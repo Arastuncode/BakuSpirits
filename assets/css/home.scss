@@ -2,36 +2,48 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
-$background-color:#1D1D1D;
-$text-hover-color: rgb(247, 176, 53);
+body {
+    background-image: url(../img/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+$background-color:rgb(23, 110, 88);
+$text-hover-color: rgb(247, 176, 53);
+$font-color:rgb(110, 86, 44);
 #header {
-    background-color: $background-color !important;
+
+    //background-color: $background-color !important;
     ul {
         a {
             color: white !important;
             font-size: 1.2em;
-            padding: 40px;
+            padding: 20px;
+
             &:hover {
                 color: $text-hover-color c;
             }
         }
     }
 
-    .right-box{
+    .right-box {
         display: inline;
-       li {
+
+        li {
             list-style: none;
             display: inline;
+
             a {
                 text-decoration: none !important;
                 padding: 10px;
-                color:red;
-                img{
-                    sub{
-                        color: red;
+                color: red;
+
+                img {
+                    sub {
+                        color: red !important;
                     }
                 }
             }
@@ -43,16 +55,19 @@ $text-hover-color: rgb(247, 176, 53);
     .carousel {
         .carousel-item {
             position: relative;
+
             img {
                 width: 100%;
                 height: 700px;
                 filter: brightness(70%);
             }
+
             .first {
                 color: rgb(43, 43, 43);
                 top: 50px;
                 left: -400px;
                 position: absolute;
+
                 .offer {
                     font-size: 14px;
 
@@ -70,36 +85,142 @@ $text-hover-color: rgb(247, 176, 53);
     }
 }
 
-#products {
-    overflow: hidden;
+main {
+    .about {
+        .content {
+            h2 {
+                color: white;
+                text-align: center;
+                font-family: 'Delius Unicase', cursive;
+                font-size: 24px;
+            }
 
-    .image {
-        height: 1000px;
+            cursor: pointer;
 
-        img {
-            width: 100%;
-            height: 80%;
+            h3 {
+                font-size: 24px;
+                color: #f7b035;
+                flex: 1 1 150px;
+            }
         }
     }
-}
 
-.about {
-    background-color: $background-color;
+    #products {
+        overflow: hidden;
+        color: #f7b035;
 
-    .content {
-        h2 {
-            color: white;
-            text-align: center;
-            font-family: 'Delius Unicase', cursive;
-            font-size: 24px;
+        .image {
+            height: 1000px;
+
+            img {
+                width: 100%;
+                height: 80%;
+            }
         }
 
-        cursor: pointer;
+        .about {
+            a {
+                text-decoration: none;
+                font-family: 'Delius Unicase', cursive;
+                font-weight: bold;
+                font-size: x-large;
+                color: #f7b035;
+                position: relative;
+                margin-left: 30%;
 
-        h3 {
-            font-size: 24px;
-            color: #f7b035;
-            flex: 1 1 150px;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $text-hover-color;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform 0.4s;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+
+            .content {
+                color: white;
+                margin-left: 15%;
+            }
+
+
+        }
+    }
+
+    #shop {
+
+        .card {
+            margin-top: 10px;
+            width: 18rem;
+            background-color: transparent;
+            border: none;
+            color: $font-color;
+
+            .card-img-top {
+                border-radius: 10px;
+                transition: transform .75s;
+            }
+
+            &:hover .card-img-top {
+                transform: scale(1.1);
+            }
+
+            .card-body {
+
+                .card-title {
+                    text-decoration: none;
+                    color: $font-color;
+                    font-size: 24px;
+                    font-weight: bolder;
+                }
+
+                .btn {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: $font-color;
+                    outline: 2px solid #fff;
+                    padding: 10px 40px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: color 1s;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 8px;
+                    outline:none;
+                    &:hover {
+                        color: $font-color !important;
+                    }
+
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: -50px;
+                        width: 0;
+                        height: 100%;
+                        background-color: #fff !important;
+                        transform: skewX(35deg);
+                        z-index: -1;
+                        transition: width 1s;
+                    }
+
+                    &:hover::before {
+                        width: 150%;
+                    }
+                    p{
+                        font-weight: 16px !important;
+                    }
+                }
+            }
         }
     }
 }
@@ -110,10 +231,9 @@ $text-hover-color: rgb(247, 176, 53);
 //Phone Portrait  
 @media screen and(min-width: 320px) {
     #header {
-        background-color: $background-color !important;
         ul {
             a {
-                
+
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
@@ -136,11 +256,13 @@ $text-hover-color: rgb(247, 176, 53);
 @media screen and (max-width: 480px) {
     #header {
         background-color: $background-color !important;
+
         ul {
             a {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
+
                 &:hover {
                     color: $text-hover-color !important;
                 }
@@ -159,11 +281,13 @@ $text-hover-color: rgb(247, 176, 53);
 @media screen and(min-width: 768px) and(max-width: 1024px) {
     #header {
         background-color: $background-color !important;
+
         ul {
             a {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
+
                 &:hover {
                     color: $text-hover-color !important;
                 }
@@ -177,11 +301,13 @@ $text-hover-color: rgb(247, 176, 53);
 @media screen and(max-width: 768px) {
     #header {
         background-color: $background-color !important;
+
         ul {
             a {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
+                font-size:16px;
                 &:hover {
                     color: $text-hover-color !important;
                 }
@@ -194,11 +320,13 @@ $text-hover-color: rgb(247, 176, 53);
 @media screen and(max-width: 1024px) {
     #header {
         background-color: $background-color !important;
+
         ul {
             a {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
+
                 &:hover {
                     color: $text-hover-color !important;
                 }
@@ -214,15 +342,7 @@ $text-hover-color: rgb(247, 176, 53);
 }
 
 //Desktop
-@media screen and (min-width: 1224px) {
-    body {
-        background-color: white;
-    }
-}
+@media screen and (min-width: 1224px) {}
 
 // Large Desktop
-@media screen and (min-width: 1824px) {
-    body {
-        background-color: burlywood;
-    }
-}
+@media screen and (min-width: 1824px) {}
