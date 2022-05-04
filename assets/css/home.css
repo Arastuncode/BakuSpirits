@@ -18,7 +18,7 @@ body {
 }
 
 #header ul a:hover {
-  color: #f7b035 c;
+  color: #f7b035 !important;
 }
 
 #header .right-box {
@@ -46,9 +46,9 @@ body {
 
 #carousel .carousel .carousel-item img {
   width: 100%;
-  height: 700px;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  height: 750px;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 #carousel .carousel .carousel-item .first {
@@ -230,8 +230,6 @@ main .video iframe {
 }
 
 main .footer {
-  height: 800px;
-  background-color: #2b7746;
   padding: 35px;
   color: white;
 }
@@ -243,6 +241,7 @@ main .footer ul {
 main .footer ul a {
   text-decoration: none;
   color: white;
+  padding: 15px;
 }
 
 main .footer ul a:hover {
@@ -253,7 +252,7 @@ main .footer ul a img {
   padding: 10px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   #header ul a {
     text-align: center !important;
     font: 1.2em sans-serif;
