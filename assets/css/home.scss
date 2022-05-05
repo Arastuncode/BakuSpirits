@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    //overflow-x: hidden;
-
 }
 
 body {
@@ -15,14 +13,14 @@ body {
 $background-color:rgb(23, 110, 88);
 $text-hover-color: rgb(247, 176, 53);
 $font-color:rgb(110, 86, 44);
-#header {
 
-    //background-color: $background-color !important;
+#header {
     ul {
         a {
             color: white !important;
             font-size: 1.2em;
             padding: 20px;
+
             &:hover {
                 color: $text-hover-color !important;
             }
@@ -39,13 +37,7 @@ $font-color:rgb(110, 86, 44);
             a {
                 text-decoration: none !important;
                 padding: 10px;
-                color: red;
 
-                img {
-                    sub {
-                        color: red !important;
-                    }
-                }
             }
         }
     }
@@ -58,7 +50,7 @@ $font-color:rgb(110, 86, 44);
 
             img {
                 width: 100%;
-                height: 750px;
+                height: 700px;
                 filter: brightness(90%);
             }
 
@@ -115,7 +107,7 @@ main {
             img {
                 width: 100%;
                 height: 80%;
-                border-radius:10px;
+                border-radius: 10px;
             }
         }
 
@@ -196,7 +188,8 @@ main {
                     background-color: transparent;
                     border: none;
                     border-radius: 8px;
-                    outline:none;
+                    outline: none;
+
                     &:hover {
                         color: $font-color !important;
                     }
@@ -217,47 +210,49 @@ main {
                     &:hover::before {
                         width: 150%;
                     }
-                    p{
+
+                    p {
                         font-weight: 16px !important;
                     }
                 }
             }
         }
     }
-    .video{
-        //text-align: center;
-        margin-left:26%;
-        iframe{
-            height:390px;
-            width:690px;
+
+    .video {
+
+        margin-left: 4%;
+
+        iframe {
+            height: 390px;
+            width: 690px;
             border-radius: 12px;
             filter: brightness(70%);
-            box-shadow: 5px 5px 5px rgb(23, 110, 88);
+            box-shadow: 10px 10px 10px rgb(18, 91, 73);
         }
     }
-    .footer{
-        padding:35px;
+
+   
+} 
+.footer {
+        padding: 30px;
         color: white;
-        ul{
+       
+        ul {
             list-style: none;
-            a{
+          
+            a {
                 text-decoration: none;
                 color: white;
                 padding: 15px;
-                &:hover{
-                    color:$text-hover-color;
+
+                &:hover {
+                    color: $text-hover-color;
                 }
-                img{
-                    padding:10px;
-                }
-                
             }
         }
-    }
 }
 
-//Phone Portrait & Landscape
-@media screen and(min-width: 320px) and(max-width: 480px) {}
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
@@ -275,13 +270,28 @@ main {
             }
         }
     }
+    main {
+        
 
-    .about {
-        h3 {
-            font-size: 16px;
+        .about {
+            h3 {
+                font-size: 16px;
+            }
         }
-    }
     
+        .shop {
+            .card {
+                display: flex !important;
+                align-items: center !important;
+                margin-left: 15px;
+            }
+        }
+    
+        .video {
+            display: none !important;
+        }
+         
+    }
 }
 
 //Phone Landscape
@@ -302,35 +312,59 @@ main {
         }
     }
 
-    .about {
-        h3 {
-            font-size: 16px;
+    main {
+      
+        
+        .about {
+            h3 {
+                font-size: 16px;
+            }
         }
-    }
     
+        .shop {
+            .card {
+                display: flex !important;
+                align-items: center !important;
+                margin-left: 30px;
+            }
+        }
+    
+        .video {
+            display: none !important;
+        }
+        
+    }
 }
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
-    #header {
-        background-color: $background-color !important;
+    // #header {
+    //     background-color: $background-color !important;
 
-        ul {
-            a {
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
+    //     ul {
+    //         a {
+    //             text-align: center !important;
+    //             font: 1.2em sans-serif;
+    //             color: white;
 
-                &:hover {
-                    color: $text-hover-color !important;
-                }
-            }
-        }
-    }
-    
+    //             &:hover {
+    //                 color: $text-hover-color !important;
+    //             }
+    //             i{
+    //                 margin-top:10px;
+    //             }
+    //         }
+    //     }
+    // }
+    // #footer {
+    //     .img{
+    //         visibility: hidden !important;
+    //     }
+    // }
+
 }
 
-//Table Portrait 
+// Table Portrait 
 @media screen and(max-width: 768px) {
     #header {
         background-color: $background-color !important;
@@ -340,14 +374,34 @@ main {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
-                font-size:16px;
+                font-size: 16px;
+
                 &:hover {
                     color: $text-hover-color !important;
                 }
             }
         }
     }
+
+    main {
+        
+
+        .shop {
+            .card {
+                display: flex !important;
+                align-items: center !important;
+                margin-left: 15px;
+            }
+        }
+    
+        .video {
+            display: none !important;
+        }
+    }
+   
 }
+
+ 
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
@@ -359,17 +413,30 @@ main {
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
+                padding-top: 30px !important;
 
                 &:hover {
                     color: $text-hover-color !important;
+                }
+
+                i {
+                    margin-top: 10px;
                 }
             }
         }
     }
 
-    #products {
-        .image {
-            height: 800px;
+    main {
+        
+
+        #products {
+            .image {
+                height: 800px;
+            }
+        }
+
+        .video {
+            display: none !important;
         }
     }
 }

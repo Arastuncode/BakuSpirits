@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header ul a {
+  color: white !important;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+#header ul a:hover {
+  color: #f7b035 !important;
+}
+
+#header .right-box {
+  display: inline;
+}
+
+#header .right-box li {
+  list-style: none;
+  display: inline;
+}
+
+#header .right-box li a {
+  text-decoration: none !important;
+  padding: 10px;
+}
+
+.footer {
+  padding: 30px;
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+.footer ul a:hover {
+  color: #f7b035;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    background-color: #176e58 !important;
+  }
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #header {
+    background-color: #176e58 !important;
+  }
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+  #header ul a i {
+    margin-top: 10px;
+  }
+  #header ul a .count {
+    position: absolute;
+    top: 5.3%;
+    right: 13.4%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background-color: #176e58 !important;
+  }
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #header {
+    background-color: #176e58 !important;
+  }
+  #header ul a {
+    text-align: center !important;
+    font: 1.2em sans-serif;
+    color: white;
+    padding-top: 30px !important;
+  }
+  #header ul a:hover {
+    color: #f7b035 !important;
+  }
+  #header ul a i {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=products.css.map */

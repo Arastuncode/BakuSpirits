@@ -33,11 +33,6 @@ body {
 #header .right-box li a {
   text-decoration: none !important;
   padding: 10px;
-  color: red;
-}
-
-#header .right-box li a img sub {
-  color: red !important;
 }
 
 #carousel .carousel .carousel-item {
@@ -46,7 +41,7 @@ body {
 
 #carousel .carousel .carousel-item img {
   width: 100%;
-  height: 750px;
+  height: 700px;
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
@@ -216,7 +211,7 @@ main #shop .card .card-body .btn p {
 }
 
 main .video {
-  margin-left: 26%;
+  margin-left: 4%;
 }
 
 main .video iframe {
@@ -225,31 +220,27 @@ main .video iframe {
   border-radius: 12px;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
-  -webkit-box-shadow: 5px 5px 5px #176e58;
-          box-shadow: 5px 5px 5px #176e58;
+  -webkit-box-shadow: 10px 10px 10px #125b49;
+          box-shadow: 10px 10px 10px #125b49;
 }
 
-main .footer {
-  padding: 35px;
+.footer {
+  padding: 30px;
   color: white;
 }
 
-main .footer ul {
+.footer ul {
   list-style: none;
 }
 
-main .footer ul a {
+.footer ul a {
   text-decoration: none;
   color: white;
   padding: 15px;
 }
 
-main .footer ul a:hover {
+.footer ul a:hover {
   color: #f7b035;
-}
-
-main .footer ul a img {
-  padding: 10px;
 }
 
 @media screen and (max-width: 320px) {
@@ -261,8 +252,20 @@ main .footer ul a img {
   #header ul a:hover {
     color: #f7b035 !important;
   }
-  .about h3 {
+  main .about h3 {
     font-size: 16px;
+  }
+  main .shop .card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-left: 15px;
+  }
+  main .video {
+    display: none !important;
   }
 }
 
@@ -278,22 +281,20 @@ main .footer ul a img {
   #header ul a:hover {
     color: #f7b035 !important;
   }
-  .about h3 {
+  main .about h3 {
     font-size: 16px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #header {
-    background-color: #176e58 !important;
+  main .shop .card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-left: 30px;
   }
-  #header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-  }
-  #header ul a:hover {
-    color: #f7b035 !important;
+  main .video {
+    display: none !important;
   }
 }
 
@@ -310,6 +311,18 @@ main .footer ul a img {
   #header ul a:hover {
     color: #f7b035 !important;
   }
+  main .shop .card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-left: 15px;
+  }
+  main .video {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -320,12 +333,19 @@ main .footer ul a img {
     text-align: center !important;
     font: 1.2em sans-serif;
     color: white;
+    padding-top: 30px !important;
   }
   #header ul a:hover {
     color: #f7b035 !important;
   }
-  #products .image {
+  #header ul a i {
+    margin-top: 10px;
+  }
+  main #products .image {
     height: 800px;
+  }
+  main .video {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=home.css.map */
