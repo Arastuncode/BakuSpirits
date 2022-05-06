@@ -2,18 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background-image: url(../img/green.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    ::selection {
+        color: #ff0000;
+    }
 }
 
-$background-color:rgb(23, 110, 88);
+$background-color: rgb(23, 110, 88);
 $text-hover-color: rgb(247, 176, 53);
-$font-color:rgb(110, 86, 44);
+$font-color: rgb(110, 86, 44);
+$main-font-color:#fff;
 #header {
     ul {
         a {
@@ -22,8 +25,14 @@ $font-color:rgb(110, 86, 44);
             padding: 20px;
 
             &:hover {
-                color: $text-hover-color !important;
+                color: $text-hover-color  !important;
             }
+        }
+    }
+
+    main {
+        #shop-area {
+            color: white;
         }
     }
 
@@ -43,14 +52,164 @@ $font-color:rgb(110, 86, 44);
     }
 }
 
- 
+main {
+    hr {
+        color: rgb(247, 176, 53);
+        height: 5px;
+    }
+
+    .filter-area {
+        color: white;
+
+        input {
+            outline: none;
+        }
+
+        .name {
+            width: 5px;
+            height: 25px;
+            background-color: rgb(247, 176, 53);
+
+            h6 {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .search-sorting {
+        .sorting-box {
+            width: 300px;
+            .form-select {
+                background-color: transparent;
+                border: none;
+                outline:none !important; 
+            }
+            
+        }
+        .search-box {
+            .search {
+                display: inline;
+                border: 2px solid #ccc;
+                border-radius: 100px;
+                padding: 10px 15px;
+                transition: background-color 0.5 ease-in-out;
+                border: none;
+                background-color: transparent;
+                width: 200px;
+                color: black;;
+                &:focus {
+                    outline: none;
+                }
+            }
+            ::placeholder {
+                color: black;
+                opacity: 1;
+            }
+
+            button,
+            i {
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: black;
+            }
+        }
+
+    }
+    #shop-area {
+        .card {
+            margin-top: 10px;
+            width: 18rem;
+            background-color: transparent;
+            border: none;
+            color: white;
+
+            .card-img-top {
+                border-radius: 10px;
+                transition: transform .75s;
+            }
+
+            &:hover .card-img-top {
+                transform: scale(1.1);
+                box-shadow: 20px 20px 20px rgb(18, 91, 73);
+
+            }
+           
+            .card-body {
+
+                .card-title {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bolder;
+                }
+
+                .btn {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: white;
+                    outline: 2px solid #fff;
+                    padding: 10px 40px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: color 1s;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 8px;
+                    outline: none;
+
+                    &:hover {
+                        color: $font-color !important;
+                    }
+
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: -50px;
+                        width: 0;
+                        height: 100%;
+                        background-color: #fff !important;
+                        transform: skewX(35deg);
+                        z-index: -1;
+                        transition: width 1s;
+                    }
+
+                    &:hover::before {
+                        width: 150%;
+                    }
+
+                    p {
+                        font-weight: 16px !important;
+                    }
+                }
+            }
+        }     
+    }
+    .pagination{
+        background-color:transparent;
+        ul{
+            display: inline;
+            li{
+                a{
+                    color:$main-font-color;
+                    text-decoration: none;
+                }
+                padding: 10px;
+                display: inline;
+                list-style: none;
+            }
+        }
+    }
+}
+
 .footer {
     padding: 30px;
     color: white;
-   
+
     ul {
         list-style: none;
-      
+
         a {
             text-decoration: none;
             color: white;
@@ -75,13 +234,13 @@ $font-color:rgb(110, 86, 44);
                 color: white;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
             }
         }
     }
 }
- 
+
 //Phone Portrait  
 @media screen and(max-width: 320px) {
     #header {
@@ -93,7 +252,7 @@ $font-color:rgb(110, 86, 44);
                 color: white;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
             }
         }
@@ -103,7 +262,7 @@ $font-color:rgb(110, 86, 44);
 //Phone Landscape
 @media screen and (max-width: 480px) {
     #header {
-        background-color: $background-color !important;
+        background-color: $background-color  !important;
 
         ul {
             a {
@@ -112,7 +271,7 @@ $font-color:rgb(110, 86, 44);
                 color: white;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
             }
         }
@@ -123,7 +282,7 @@ $font-color:rgb(110, 86, 44);
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
     #header {
-        background-color: $background-color !important;
+        background-color: $background-color  !important;
 
         ul {
             a {
@@ -132,26 +291,28 @@ $font-color:rgb(110, 86, 44);
                 color: white;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
-                i{
-                    margin-top:10px;
+
+                i {
+                    margin-top: 10px;
                 }
+
                 .count {
                     position: absolute;
                     top: 5.3%;
-                    right:13.4%;
+                    right: 13.4%;
                 }
             }
         }
     }
-    
+
 }
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
     #header {
-        background-color: $background-color !important;
+        background-color: $background-color  !important;
 
         ul {
             a {
@@ -161,7 +322,7 @@ $font-color:rgb(110, 86, 44);
                 font-size: 16px;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
             }
         }
@@ -171,7 +332,7 @@ $font-color:rgb(110, 86, 44);
 //Table  Landscape
 @media screen and(max-width: 1024px) {
     #header {
-        background-color: $background-color !important;
+        background-color: $background-color  !important;
 
         ul {
             a {
@@ -181,7 +342,7 @@ $font-color:rgb(110, 86, 44);
                 padding-top: 30px !important;
 
                 &:hover {
-                    color: $text-hover-color !important;
+                    color: $text-hover-color  !important;
                 }
 
                 i {

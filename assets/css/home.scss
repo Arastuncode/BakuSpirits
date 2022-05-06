@@ -150,7 +150,6 @@ main {
     }
 
     #shop {
-
         .card {
             margin-top: 10px;
             width: 18rem;
@@ -192,6 +191,7 @@ main {
 
                     &:hover {
                         color: $font-color !important;
+                        
                     }
 
                     &::before {
