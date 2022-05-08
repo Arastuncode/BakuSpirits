@@ -10,44 +10,45 @@ body {
     // background-size: cover;
     background-color: rgb(215, 205, 205);
 }
+
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
-$text-hover-color: black;
-$font-color:rgb(162, 29, 29);
+$text-hover-color: rgb(162, 29, 29);
+$font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 
-header
-{
+header {
     background-color: #fff;
-    nav
-    {
+
+    nav {
         padding: 0px !important;
-        #logo
-        {
-            width: 150px;
-            height: 100px;
+
+        .logo {
+            img {
+                width: 150px;
+                height: 100px;
+            }
         }
-        #mobile-navbar-show
-        {
+
+        #mobile-navbar-show {
             cursor: pointer;
             border: none;
         }
-        ul
-        {
-            li
-            {
+
+        ul {
+            li {
                 position: relative;
                 padding: 38px 20px;
-                a
-                {
+
+                a {
                     position: relative;
                     font-size: 12px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color:  black !important;
+                    color: black !important;
                     font-weight: 500;
-                    &::after
-                    {
+
+                    &::after {
                         content: "";
                         transition: width .3s;
                         position: absolute;
@@ -56,27 +57,28 @@ header
                         transform: translateX(-50%);
                         width: 0;
                         height: 1px;
-                        background-color:  black;
+                        background-color: black;
                     }
-                    &:hover
-                    {
-                        &::after
-                        {
+
+                    &:hover {
+                        &::after {
                             width: 80%;
                         }
+
                         text-decoration: none;
                     }
                 }
-                .fa-search
-                {
+
+                .fa-search {
                     transform: rotateY(180deg);
                 }
-                i, span
-                {
+
+                i,
+                span {
                     cursor: pointer;
                 }
-                ul
-                {
+
+                ul {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
@@ -86,93 +88,114 @@ header
                     opacity: 0;
                     visibility: hidden;
                     z-index: 2;
-                    li
-                    {
+
+                    li {
                         padding: 5px 30px;
-                        i
-                        {
+
+                        i {
                             font-size: 10px !important;
                         }
-                        ul
-                        {
+
+                        ul {
                             opacity: 0 !important;
                             visibility: hidden !important;
                             top: 0;
                             left: 100%;
                         }
-                        #input-search
-                        {
+
+                        #input-search {
                             border: none;
-                            &:focus
-                            {
+
+                            &:focus {
                                 outline: none;
                             }
                         }
-                        &:hover
-                        {
-                            ul
-                            {
+
+                        &:hover {
+                            ul {
                                 opacity: 1 !important;
                                 visibility: visible !important;
                             }
                         }
                     }
-                    .element
-                    {
-                        ul
-                        {
-                            top: 0;
-                            left: -100%;
+
+
+                }
+
+                .dropdown {
+                    transition: opacity .5s;
+                    background-color: white;
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    left: 0;
+                    visibility: hidden;
+                    z-index: -1;
+
+                    ul {
+                        width: auto;
+                        visibility: visible;
+                        position: relative;
+
+                        //top: 10px;
+                        li {
+                            padding: 5px 0;
+                            font-size: 12px;
+
+                            a {
+                                text-decoration: none;
+                                padding: 0 !important;
+                            }
                         }
                     }
                 }
-                .elements
-                {
-                    li
-                    {
-                        text-align: right;
-                    }
-                }
-                &:hover
-                {
-                    ul
-                    {
+
+                &:hover {
+                    ul {
                         opacity: 1;
                         visibility: visible;
+
+                        a {
+                            text-decoration: none;
+                        }
                     }
-                    .shop
-                    {
+
+                    .dropdown {
                         opacity: 1;
                         visibility: visible;
                         z-index: 99;
                     }
                 }
             }
-            .shop-cart
-            {
-                sup
-                {
-                    padding: 1px 3px;
-                    color:  white;
-                    background-color:#f34f3f;
+
+            .shop-cart {
+                a {
+                    text-decoration: none;
                 }
-                ul
-                {
-                    top: 100px;
+
+                sup {
+                    padding: 1px 3px;
+                    color: white;
+                    background-color: #f34f3f;
+                }
+
+                ul {
+                    top: 20px;
                     left: -70%;
-                    li
-                    {
-                        font-size: 14px;
+
+                    li {
+                        font-size: 10px;
                     }
                 }
             }
         }
+
     }
 
     .mobile-navbar
     {
         transition: all .3s;
-        background-color:  white;
+        background-color: white;
         top: 0;
         right: 36px;
         width: 0;
@@ -195,7 +218,7 @@ header
                 {
                     font-size: 12px;
                     text-transform: uppercase;
-                    color: black;
+                    color:black;
                     letter-spacing: .1em;
                     &:hover
                     {
@@ -215,7 +238,7 @@ header
                         text-transform: capitalize;
                         font-size: 12px;
                         letter-spacing: 0em;
-                        color: lighten($color:  black, $amount: 50);
+                        color: lighten($color: black, $amount: 50);
                     }
                 }
                 ul
@@ -228,8 +251,8 @@ header
             }
         }
     }
-    .mobile-navbar.active
-    {
+
+    .mobile-navbar.active {
         width: 420px;
         visibility: visible;
         opacity: 1;
@@ -237,6 +260,7 @@ header
         z-index: 9;
     }
 }
+
 
 main {
     .about {
@@ -379,8 +403,10 @@ main {
             }
         }
     }
+
     video {
         padding-right: 14%;
+
         source {
             height: 390px;
             width: 100%;
@@ -396,9 +422,11 @@ main {
     ul {
         list-style: none;
         cursor: pointer;
-        p:hover{
+
+        p:hover {
             color: $text-hover-color;
         }
+
         a {
             text-decoration: none;
             color: white;
@@ -414,7 +442,7 @@ main {
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
- 
+
 
     main {
 
@@ -442,7 +470,7 @@ main {
 
 //Phone Landscape
 @media screen and (max-width: 480px) {
-  
+
 
     main {
 
@@ -498,7 +526,7 @@ main {
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
- 
+
 
     main {
 

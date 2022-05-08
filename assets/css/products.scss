@@ -7,48 +7,49 @@
 body {
     background-color: rgb(215, 205, 205);
 }
+
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
-$text-hover-color: black;
-$font-color:rgb(162, 29, 29);
+$text-hover-color: rgb(162, 29, 29) ;
+$font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 $background-color: rgb(23, 110, 88);
 $text-hover-color: rgb(247, 176, 53);
 $font-color: rgb(110, 86, 44);
-$main-font-color:#fff;
-header
-{
+$main-font-color: #fff;
+
+header {
     background-color: #fff;
-    nav
-    {
+
+    nav {
         padding: 0px !important;
-        #logo
-        {
-            width: 150px;
-            height: 100px;
+
+        .logo {
+            img {
+                width: 150px;
+                height: 100px;
+            }
         }
-        #mobile-navbar-show
-        {
+
+        #mobile-navbar-show {
             cursor: pointer;
             border: none;
         }
-      
-        ul
-        {
-            li
-            {
+
+        ul {
+            li {
                 position: relative;
                 padding: 38px 20px;
-                a
-                {
+
+                a {
                     position: relative;
                     font-size: 12px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color:  black !important;
+                    color: black !important;
                     font-weight: 500;
-                    &::after
-                    {
+
+                    &::after {
                         content: "";
                         transition: width .3s;
                         position: absolute;
@@ -57,27 +58,28 @@ header
                         transform: translateX(-50%);
                         width: 0;
                         height: 1px;
-                        background-color:  black;
+                        background-color: black;
                     }
-                    &:hover
-                    {
-                        &::after
-                        {
+
+                    &:hover {
+                        &::after {
                             width: 80%;
                         }
+
                         text-decoration: none;
                     }
                 }
-                .fa-search
-                {
+
+                .fa-search {
                     transform: rotateY(180deg);
                 }
-                i, span
-                {
+
+                i,
+                span {
                     cursor: pointer;
                 }
-                ul
-                {
+
+                ul {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
@@ -87,57 +89,54 @@ header
                     opacity: 0;
                     visibility: hidden;
                     z-index: 2;
-                    li
-                    {
+
+                    li {
                         padding: 5px 30px;
-                        i
-                        {
+
+                        i {
                             font-size: 10px !important;
                         }
-                        ul
-                        {
+
+                        ul {
                             opacity: 0 !important;
                             visibility: hidden !important;
                             top: 0;
                             left: 100%;
                         }
-                        #input-search
-                        {
+
+                        #input-search {
                             border: none;
-                            &:focus
-                            {
+
+                            &:focus {
                                 outline: none;
                             }
                         }
-                        &:hover
-                        {
-                            ul
-                            {
+
+                        &:hover {
+                            ul {
                                 opacity: 1 !important;
                                 visibility: visible !important;
                             }
                         }
                     }
-                    .element
-                    {
-                        ul
-                        {
+
+                    .element {
+                        ul {
                             top: 0;
                             left: -100%;
                         }
                     }
                 }
-                .elements
-                {
-                    li
-                    {
+
+                .elements {
+                    li {
                         text-align: right;
                     }
                 }
-                .shop
-                {
+
+                .shop {
                     transition: opacity .3s;
-                    background-color:  white;
+                    background-color: white;
                     position: absolute;
                     top: 115px;
                     width: 100%;
@@ -145,74 +144,58 @@ header
                     opacity: 0;
                     visibility: hidden;
                     z-index: -1;
-                    ul
-                    {
+
+                    ul {
                         width: auto;
                         opacity: 1;
                         visibility: visible;
                         position: relative;
                         top: 0;
-                        li
-                        {
+
+                        li {
+
                             padding: 5px 0;
-                            a
-                            {
+
+                            a {
+                                text-decoration: none;
+
                                 padding: 0 !important;
                             }
                         }
                     }
                 }
-                &:hover
-                {
-                    ul
-                    {
+
+                &:hover {
+                    ul {
                         opacity: 1;
                         visibility: visible;
                     }
-                    .shop
-                    {
+
+                    .shop {
                         opacity: 1;
                         visibility: visible;
                         z-index: 99;
                     }
                 }
             }
-            li.shop-li
-            {
-                position: static;
-            }
-            .shop-cart
-            {
-                sup
-                {
+
+            .shop-cart {
+                a {
+                    text-decoration: none;
+                }
+
+                sup {
                     padding: 1px 3px;
-                    color:  white;
-                    background-color:#f34f3f;
+                    color: white;
+                    background-color: #f34f3f;
                 }
-                ul
-                {
-                    top: 100px;
+
+                ul {
+                    top: 20px;
                     left: -70%;
-                    li
-                    {
+
+                    li {
                         font-size: 14px;
-                    }
-                }
-            }
-            .search
-            {
-                ul
-                {
-                    visibility: visible;
-                    opacity: 1;
-                    top: 100px;
-                    display: none;
-                    li
-                    {
-                        i
-                        {
-                            font-size: 14px !important;
-                        }
                     }
                 }
             }
@@ -223,7 +206,7 @@ header
     .mobile-navbar
     {
         transition: all .3s;
-        background-color:  white;
+        background-color: white;
         top: 0;
         right: 36px;
         width: 0;
@@ -246,7 +229,7 @@ header
                 {
                     font-size: 12px;
                     text-transform: uppercase;
-                    color: black;
+                    color:black;
                     letter-spacing: .1em;
                     &:hover
                     {
@@ -266,7 +249,7 @@ header
                         text-transform: capitalize;
                         font-size: 12px;
                         letter-spacing: 0em;
-                        color: lighten($color:  black, $amount: 50);
+                        color: lighten($color: black, $amount: 50);
                     }
                 }
                 ul
@@ -279,8 +262,8 @@ header
             }
         }
     }
-    .mobile-navbar.active
-    {
+
+    .mobile-navbar.active {
         width: 420px;
         visibility: visible;
         opacity: 1;
@@ -290,11 +273,6 @@ header
 }
 
 main {
-    hr {
-        color: rgb(247, 176, 53);
-        height: 5px;
-    }
-
     .filter-area {
         color: white;
 
@@ -316,13 +294,15 @@ main {
     .search-sorting {
         .sorting-box {
             width: 300px;
+
             .form-select {
                 background-color: transparent;
                 border: none;
-                outline:none !important; 
+                outline: none !important;
             }
-            
+
         }
+
         .search-box {
             .search {
                 display: inline;
@@ -333,11 +313,14 @@ main {
                 border: none;
                 background-color: transparent;
                 width: 200px;
-                color: black;;
+                color: black;
+                ;
+
                 &:focus {
                     outline: none;
                 }
             }
+
             ::placeholder {
                 color: black;
                 opacity: 1;
@@ -353,6 +336,7 @@ main {
         }
 
     }
+
     #shop-area {
         .card {
             margin-top: 10px;
@@ -371,7 +355,7 @@ main {
                 box-shadow: 20px 20px 20px rgb(18, 91, 73);
 
             }
-           
+
             .card-body {
 
                 .card-title {
@@ -396,7 +380,7 @@ main {
                     outline: none;
 
                     &:hover {
-                        color: $font-color !important;
+                        color: $font-color  !important;
                     }
 
                     &::before {
@@ -421,17 +405,21 @@ main {
                     }
                 }
             }
-        }     
+        }
     }
-    .pagination{
-        background-color:transparent;
-        ul{
+
+    .pagination {
+        background-color: transparent;
+
+        ul {
             display: inline;
-            li{
-                a{
-                    color:$main-font-color;
+
+            li {
+                a {
+                    color: $main-font-color;
                     text-decoration: none;
                 }
+
                 padding: 10px;
                 display: inline;
                 list-style: none;
@@ -476,6 +464,11 @@ main {
             }
         }
     }
+    #shop-area {
+        .card-body {
+            padding:20px;
+        }
+    }
 }
 
 //Phone Portrait  
@@ -492,6 +485,11 @@ main {
                     color: $text-hover-color  !important;
                 }
             }
+        }
+    }
+    #shop-area {
+        .card-body {
+            padding:20px;
         }
     }
 }
@@ -513,7 +511,11 @@ main {
             }
         }
     }
-
+    #shop-area {
+        .card-body {
+            padding:20px;
+        }
+    }
 }
 
 //Table Portrait & Landscape
@@ -543,7 +545,11 @@ main {
             }
         }
     }
-
+    #shop-area {
+        .card-body {
+            padding:20px;
+        }
+    }
 }
 
 // Table Portrait 
@@ -562,6 +568,11 @@ main {
                     color: $text-hover-color  !important;
                 }
             }
+        }
+    }
+    #shop-area {
+        .card-body {
+            padding:20px;
         }
     }
 }
@@ -586,6 +597,11 @@ main {
                     margin-top: 10px;
                 }
             }
+        }
+    }
+    #shop-area {
+        .card-body {
+            padding:20px;
         }
     }
 }

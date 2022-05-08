@@ -17,7 +17,7 @@ header nav {
   padding: 0px !important;
 }
 
-header nav #logo {
+header nav .logo img {
   width: 150px;
   height: 100px;
 }
@@ -123,6 +123,36 @@ header nav ul li .elements li {
   text-align: right;
 }
 
+header nav ul li .shop {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  background-color: white;
+  position: absolute;
+  top: 115px;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+header nav ul li .shop ul {
+  width: auto;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  top: 0;
+}
+
+header nav ul li .shop ul li {
+  padding: 5px 0;
+}
+
+header nav ul li .shop ul li a {
+  text-decoration: none;
+  padding: 0 !important;
+}
+
 header nav ul li:hover ul {
   opacity: 1;
   visibility: visible;
@@ -134,6 +164,10 @@ header nav ul li:hover .shop {
   z-index: 99;
 }
 
+header nav ul .shop-cart a {
+  text-decoration: none;
+}
+
 header nav ul .shop-cart sup {
   padding: 1px 3px;
   color: white;
@@ -141,7 +175,7 @@ header nav ul .shop-cart sup {
 }
 
 header nav ul .shop-cart ul {
-  top: 100px;
+  top: 20px;
   left: -70%;
 }
 
@@ -235,8 +269,8 @@ header .mobile-navbar.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 350px;
-  width: 640px;
+  height: 349px;
+  width: 635px;
   border-radius: 12px;
   -webkit-box-shadow: 5px 10px 8px #888888;
           box-shadow: 5px 10px 8px #888888;
@@ -245,6 +279,14 @@ header .mobile-navbar.active {
 #about .sertification h2 {
   color: #fff;
   text-align: center;
+}
+
+#about .sertification .hidden-image {
+  visibility: hidden;
+  -webkit-transition: 0.70s;
+  transition: 0.70s;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
 }
 
 .footer {
@@ -258,7 +300,7 @@ header .mobile-navbar.active {
 }
 
 .footer ul p:hover {
-  color: black;
+  color: #a21d1d;
 }
 
 .footer ul a {
@@ -268,47 +310,61 @@ header .mobile-navbar.active {
 }
 
 .footer ul a:hover {
-  color: black;
+  color: #a21d1d;
 }
 
 @media screen and (max-width: 320px) {
-  #about-are p {
-    position: absolute;
-    color: red !important;
-    top: 27%;
+  #about-are .sertification h2 {
+    color: #fff;
+    text-align: center;
+  }
+  #about-are .sertification .hidden-image {
+    visibility: inherit;
+  }
+  #about-are .sertification .icon {
+    visibility: hidden;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #about-are {
-    color: red;
-  }
-  #about-are .image img {
+  #about .image img {
     height: 500px !important;
+  }
+  #about .sertification .hidden-image {
+    visibility: inherit;
+  }
+  #about .sertification .icon {
+    visibility: hidden;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about-are p {
-    position: absolute;
-    color: red !important;
-    top: 27%;
+  #about .sertification .hidden-image {
+    visibility: inherit;
+  }
+  #about .sertification .icon {
+    visibility: hidden;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #about-are p {
-    position: absolute;
-    color: red !important;
-    top: 27%;
+  #about-are .sertification .hidden-image {
+    visibility: inherit;
+  }
+  #about-are .sertification .icon {
+    visibility: hidden;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  #about-are p {
-    position: absolute;
-    color: red;
-    top: 27%;
+  #about .sertification {
+    padding: 10px;
+  }
+  #about .sertification .hidden-image {
+    visibility: inherit;
+  }
+  #about .sertification .icon {
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=company.css.map */

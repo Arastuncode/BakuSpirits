@@ -7,11 +7,12 @@
 
 body {
     background-color: rgb(215, 205, 205);
+    //background-color: #F2F2F2;
 }
 
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
-$text-hover-color: black;
+$text-hover-color: rgb(162, 29, 29);
 $font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 
@@ -21,9 +22,11 @@ header {
     nav {
         padding: 0px !important;
 
-        #logo {
-            width: 150px;
-            height: 100px;
+        .logo {
+            img {
+                width: 150px;
+                height: 100px;
+            }
         }
 
         #mobile-navbar-show {
@@ -129,6 +132,37 @@ header {
                     }
                 }
 
+                .shop {
+                    transition: opacity .3s;
+                    background-color: white;
+                    position: absolute;
+                    top: 115px;
+                    width: 100%;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: -1;
+
+                    ul {
+                        width: auto;
+                        opacity: 1;
+                        visibility: visible;
+                        position: relative;
+                        top: 0;
+
+                        li {
+
+                            padding: 5px 0;
+
+                            a {
+                                text-decoration: none;
+
+                                padding: 0 !important;
+                            }
+                        }
+                    }
+                }
+
                 &:hover {
                     ul {
                         opacity: 1;
@@ -144,6 +178,10 @@ header {
             }
 
             .shop-cart {
+                a {
+                    text-decoration: none;
+                }
+
                 sup {
                     padding: 1px 3px;
                     color: white;
@@ -151,7 +189,7 @@ header {
                 }
 
                 ul {
-                    top: 100px;
+                    top: 20px;
                     left: -70%;
 
                     li {
@@ -160,6 +198,7 @@ header {
                 }
             }
         }
+
     }
 
     .mobile-navbar {
@@ -228,6 +267,7 @@ header {
     }
 }
 
+
 #about {
     overflow-x: hidden;
 
@@ -252,19 +292,27 @@ header {
 
     .video {
         iframe {
-            display:flex; 
+            display: flex;
             align-items: center;
-            height: 350px;
-            width: 640px;
+            height: 349px;
+            width: 635px;
             border-radius: 12px;
             box-shadow: 5px 10px 8px #888888;
         }
     }
-    .sertification{
-        h2{
+
+    .sertification {
+        h2 {
             color: #fff;
             text-align: center;
         }
+
+        .hidden-image {
+            visibility: hidden;
+            transition: 0.70s;
+            box-shadow: 5px 10px 8px #888888;
+        }
+
     }
 }
 
@@ -298,10 +346,19 @@ header {
 //Phone Portrait  
 @media screen and(max-width: 320px) {
     #about-are {
-        p {
-            position: absolute;
-            color: red !important;
-            top: 27%;
+        .sertification {
+            h2 {
+                color: #fff;
+                text-align: center;
+            }
+    
+            .hidden-image {
+                visibility: inherit;
+                 
+            }
+            .icon{
+                visibility: hidden;
+            }
         }
     }
 }
@@ -309,12 +366,21 @@ header {
 //Phone Landscape
 @media screen and (max-width: 480px) {
 
-    #about-are {
-        color: red;
+    #about  {
 
         .image {
             img {
                 height: 500px !important;
+            }
+        }
+        .sertification {
+    
+            .hidden-image {
+                visibility: inherit;
+                 
+            }
+            .icon{
+                visibility: hidden;
             }
         }
     }
@@ -322,11 +388,16 @@ header {
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
-    #about-are {
-        p {
-            position: absolute;
-            color: red !important;
-            top: 27%;
+    #about  {
+      
+        .sertification {
+            .hidden-image {
+                visibility: inherit;
+                 
+            }
+            .icon{
+                visibility: hidden;
+            }
         }
     }
 
@@ -336,10 +407,15 @@ header {
 @media screen and(max-width: 768px) {
 
     #about-are {
-        p {
-            position: absolute;
-            color: red !important;
-            top: 27%;
+       
+        .sertification {
+            .hidden-image {
+                visibility: inherit;
+                 
+            }
+            .icon{
+                visibility: hidden;
+            }
         }
     }
 }
@@ -348,11 +424,16 @@ header {
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
-    #about-are {
-        p {
-            position: absolute;
-            color: red;
-            top: 27%;
+    #about  {
+       
+        .sertification {
+            padding:10px;
+            .hidden-image {
+                visibility: inherit;
+            }
+            .icon{
+                visibility: hidden;
+            }
         }
     }
 }
