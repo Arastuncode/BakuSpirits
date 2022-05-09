@@ -2,14 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
-    //     background-image: url(../img/pexels-martin-péchy-304664.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
     background-color: rgb(215, 205, 205);
-    overflow-x: hidden;
+    //background-color: #F2F2F2;
 }
 
 $color: #f34f3f;
@@ -20,16 +18,20 @@ $header-font-color: rgb(162, 29, 29);
 
 header {
     height: 100px;
+
     nav {
         padding: 0px !important;
+
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
         }
+
         ul {
             li {
                 position: relative;
                 padding: 38px 20px;
+
                 a {
                     position: relative;
                     font-size: 12px;
@@ -72,7 +74,7 @@ header {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
-                    top: 115px;
+                    top: 80px;
                     left: 0;
                     width: 228px;
                     opacity: 0;
@@ -109,31 +111,45 @@ header {
                         }
                     }
 
+                    .element {
+                        ul {
+                            top: 0;
+                            left: -100%;
+                        }
+                    }
+                }
 
+                .elements {
+                    li {
+                        text-align: right;
+                    }
                 }
 
                 .dropdown {
-                    transition: opacity .5s;
+                    transition: opacity .3s;
                     background-color: white;
                     position: absolute;
-                    top: 20px;
+                    top: -5%;
                     width: 100%;
                     left: 0;
+                    opacity: 0;
                     visibility: hidden;
                     z-index: -1;
 
                     ul {
                         width: auto;
+                        opacity: 1;
                         visibility: visible;
                         position: relative;
+                        top: 0;
 
-                        //top: 10px;
                         li {
+
                             padding: 5px 0;
-                            font-size: 12px;
 
                             a {
                                 text-decoration: none;
+
                                 padding: 0 !important;
                             }
                         }
@@ -144,16 +160,14 @@ header {
                     ul {
                         opacity: 1;
                         visibility: visible;
-
-                        a {
-                            text-decoration: none;
-                        }
                     }
 
-                    .dropdown {
+                    .shop {
                         opacity: 1;
                         visibility: visible;
                         z-index: 99;
+                        position: relative;
+                        top: -2%;
                     }
                 }
             }
@@ -174,7 +188,7 @@ header {
                     left: -70%;
 
                     li {
-                        font-size: 10px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -248,48 +262,8 @@ header {
     }
 }
 
-.image {
-    width: 70%;
-    height: auto;
-    filter: brightness(40%);
-}
 
-#patner-area {
-    img {
-        border-radius: 10px;
-        cursor: pointer;
-    }
 
-    .card {
-        background-color: transparent !important;
-        border: none;
-        cursor: pointer;
-
-        h3 {
-            color: white;
-            position: relative;
-            max-width: 300px;
-
-            &::before {
-                content: " ";
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background-color: $text-hover-color;
-                transform-origin: right;
-                transform: scaleX(0);
-                transition: transform 0.4s;
-            }
-
-            &:hover::before {
-                transform: scaleX(1);
-                transform-origin: left;
-            }
-        }
-    }
-}
 
 .footer {
     padding: 30px;
@@ -318,126 +292,39 @@ header {
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
-
-
-    main {
-
-
-        .about {
-            h3 {
-                font-size: 16px;
-            }
-        }
-
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 15px;
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
-
+    #process{
+        margin-top:40% !important;
     }
 }
 
 //Phone Landscape
 @media screen and (max-width: 480px) {
-
-
-    main {
-
-
-        .about {
-            h3 {
-                font-size: 16px;
-            }
-        }
-
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 30px;
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
-
+    #process{
+        margin-top:40% !important;
     }
 }
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
-    // #header {
-    //     background-color: $background-color !important;
-
-    //     ul {
-    //         a {
-    //             text-align: center !important;
-    //             font: 1.2em sans-serif;
-    //             color: white;
-
-    //             &:hover {
-    //                 color: $text-hover-color !important;
-    //             }
-    //             i{
-    //                 margin-top:10px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #footer {
-    //     .img{
-    //         visibility: hidden !important;
-    //     }
-    // }
+    #process{
+        margin-top:40% !important;
+    }
 
 }
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
-
-
-    main {
-
-
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 15px;
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
+    #process{
+        margin-top:40% !important;
     }
-
 }
 
 
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
-    main {
-
-
-        #products {
-            .image {
-                height: 800px;
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
+    #process{
+        margin-top:40% !important;
     }
 }
 

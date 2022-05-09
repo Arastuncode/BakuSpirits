@@ -17,18 +17,9 @@ $font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 
 header {
-    background-color: #fff;
-
+    height: 100px;
     nav {
         padding: 0px !important;
-
-        .logo {
-            img {
-                width: 150px;
-                height: 100px;
-            }
-        }
-
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
@@ -81,7 +72,7 @@ header {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
-                    top: 115px;
+                    top: 80px;
                     left: 0;
                     width: 228px;
                     opacity: 0;

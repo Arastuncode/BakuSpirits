@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: rgb(215, 205, 205);
+    
+   //background-image: url(../img/marcel-strauss-hRqCX2-WSDg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-color: rgb(215, 205, 205);
 }
 
 $color: #f34f3f;
@@ -19,8 +23,7 @@ $font-color: rgb(110, 86, 44);
 $main-font-color: #fff;
 
 header {
-    background-color: #fff;
-
+    height: 100px;
     nav {
         padding: 0px !important;
 
@@ -83,7 +86,7 @@ header {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
-                    top: 115px;
+                    top: 80px;
                     left: 0;
                     width: 228px;
                     opacity: 0;
@@ -134,7 +137,7 @@ header {
                     }
                 }
 
-                .shop {
+                .dropdown {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
@@ -438,6 +441,7 @@ main {
         a {
             text-decoration: none;
             color: white;
+
             padding: 15px;
 
             &:hover {

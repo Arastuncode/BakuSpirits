@@ -5,10 +5,10 @@
 }
 
 body {
-    // background-image: url(../img/green.jpg);
+    // background-image: url(../img/pexels-martin-péchy-304664.jpg);
     // background-repeat: no-repeat;
     // background-size: cover;
-    background-color: rgb(215, 205, 205);
+     background-color: rgb(215, 205, 205);
 }
 
 $color: #f34f3f;
@@ -18,8 +18,7 @@ $font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 
 header {
-    background-color: #fff;
-
+    height: 100px;
     nav {
         padding: 0px !important;
 
@@ -82,7 +81,7 @@ header {
                     transition: opacity .3s;
                     background-color: white;
                     position: absolute;
-                    top: 115px;
+                    top: 80px;
                     left: 0;
                     width: 228px;
                     opacity: 0;
@@ -174,7 +173,7 @@ header {
                 }
 
                 sup {
-                    padding: 1px 3px;
+                    padding: 5px 1px;
                     color: white;
                     background-color: #f34f3f;
                 }
@@ -261,7 +260,6 @@ header {
     }
 }
 
-
 main {
     .about {
         .content {
@@ -271,9 +269,7 @@ main {
                 font-family: 'Delius Unicase', cursive;
                 font-size: 24px;
             }
-
             cursor: pointer;
-
             h3 {
                 font-size: 24px;
                 color: $font-color;
@@ -439,7 +435,6 @@ main {
     }
 }
 
-
 //Phone Portrait  
 @media screen and(max-width: 320px) {
 
@@ -545,8 +540,6 @@ main {
     }
 
 }
-
-
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {

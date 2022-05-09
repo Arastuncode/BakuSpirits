@@ -7,19 +7,15 @@
 
 body {
   background-color: #d7cdcd;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #fff;
+  height: 100px;
 }
 
 header nav {
   padding: 0px !important;
-}
-
-header nav .logo img {
-  width: 150px;
-  height: 100px;
 }
 
 header nav #mobile-navbar-show {
@@ -119,7 +115,7 @@ header nav ul li .dropdown {
   transition: opacity .5s;
   background-color: white;
   position: absolute;
-  top: 0px;
+  top: 20px;
   width: 100%;
   left: 0;
   visibility: hidden;
@@ -236,6 +232,55 @@ header .mobile-navbar.active {
   opacity: 1;
   right: 0;
   z-index: 9;
+}
+
+.image {
+  width: 70%;
+  height: auto;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+#patner-area img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#patner-area .card {
+  background-color: transparent !important;
+  border: none;
+  cursor: pointer;
+}
+
+#patner-area .card h3 {
+  color: white;
+  position: relative;
+  max-width: 300px;
+}
+
+#patner-area .card h3::before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a21d1d;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+#patner-area .card h3:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .footer {
