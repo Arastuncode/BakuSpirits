@@ -238,18 +238,18 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main .about .content {
+main .about-area .content {
   cursor: pointer;
 }
 
-main .about .content h2 {
+main .about-area .content h2 {
   color: white;
   text-align: center;
   font-family: 'Delius Unicase', cursive;
   font-size: 24px;
 }
 
-main .about .content h3 {
+main .about-area .content h3 {
   font-size: 24px;
   color: #a21d1d;
   -webkit-box-flex: 1;
@@ -416,18 +416,20 @@ main video source {
   color: #a21d1d;
 }
 
-@media screen and (max-width: 320px) {
-  main .about h3 {
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  main .about-area h3 {
     font-size: 16px;
   }
-  main .shop .card {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    margin-left: 15px;
+  main #shop .card {
+    max-width: 22em !important;
+  }
+  main #shop .card .card-body {
+    font-size: 1.25em !important;
+    font-weight: bolder !important;
+    font-style: italic;
+  }
+  main #shop .card .card-body a {
+    font-size: 1.25em !important;
   }
   main .video {
     display: none !important;
@@ -435,17 +437,37 @@ main video source {
 }
 
 @media screen and (max-width: 480px) {
-  main .about h3 {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #carousel .carousel-item {
+    width: 414px !important;
+  }
+  main .about-area .text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: none !important;
+        flex-wrap: none !important;
+  }
+  main .about-area h3 {
     font-size: 16px;
   }
-  main .shop .card {
+  main #products .about {
+    position: relative;
+    height: 400px;
+    color: black !important;
+  }
+  main #shop .card {
+    width: 24rem !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
-    margin-left: 30px;
+    margin-left: 1% !important;
   }
   main .video {
     display: none !important;
@@ -462,6 +484,13 @@ main video source {
             align-items: center !important;
     margin-left: 15px;
   }
+  main #products .image {
+    height: 800px;
+  }
+  main #products .about {
+    margin-top: -15%;
+    margin-right: 5% !important;
+  }
   main .video {
     display: none !important;
   }
@@ -470,6 +499,10 @@ main video source {
 @media screen and (max-width: 1024px) {
   main #products .image {
     height: 800px;
+  }
+  main #products .about {
+    position: relative;
+    left: 1%;
   }
   main .video {
     display: none !important;

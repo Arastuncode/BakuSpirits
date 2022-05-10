@@ -261,30 +261,27 @@ header {
 
 #login-area {
     .login {
-        width: 700px;
-        height: 400px;
+        width: 900px;
+        height: 600px;
         background-color: #fff;
         border-radius: 10px;
-        margin-left: 17%;
+        margin-left: 10%;
         box-shadow: 15px 15px 15px #888888;
-
-        h2 {
-            margin-top: 1%;
+        h2{
+            margin-top:1%;
             text-align: center;
         }
-
         form {
             margin-left: 20%;
-            margin-top: 5%;
-
+            margin-top:5%;
             input {
                 width: 60% !important;
-                outline: none !important;
+                outline:none !important;
             }
             a {
                 position: relative;
                 color: #0095F6 !important;
-                font-weight:bold;
+                font-weight:bolder;
                 text-decoration: none;
                 &::after {
                     content: "";
@@ -294,7 +291,7 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 0;
-                    height: 1px;
+                    height: 1.5px;
                     background-color: #0095F6;
                 }
 
@@ -302,7 +299,6 @@ header {
                     &::after {
                         width: 100%;
                     }
-
                     text-decoration: none;
                 }
             }
@@ -338,10 +334,12 @@ header {
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
+
+
     main {
         .head-image {
             .image {
-                width: 410px;
+                width: 375px !important;
                 height: 200px;
 
                 img {
@@ -353,9 +351,13 @@ header {
 
         #login-area {
             .login {
+                position: relative;
+                left: 2%;
+                width: 350px !important;
 
-                margin-left: -2%;
-                width: 410px;
+                form {
+                    margin-right: -5%;
+                }
             }
         }
     }
@@ -380,9 +382,10 @@ header {
         #login-area {
             .login {
                 position: relative;
-                left: 2%;
+                left:-10% !important;
                 width: 350px !important;
-
+                height:550px !important;
+                background-color:#fff;
                 form {
                     margin-right: -5%;
                 }
@@ -421,10 +424,11 @@ header {
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
+
     main {
         .head-image {
             .image {
-                width: 410px;
+                width: 375px !important;
                 height: 200px;
 
                 img {
@@ -436,24 +440,26 @@ header {
 
         #login-area {
             .login {
+                position: relative;
+                left: 2%;
+                width: 350px !important;
 
-                margin-left: -2%;
-                width: 410px;
+                form {
+                    margin-right: -5%;
+                }
             }
         }
     }
-
 }
 
 
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
-
     main {
         .head-image {
             .image {
-                width: 410px;
+                width: 375px !important;
                 height: 200px;
 
                 img {
@@ -465,9 +471,13 @@ header {
 
         #login-area {
             .login {
+                position: relative;
+                left: 2%;
+                width: 350px !important;
 
-                margin-left: -2%;
-                width: 410px;
+                form {
+                    margin-right: -5%;
+                }
             }
         }
     }

@@ -241,46 +241,58 @@ header .mobile-navbar.active {
           filter: brightness(40%);
 }
 
-#patner-area img {
+#login-area .login {
+  width: 700px;
+  height: 400px;
+  background-color: #fff;
   border-radius: 10px;
-  cursor: pointer;
+  margin-left: 17%;
+  -webkit-box-shadow: 15px 15px 15px #888888;
+          box-shadow: 15px 15px 15px #888888;
 }
 
-#patner-area .card {
-  background-color: transparent !important;
-  border: none;
-  cursor: pointer;
+#login-area .login h2 {
+  margin-top: 1%;
+  text-align: center;
 }
 
-#patner-area .card h3 {
-  color: white;
+#login-area .login form {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+#login-area .login form input {
+  width: 60% !important;
+  outline: none !important;
+}
+
+#login-area .login form a {
   position: relative;
-  max-width: 300px;
+  color: #0095F6 !important;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-#patner-area .card h3::before {
-  content: " ";
+#login-area .login form a::after {
+  content: "";
+  -webkit-transition: width .3s;
+  transition: width .3s;
   position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #a21d1d;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: #0095F6;
 }
 
-#patner-area .card h3:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+#login-area .login form a:hover {
+  text-decoration: none;
+}
+
+#login-area .login form a:hover::after {
+  width: 100%;
 }
 
 .footer {
@@ -308,84 +320,66 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 320px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+  main .head-image .image {
+    width: 410px;
+    height: 200px;
   }
-  main .about h3 {
-    font-size: 16px;
+  main .head-image .image img {
+    width: 100%;
+    height: 100%;
   }
-  main .shop .card {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    margin-left: 15px;
-  }
-  main .video {
-    display: none !important;
+  main #login-area .login {
+    margin-left: -2%;
+    width: 410px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+  main .head-image .image {
+    width: 375px !important;
+    height: 200px;
   }
-  .head-image .image {
-    width: 100% !important;
+  main .head-image .image img {
+    width: 100%;
+    height: 100%;
   }
-  .head-image .image img {
-    width: 100% !important;
+  main #login-area .login {
+    position: relative;
+    left: 2%;
+    width: 350px !important;
   }
-  main #patner-area .about h3 {
-    font-size: 16px;
-  }
-  main #patner-area .shop .card {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    margin-left: 30px;
-  }
-  main #patner-area .video {
-    display: none !important;
+  main #login-area .login form {
+    margin-right: -5%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+  main .head-image .image {
+    width: 410px;
+    height: 200px;
   }
-  main .shop .card {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    margin-left: 15px;
+  main .head-image .image img {
+    width: 100%;
+    height: 100%;
   }
-  main .video {
-    display: none !important;
+  main #login-area .login {
+    margin-left: -2%;
+    width: 410px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+  main .head-image .image {
+    width: 410px;
+    height: 200px;
   }
-  main #products .image {
-    height: 800px;
+  main .head-image .image img {
+    width: 100%;
+    height: 100%;
   }
-  main .video {
-    display: none !important;
+  main #login-area .login {
+    margin-left: -2%;
+    width: 410px;
   }
 }
-/*# sourceMappingURL=partners.css.map */
+/*# sourceMappingURL=forget.css.map */

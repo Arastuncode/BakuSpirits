@@ -20,16 +20,20 @@ $header-font-color: rgb(162, 29, 29);
 
 header {
     height: 100px;
+
     nav {
         padding: 0px !important;
+
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
         }
+
         ul {
             li {
                 position: relative;
                 padding: 38px 20px;
+
                 a {
                     position: relative;
                     font-size: 12px;
@@ -318,7 +322,17 @@ header {
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
+    header {
+        nav {
+            .logo {
 
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
 
     main {
 
@@ -346,63 +360,70 @@ header {
 
 //Phone Landscape
 @media screen and (max-width: 480px) {
+    header {
+        nav {
+            .logo {
 
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+
+    .head-image {
+        .image {
+            width: 100% !important;
+
+            img {
+                width: 100% !important;
+            }
+        }
+    }
 
     main {
+        #patner-area {
+           
+            .about {
+                h3 {
+                    font-size: 16px;
+                }
+            }
 
+            .shop {
+                .card {
+                    display: flex !important;
+                    align-items: center !important;
+                    margin-left: 30px;
+                }
+            }
 
-        .about {
-            h3 {
-                font-size: 16px;
+            .video {
+                display: none !important;
             }
         }
 
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 30px;
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
 
     }
 }
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    // #header {
-    //     background-color: $background-color !important;
-
-    //     ul {
-    //         a {
-    //             text-align: center !important;
-    //             font: 1.2em sans-serif;
-    //             color: white;
-
-    //             &:hover {
-    //                 color: $text-hover-color !important;
-    //             }
-    //             i{
-    //                 margin-top:10px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #footer {
-    //     .img{
-    //         visibility: hidden !important;
-    //     }
-    // }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
+    header {
+        nav {
+            .logo {
 
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
 
     main {
 
@@ -426,6 +447,18 @@ header {
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+
     main {
 
 

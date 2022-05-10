@@ -254,6 +254,7 @@ header .mobile-navbar.active {
 }
 
 #about .about .image img {
+  height: 90% !important;
   border-radius: 10px;
 }
 
@@ -280,8 +281,6 @@ header .mobile-navbar.active {
   visibility: hidden;
   -webkit-transition: 0.70s;
   transition: 0.70s;
-  -webkit-box-shadow: 5px 10px 8px #888888;
-          box-shadow: 5px 10px 8px #888888;
 }
 
 .footer {
@@ -309,6 +308,10 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 320px) {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
   #about-are .sertification h2 {
     color: #fff;
     text-align: center;
@@ -322,8 +325,19 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 480px) {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
   #about .image img {
     height: 500px !important;
+  }
+  #about .sertification {
+    margin-bottom: 15% !important;
+  }
+  #about .sertification .images img {
+    padding-bottom: 15% !important;
+    margin-bottom: -25% !important;
   }
   #about .sertification .hidden-image {
     visibility: inherit;
@@ -334,6 +348,10 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
   #about .sertification .hidden-image {
     visibility: inherit;
   }
@@ -343,6 +361,10 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 768px) {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
   #about-are .sertification .hidden-image {
     visibility: inherit;
   }
@@ -352,6 +374,10 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 1024px) {
+  header nav .logo img {
+    width: 100px !important;
+    height: 100px !important;
+  }
   #about .sertification {
     padding: 10px;
   }

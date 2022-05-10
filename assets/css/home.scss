@@ -8,7 +8,7 @@ body {
     // background-image: url(../img/pexels-martin-péchy-304664.jpg);
     // background-repeat: no-repeat;
     // background-size: cover;
-     background-color: rgb(215, 205, 205);
+    background-color: rgb(215, 205, 205);
 }
 
 $color: #f34f3f;
@@ -19,6 +19,7 @@ $header-font-color: rgb(162, 29, 29);
 
 header {
     height: 100px;
+
     nav {
         padding: 0px !important;
 
@@ -191,8 +192,7 @@ header {
 
     }
 
-    .mobile-navbar
-    {
+    .mobile-navbar {
         transition: all .3s;
         background-color: white;
         top: 0;
@@ -200,39 +200,38 @@ header {
         width: 0;
         opacity: 0;
         visibility: hidden;
-        .fa-times
-        {
+
+        .fa-times {
             position: absolute;
             top: 50px;
             right: 50px;
             cursor: pointer;
             color: $color;
         }
-        ul
-        {
-            li
-            {
+
+        ul {
+            li {
                 margin-top: 20px;
-                a
-                {
+
+                a {
                     font-size: 12px;
                     text-transform: uppercase;
-                    color:black;
+                    color: black;
                     letter-spacing: .1em;
-                    &:hover
-                    {
+
+                    &:hover {
                         text-decoration: none;
                     }
                 }
             }
-            ul
-            {
+
+            ul {
                 display: none;
-                li
-                {
+
+                li {
                     margin-top: 0;
-                    a
-                    {
+
+                    a {
                         padding: 0 !important;
                         text-transform: capitalize;
                         font-size: 12px;
@@ -240,10 +239,9 @@ header {
                         color: lighten($color: black, $amount: 50);
                     }
                 }
-                ul
-                {
-                    li
-                    {
+
+                ul {
+                    li {
                         text-transform: uppercase;
                     }
                 }
@@ -261,7 +259,7 @@ header {
 }
 
 main {
-    .about {
+    .about-area {
         .content {
             h2 {
                 color: white;
@@ -269,7 +267,9 @@ main {
                 font-family: 'Delius Unicase', cursive;
                 font-size: 24px;
             }
+
             cursor: pointer;
+
             h3 {
                 font-size: 24px;
                 color: $font-color;
@@ -436,23 +436,26 @@ main {
 }
 
 //Phone Portrait  
-@media screen and(max-width: 320px) {
-
-
+@media screen and(min-width: 320px) and (max-width: 470px)  {
     main {
 
-
-        .about {
+        .about-area {
             h3 {
                 font-size: 16px;
             }
         }
 
-        .shop {
+        #shop {
             .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 15px;
+                max-width:22em !important;
+                .card-body{
+                    a{
+                        font-size: 1.25em !important;
+                    }
+                    font-size: 1.25em !important;
+                    font-weight: bolder !important;
+                    font-style: italic;
+                }
             }
         }
 
@@ -465,72 +468,82 @@ main {
 
 //Phone Landscape
 @media screen and (max-width: 480px) {
+    header {
+        nav {
+            .logo {
 
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+
+    #carousel {
+        .carousel-item {
+            width: 414px !important;
+
+        }
+    }
 
     main {
+        .about-area {
+            .text {
+                display: flex !important;
+                flex-wrap: none !important;
+            }
 
-
-        .about {
             h3 {
                 font-size: 16px;
             }
         }
 
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 30px;
+        #products {
+            .about {
+                position: relative;
+                height: 400px;
+                color: black !important;
             }
         }
 
+        #shop {
+            .card {
+                width:24rem !important;
+                display: flex !important;
+                align-items: center !important;
+                margin-left:1% !important;
+            }
+        }
         .video {
             display: none !important;
         }
-
     }
 }
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    // #header {
-    //     background-color: $background-color !important;
-
-    //     ul {
-    //         a {
-    //             text-align: center !important;
-    //             font: 1.2em sans-serif;
-    //             color: white;
-
-    //             &:hover {
-    //                 color: $text-hover-color !important;
-    //             }
-    //             i{
-    //                 margin-top:10px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #footer {
-    //     .img{
-    //         visibility: hidden !important;
-    //     }
-    // }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
-
-
     main {
-
-
         .shop {
             .card {
                 display: flex !important;
                 align-items: center !important;
                 margin-left: 15px;
+            }
+        }
+
+        #products {
+            .image {
+                height: 800px;
+            }
+
+            .about {
+                margin-top: -15%;
+                margin-right: 5% !important;
+
             }
         }
 
@@ -544,11 +557,15 @@ main {
 //Table  Landscape
 @media screen and(max-width: 1024px) {
     main {
-
-
         #products {
             .image {
                 height: 800px;
+            }
+
+            .about {
+                position: relative;
+                left: 1%;
+
             }
         }
 

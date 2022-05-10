@@ -275,7 +275,7 @@ header {
     .about {
         .image {
             img {
-                //height: 650px !important;
+                height:90% !important;
                 border-radius: 10px;
             }
         }
@@ -301,7 +301,7 @@ header {
         .hidden-image {
             visibility: hidden;
             transition: 0.70s;
-            box-shadow: 5px 10px 8px #888888;
+             
         }
 
     }
@@ -336,6 +336,17 @@ header {
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
     #about-are {
         .sertification {
             h2 {
@@ -357,6 +368,17 @@ header {
 //Phone Landscape
 @media screen and (max-width: 480px) {
 
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
     #about  {
 
         .image {
@@ -365,7 +387,15 @@ header {
             }
         }
         .sertification {
-    
+            margin-bottom: 15% !important;
+             
+            .images{
+                
+                img{
+                    padding-bottom: 15% !important;
+                    margin-bottom:-25% !important;
+                }
+            }
             .hidden-image {
                 visibility: inherit;
                  
@@ -379,6 +409,17 @@ header {
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
     #about  {
       
         .sertification {
@@ -396,7 +437,17 @@ header {
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
+    header {
+        nav {
+            .logo {
 
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
     #about-are {
        
         .sertification {
@@ -415,6 +466,17 @@ header {
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
     #about  {
        
         .sertification {

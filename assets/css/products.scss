@@ -5,16 +5,14 @@
 }
 
 body {
-    
-   //background-image: url(../img/marcel-strauss-hRqCX2-WSDg-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  background-color: rgb(215, 205, 205);
+    background-color: rgb(215, 205, 205);
 }
 
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
-$text-hover-color: rgb(162, 29, 29) ;
+$text-hover-color: rgb(162, 29, 29);
 $font-color: rgb(162, 29, 29);
 $header-font-color: rgb(162, 29, 29);
 $background-color: rgb(23, 110, 88);
@@ -24,6 +22,7 @@ $main-font-color: #fff;
 
 header {
     height: 100px;
+
     nav {
         padding: 0px !important;
 
@@ -206,8 +205,7 @@ header {
 
     }
 
-    .mobile-navbar
-    {
+    .mobile-navbar {
         transition: all .3s;
         background-color: white;
         top: 0;
@@ -215,39 +213,38 @@ header {
         width: 0;
         opacity: 0;
         visibility: hidden;
-        .fa-times
-        {
+
+        .fa-times {
             position: absolute;
             top: 50px;
             right: 50px;
             cursor: pointer;
             color: $color;
         }
-        ul
-        {
-            li
-            {
+
+        ul {
+            li {
                 margin-top: 20px;
-                a
-                {
+
+                a {
                     font-size: 12px;
                     text-transform: uppercase;
-                    color:black;
+                    color: black;
                     letter-spacing: .1em;
-                    &:hover
-                    {
+
+                    &:hover {
                         text-decoration: none;
                     }
                 }
             }
-            ul
-            {
+
+            ul {
                 display: none;
-                li
-                {
+
+                li {
                     margin-top: 0;
-                    a
-                    {
+
+                    a {
                         padding: 0 !important;
                         text-transform: capitalize;
                         font-size: 12px;
@@ -255,10 +252,9 @@ header {
                         color: lighten($color: black, $amount: 50);
                     }
                 }
-                ul
-                {
-                    li
-                    {
+
+                ul {
+                    li {
                         text-transform: uppercase;
                     }
                 }
@@ -453,8 +449,18 @@ main {
 
 
 //Phone Portrait & Landscape
-@media screen and(min-width: 320px) and(max-width: 480px) {
-    #header {
+@media screen and(min-width: 320px) and(max-width: 470px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+
         ul {
             a {
 
@@ -468,16 +474,61 @@ main {
             }
         }
     }
-    #shop-area {
-        .card-body {
-            padding:20px;
+
+    main {
+        #shop-area {
+            padding-bottom: 30% !important;
+            .card-body {
+                padding: 20px;
+            }
+
+            .form-select {
+                width: 200px !important;
+            }
+
+            .search-box {
+                margin-top: 2% !important;
+
+                .search {
+                    width: 200px !important;
+                }
+            }
+            .card{
+               width: 22em !important;
+                .card-body{
+                    a{
+                        font-size: 1.25em !important;
+                    }
+                    font-size: 1.25em !important;
+                    font-weight: bolder !important;
+                    font-style: italic;
+                }
+            }
         }
+        .pagination{
+           margin-left: 15% !important;
+            
+        }
+    }
+    .footer{
+        margin-top:-15% !important;
     }
 }
 
 //Phone Portrait  
 @media screen and(max-width: 320px) {
-    #header {
+    header {
+
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+
         ul {
             a {
 
@@ -491,20 +542,30 @@ main {
             }
         }
     }
+
     #shop-area {
         .card-body {
-            padding:20px;
+            padding: 20px;
         }
     }
 }
 
 //Phone Landscape
-@media screen and (max-width: 480px) {
-    #header {
-        background-color: $background-color  !important;
+@media screen and (min-width: 480px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
 
         ul {
             a {
+
                 text-align: center !important;
                 font: 1.2em sans-serif;
                 color: white;
@@ -515,17 +576,64 @@ main {
             }
         }
     }
-    #shop-area {
-        .card-body {
-            padding:20px;
+
+    main {
+        #shop-area {
+            padding-bottom: 50% !important;
+            .card-body {
+                padding: 20px;
+            }
+            .filter-area{
+                margin-bottom: 5% !important;
+            }
+            .form-select {
+                width: 210px !important;
+            }
+
+            .search-box {
+                margin-top: 2% !important;
+                width: 240px !important;
+                .search {
+                    width: 200px !important;
+                }
+            }
+            .card{
+                
+                max-width: 22em !important;
+                .card-body{
+                    a{
+                        font-size: 1.25em !important;
+                    }
+                    font-size: 1.25em !important;
+                    font-weight: bolder !important;
+                    font-style: italic;
+                }
+            }
         }
+        .pagination{
+           margin-left: 15% !important;
+            
+        }
+    }
+    .footer{
+        margin-top:-15% !important;
     }
 }
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {
-    #header {
-        background-color: $background-color  !important;
+    header {
+        nav {
+
+
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
 
         ul {
             a {
@@ -549,17 +657,28 @@ main {
             }
         }
     }
+
     #shop-area {
         .card-body {
-            padding:20px;
+            padding: 20px;
         }
     }
 }
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
-    #header {
-        background-color: $background-color  !important;
+    header {
+
+        nav {
+
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
 
         ul {
             a {
@@ -574,17 +693,28 @@ main {
             }
         }
     }
+
     #shop-area {
         .card-body {
-            padding:20px;
+            padding: 20px;
         }
     }
 }
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
-    #header {
-        background-color: $background-color  !important;
+    header {
+
+        nav {
+
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
 
         ul {
             a {
@@ -603,9 +733,10 @@ main {
             }
         }
     }
+
     #shop-area {
         .card-body {
-            padding:20px;
+            padding: 20px;
         }
     }
 }
