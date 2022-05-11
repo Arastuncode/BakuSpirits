@@ -18,7 +18,7 @@ header nav {
 }
 
 header nav .logo img {
-  width: 150px;
+  width: 100px;
   height: 100px;
 }
 
@@ -162,7 +162,7 @@ header nav ul .shop-cart a {
 }
 
 header nav ul .shop-cart sup {
-  padding: 5px 1px;
+  padding: 2px 2px;
   color: white;
   background-color: #f34f3f;
 }
@@ -173,7 +173,7 @@ header nav ul .shop-cart ul {
 }
 
 header nav ul .shop-cart ul li {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 header .mobile-navbar {

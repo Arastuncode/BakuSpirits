@@ -5,7 +5,7 @@
 }
 
 body {
-    // background-image: url(../img/green.jpg);
+    // background-image: url(../img/pexels-martin-péchy-304664.jpg);
     // background-repeat: no-repeat;
     // background-size: cover;
     background-color: rgb(215, 205, 205);
@@ -259,157 +259,102 @@ header {
 }
 
 main {
-    .about-area {
-        .content {
-            h2 {
-                color: white;
-                text-align: center;
-                font-family: 'Delius Unicase', cursive;
-                font-size: 24px;
-            }
-
-            cursor: pointer;
-
-            h3 {
-                font-size: 24px;
-                color: $font-color;
-                flex: 1 1 150px;
-            }
-        }
-    }
-
-    #products {
-        overflow: hidden;
-        color: $font-color;
-
-        .image {
-            height: 1000px;
+    #detail-area {
+        .product-image {
+            height: 80%;
+            margin-left: 5%;
+            position: relative;
 
             img {
-                width: 100%;
-                height: 80%;
+                width: 80%;
+                height: 100% !important;
                 border-radius: 10px;
             }
         }
 
-        .about {
-            a {
-                text-decoration: none;
-                font-family: 'Delius Unicase', cursive;
-                font-weight: bold;
-                font-size: x-large;
-                color: white;
-                position: relative;
-                margin-left: 30%;
+        .product-name {
+            margin-left: 2%;
+            color: #fff;
+        }
 
-                &::before {
-                    content: " ";
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $text-hover-color;
-                    transform-origin: right;
-                    transform: scaleX(0);
-                    transition: transform 0.4s;
-                }
-
-                &:hover::before {
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-
-            .content {
-                color: white;
-                margin-left: 15%;
-            }
-
-
+        .product-detail {
+            color: #fff;
         }
     }
 
-    #shop {
+    .container {
+        overflow: hidden;
+        position: relative;
+        .items {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            animation: carouselAnim 15s infinite alternate linear;
+        }
         .card {
-            margin-top: 10px;
-            width: 18rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 350px;
+            margin: 1em;
+            padding: 0.5em;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
             background-color: transparent;
             border: none;
-            color: white;
-
-            .card-img-top {
-                border-radius: 10px;
-                transition: transform .75s;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
-            &:hover .card-img-top {
-                transform: scale(1.1);
+            p {
+                text-align: center;
+                padding: 1em;
             }
 
-            .card-body {
-
-                .card-title {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 24px;
-                    font-weight: bolder;
-                }
-
-                .btn {
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    color: white;
-                    outline: 2px solid #fff;
-                    padding: 10px 40px;
-                    position: relative;
-                    overflow: hidden;
-                    transition: color 1s;
-                    background-color: transparent;
-                    border: none;
-                    border-radius: 8px;
-                    outline: none;
-
-                    &:hover {
-                        color: $font-color  !important;
-
-                    }
-
-                    &::before {
-                        content: " ";
-                        position: absolute;
-                        top: 0;
-                        left: -50px;
-                        width: 0;
-                        height: 100%;
-                        background-color: #fff !important;
-                        transform: skewX(35deg);
-                        z-index: -1;
-                        transition: width 1s;
-                    }
-
-                    &:hover::before {
-                        width: 150%;
-                    }
-
-                    p {
-                        font-weight: 16px !important;
-                    }
-                }
+            .name {
+                font-weight: bold;
             }
         }
-    }
 
-    video {
-        padding-right: 14%;
+        @keyframes carouselAnim {
+            from {
+                transform: translate(0, 0);
+            }
 
-        source {
-            height: 390px;
+            to {
+                transform: translate(calc(-100% + (5 * 300px)));
+            }
+        }
+
+        .sides {
             width: 100%;
+            position: absolute;
+            height: 100%;
+
+            .right, .left {
+                background: linear-gradient(to right,
+                        rgba(245, 245, 245, 1) 0%,
+                        rgba(255, 255, 255, 0) 100%);
+                width: 15%;
+                height: 100%;
+                position: absolute;
+                z-index: 200;
+            }
+            .right {
+                right: 0;
+                background: linear-gradient(to left,
+                        rgba(245, 245, 245, 1) 0%,
+                        rgba(255, 255, 255, 0) 100%);
+            }
         }
     }
-
 }
+
+
 
 .footer {
     padding: 30px;
@@ -436,31 +381,52 @@ main {
 }
 
 //Phone Portrait  
-@media screen and(min-width: 320px) and (max-width: 470px)  {
-    main {
+@media screen and(min-width: 320px) and (max-width: 470px) {
+    header {
+        nav {
+            .logo {
 
-        .about-area {
-            h3 {
-                font-size: 16px;
-            }
-        }
-
-        #shop {
-            .card {
-                max-width:22em !important;
-                .card-body{
-                    a{
-                        font-size: 1.25em !important;
-                    }
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
                 }
             }
         }
+    }
 
-        .video {
-            display: none !important;
+    main {
+
+        #detail-area {
+            .product-image {
+                margin-top: 5% !important;
+                padding-right: 5% !important;
+
+                img {
+                    width: 95% !important;
+                }
+            }
+
+            .product-name {
+                margin-top: -8% !important;
+            }
+
+            .product-detail {
+                width: 90% !important;
+            }
+        }
+
+        .container {
+            width: 95%;
+
+            .left {
+                background: transparent !important;
+
+            }
+
+            .right {
+                background: transparent !important;
+
+            }
         }
 
     }
@@ -480,43 +446,12 @@ main {
         }
     }
 
-    #carousel {
-        .carousel-item {
-            width: 414px !important;
-
-        }
-    }
-
     main {
-        .about-area {
-            .text {
-                display: flex !important;
-                flex-wrap: none !important;
+        #product-area {
+            .product-name {
+                background-color: red !important;
+                margin-top: -5% !important;
             }
-
-            h3 {
-                font-size: 16px;
-            }
-        }
-
-        #products {
-            .about {
-                position: relative;
-                height: 400px;
-                color: black !important;
-            }
-        }
-
-        #shop {
-            .card {
-                width:24rem !important;
-                display: flex !important;
-                align-items: center !important;
-                margin-left:1% !important;
-            }
-        }
-        .video {
-            display: none !important;
         }
     }
 }
@@ -526,29 +461,28 @@ main {
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
+    header {
+        nav {
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+
     main {
-        .shop {
-            .card {
-                display: flex !important;
-                align-items: center !important;
-                margin-left: 15px;
+        #product-are {
+            .product-name {
+                background-color: red !important;
+                margin-top: -5% !important;
+
+                h2 {
+                    color: red !important;
+                }
             }
-        }
-
-        #products {
-            .image {
-                height: 800px;
-            }
-
-            .about {
-                margin-top: -15%;
-                margin-right: 5% !important;
-
-            }
-        }
-
-        .video {
-            display: none !important;
         }
     }
 
@@ -556,22 +490,32 @@ main {
 
 //Table  Landscape
 @media screen and(max-width: 1024px) {
+    header {
+        nav {
+            width: 95% !important;
+
+            .logo {
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+
     main {
-        #products {
-            .image {
-                height: 800px;
-            }
+        #product-are {
+            .product-name {
+                background-color: red !important;
+                margin-top: -5% !important;
 
-            .about {
-                position: relative;
-                left: 1%;
-
+                h2 {
+                    color: red !important;
+                }
             }
         }
 
-        .video {
-            display: none !important;
-        }
     }
 }
 
