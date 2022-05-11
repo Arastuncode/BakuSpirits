@@ -6,9 +6,10 @@
 }
 
 body {
+  background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #d7cdcd;
+  overflow-x: hidden;
 }
 
 header {

@@ -6,7 +6,9 @@
 }
 
 body {
-  background-color: #d7cdcd;
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {

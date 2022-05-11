@@ -6,8 +6,10 @@
 }
 
 body {
-    background-color: rgb(215, 205, 205);
-    //background-color: #F2F2F2;
+    //background-color: rgb(215, 205, 205);
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 $color: #f34f3f;
@@ -593,6 +595,11 @@ header {
         border: none;
         color: white;
         cursor: pointer;
+        background-color:red;
+       
+        img{
+            height: 100%;
+        }
     }
 }
 

@@ -6,7 +6,9 @@
 }
 
 body {
-  background-color: #d7cdcd;
+  background-image: url(../img/polina-rytova-1dGMs4hhcVA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -240,13 +242,13 @@ header .mobile-navbar.active {
 
 main #detail-area .product-image {
   height: 80%;
-  margin-left: 5%;
+  margin-left: 7%;
   position: relative;
 }
 
 main #detail-area .product-image img {
-  width: 80%;
-  height: 100% !important;
+  width: 70%;
+  height: 110% !important;
   border-radius: 10px;
 }
 
@@ -349,6 +351,7 @@ main .container .sides .right, main .container .sides .left {
   height: 100%;
   position: absolute;
   z-index: 200;
+  margin-left: -2% !important;
 }
 
 main .container .sides .right {
@@ -389,6 +392,7 @@ main .container .sides .right {
   main #detail-area .product-image {
     margin-top: 5% !important;
     padding-right: 5% !important;
+    margin-left: -1% !important;
   }
   main #detail-area .product-image img {
     width: 95% !important;

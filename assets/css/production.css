@@ -6,7 +6,9 @@
 }
 
 body {
-  background-color: #d7cdcd;
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -413,6 +415,11 @@ header .mobile-navbar.active {
   border: none;
   color: white;
   cursor: pointer;
+  background-color: red;
+}
+
+#process .card img {
+  height: 100%;
 }
 
 .footer {
