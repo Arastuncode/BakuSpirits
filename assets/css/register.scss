@@ -20,10 +20,18 @@ $header-font-color: rgb(162, 29, 29);
 
 header {
     height: 100px;
+     
 
     nav {
         padding: 0px !important;
-
+        .logo {
+            width: 200px;
+            height:200px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
