@@ -44,3 +44,12 @@ previousArrow.onclick = function() {
 } 
 
 dotArray[0].onclick = showSlides(1); 
+const singUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container=document.getElementById('container');
+singUpButton.addEventListener('click',() =>{
+    container.classList.add("right-panel-active");
+});
+signInButton.addEventListener('click',() =>{
+    container.classList.remove("right-panel-active");
+});

@@ -31,204 +31,6 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
-header nav .login-trigger {
-  font-weight: bold;
-  color: #fff;
-  background-color: linear-gradient(to bottom right, #B05574, #F87E7B);
-  padding: 15px 30px;
-  border-radius: 30px;
-  position: relative;
-}
-
-header nav .login-trigger .close {
-  color: #fff;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-header nav .login-trigger .modal-content {
-  background-color: linear-gradient(to bottom right, #F87E7B, #B05574);
-}
-
-header nav .login-trigger .modal-content .modal-body {
-  position: relative;
-}
-
-header nav .login-trigger .modal-content .modal-body {
-  background-color: #d5b4b4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  margin: -20px 0 50px;
-}
-
-header nav .login-trigger .modal-content h1 {
-  font-weight: bold;
-  margin: 0;
-}
-
-header nav .login-trigger .modal-content p {
-  text-align: center;
-}
-
-header nav .login-trigger .modal-content p {
-  font-size: 14px;
-  font-weight: 100;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  margin: 20px 0 30px;
-}
-
-header nav .login-trigger .modal-content span {
-  font-size: 12px;
-}
-
-header nav .login-trigger .modal-content a {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 15px 0;
-}
-
-header nav .login-trigger .modal-content button {
-  border-radius: 20px;
-  border: 1px solid #FF4B2B;
-  background-color: #FF4B2B;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 45px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  -webkit-transition: -webkit-transform 80ms ease-in;
-  transition: -webkit-transform 80ms ease-in;
-  transition: transform 80ms ease-in;
-  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
-}
-
-header nav .login-trigger .modal-content button:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
-header nav .login-trigger .modal-content button:focus {
-  outline: none;
-}
-
-header nav .login-trigger .modal-content button .ghost {
-  background-color: transparent;
-  border-color: #FFFFFF;
-}
-
-header nav .login-trigger .modal-content button form {
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 50px;
-  height: 100%;
-  text-align: center;
-}
-
-header nav .login-trigger .modal-content button input {
-  background-color: #eee;
-  border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
-  width: 100%;
-}
-
-header nav .login-trigger .modal-content button .container {
-  background-color: #fff;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  position: relative;
-  overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
-}
-
-header nav .login-trigger .modal-content button .form-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
-}
-
-header nav .login-trigger .modal-content button .sign-in-container {
-  left: 0;
-  width: 50%;
-  z-index: 2;
-}
-
-header nav .login-trigger .modal-content button .container.right-panel-active .sign-in-container {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-header nav .login-trigger .modal-content button .sign-up-container {
-  left: 0;
-  width: 50%;
-  opacity: 0;
-  z-index: 1;
-}
-
-header nav .login-trigger .modal-content button .container.right-panel-active .sign-up-container {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 1;
-  z-index: 5;
-  -webkit-animation: show .6s;
-          animation: show .6s;
-}
-
-@-webkit-keyframes show {
-  0%,
-  49.99% {
-    opacity: 0;
-    z-index: 1;
-  }
-  50%,
-  100% {
-    opacity: 1;
-    z-index: 5;
-  }
-}
-
-@keyframes show {
-  0%,
-  49.99% {
-    opacity: 0;
-    z-index: 1;
-  }
-  50%,
-  100% {
-    opacity: 1;
-    z-index: 5;
-  }
-}
-
 header nav ul li {
   position: relative;
   padding: 38px 20px;
@@ -273,6 +75,264 @@ header nav ul li .fa-search {
 header nav ul li i,
 header nav ul li span {
   cursor: pointer;
+}
+
+header nav ul li .login-trigger {
+  text-decoration: none;
+}
+
+header nav ul li .modal {
+  padding-right: 22%;
+}
+
+header nav ul li .modal .close {
+  color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: transparent;
+  border: none;
+}
+
+header nav ul li .modal .modal-content {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 115vh;
+  border-radius: 20px;
+}
+
+header nav ul li .modal .modal-body {
+  position: relative;
+  background-color: transparent;
+  width: 110vh;
+}
+
+header nav ul li .modal h1 {
+  font-weight: bold;
+  margin: 0;
+  color: #0a6c0a;
+}
+
+header nav ul li .modal p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+  color: #033c03;
+}
+
+header nav ul li .modal span {
+  font-size: 12px;
+}
+
+header nav ul li .modal a {
+  color: #0a6c0a;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+header nav ul li .modal a:hover {
+  text-decoration: underline;
+  color: #0a6c0a;
+}
+
+header nav ul li .modal button {
+  border: none;
+  background-color: transparent;
+  color: #033c03;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+}
+
+header nav ul li .modal button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+header nav ul li .modal button:focus {
+  outline: none;
+}
+
+header nav ul li .modal button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+header nav ul li .modal form {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  height: 70vh;
+  text-align: center;
+}
+
+header nav ul li .modal input {
+  background-color: transparent;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  color: #033c03;
+  outline: none;
+}
+
+header nav ul li .modal .container {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+header nav ul li .modal .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header nav ul li .modal .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+header nav ul li .modal .container.right-panel-active .sign-in-container {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+header nav ul li .modal .container.right-panel-active .sign-up-container {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s;
+}
+
+header nav ul li .modal .container.right-panel-active .overlay-container {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header nav ul li .modal .container.right-panel-active .overlay {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+header nav ul li .modal .container.right-panel-active .overlay-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header nav ul li .modal .container.right-panel-active .overlay-right {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+header nav ul li .modal .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+header nav ul li .modal .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+header nav ul li .modal .overlay {
+  background-color: transparent;
+  background-position: 0 0;
+  color: #033c03;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+header nav ul li .modal .overlay-panel {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+header nav ul li .modal .overlay-left {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+header nav ul li .modal .overlay-right {
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 header nav ul li ul {
@@ -609,8 +669,13 @@ main #galery-area img {
   main #carousel .carousel-item img {
     height: 100% !important;
   }
+  main #about-area {
+    padding: -2%;
+    width: 22rem;
+  }
   main #about-area .image {
-    width: 355px !important;
+    min-width: 21rem;
+    max-width: 21.5rem !important;
     height: 300px !important;
   }
   main #about-area .image img {
@@ -618,31 +683,37 @@ main #galery-area img {
     height: 100% !important;
   }
   main #about-area .content {
-    text-align: center !important;
-    min-width: 355px !important;
+    text-align: center;
+    width: 21.5rem !important;
+    max-width: 22rem !important;
     min-height: 450px !important;
   }
   main #about-area .content hr {
     width: 50%;
     margin-left: 25%;
   }
-  main #shop .card {
-    max-width: 22em !important;
+  main #products-area .card {
+    width: 22rem;
+    max-width: 26em !important;
   }
-  main #shop .card .card-body {
+  main #products-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
-  main #shop .card .card-body a {
+  main #products-area .card .card-body a {
     font-size: 1.25em !important;
   }
   main .video {
-    display: none !important;
+    width: 25.5rem;
+  }
+  main #galery-area img {
+    width: 22rem;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
   header nav .logo img {
     width: 150px !important;
     height: 150px !important;
@@ -654,7 +725,7 @@ main #galery-area img {
     height: 100% !important;
   }
   main #about-area .image {
-    width: 385px !important;
+    width: 24.2rem !important;
     height: 300px !important;
   }
   main #about-area .image img {
@@ -663,26 +734,31 @@ main #galery-area img {
   }
   main #about-area .content {
     text-align: center !important;
-    min-width: 385px !important;
+    min-width: 390px !important;
     min-height: 450px !important;
   }
   main #about-area .content hr {
     width: 50%;
     margin-left: 25%;
   }
-  main #shop .card {
-    max-width: 22em !important;
+  main #products-area .card {
+    width: 24.5rem;
+    max-width: 28em !important;
   }
-  main #shop .card .card-body {
+  main #products-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
-  main #shop .card .card-body a {
+  main #products-area .card .card-body a {
     font-size: 1.25em !important;
   }
   main .video {
-    display: none !important;
+    width: 28.5rem;
+  }
+  main #galery-area img {
+    width: 24.5rem;
   }
 }
 
@@ -743,14 +819,25 @@ main #galery-area img {
     width: 350px !important;
     height: 250px !important;
   }
+  main #carousel {
+    min-width: 46.2rem !important;
+    max-width: 51.5rem !important;
+  }
   main #carousel .carousel-item {
     height: 300px !important;
   }
   main #carousel .carousel-item img {
+    width: 95% !important;
     height: 100% !important;
   }
+  main #about-area {
+    position: relative;
+    left: -8%;
+    background-color: transparent;
+    width: 46.2rem !important;
+  }
   main #about-area .image {
-    width: 355px !important;
+    width: 21.1rem !important;
     height: 300px !important;
   }
   main #about-area .image img {
@@ -759,26 +846,35 @@ main #galery-area img {
   }
   main #about-area .content {
     text-align: center !important;
-    width: 355px !important;
-    min-height: 460px !important;
+    min-width: 21.1rem !important;
+    min-height: 450px !important;
+    position: relative;
+    right: 10%;
   }
   main #about-area .content hr {
     width: 50%;
     margin-left: 25%;
   }
-  main #shop .card {
-    max-width: 22em !important;
+  main #products-area .card {
+    width: 34rem;
+    max-width: 36rem !important;
   }
-  main #shop .card .card-body {
+  main #products-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
-  main #shop .card .card-body a {
+  main #products-area .card .card-body a {
     font-size: 1.25em !important;
   }
   main .video {
-    display: none !important;
+    width: 56rem;
+    position: relative;
+    right: 25%;
+  }
+  main #galery-area img {
+    width: 36rem;
   }
 }
 
@@ -791,15 +887,26 @@ main #galery-area img {
   header nav ul {
     margin-left: 3%;
   }
+  main #carousel {
+    min-width: 50rem !important;
+    max-width: 63rem !important;
+  }
   main #carousel .carousel-item {
-    height: 350px !important;
+    height: 300px !important;
   }
   main #carousel .carousel-item img {
+    width: 95% !important;
     height: 100% !important;
   }
+  main #about-area {
+    position: relative;
+    left: -2%;
+    background-color: transparent;
+    width: 57rem !important;
+  }
   main #about-area .image {
-    width: 470px !important;
-    height: 400px !important;
+    width: 27rem !important;
+    height: 300px !important;
   }
   main #about-area .image img {
     width: 100% !important;
@@ -807,26 +914,35 @@ main #galery-area img {
   }
   main #about-area .content {
     text-align: center !important;
-    width: 470px !important;
-    min-height: 460px !important;
+    min-width: 28rem !important;
+    min-height: 450px !important;
+    position: relative;
+    right: 5%;
   }
   main #about-area .content hr {
     width: 50%;
     margin-left: 25%;
   }
-  main #shop .card {
-    max-width: 22em !important;
+  main #products-area .card {
+    width: 34rem;
+    max-width: 21rem !important;
   }
-  main #shop .card .card-body {
+  main #products-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
-  main #shop .card .card-body a {
+  main #products-area .card .card-body a {
     font-size: 1.25em !important;
   }
   main .video {
-    display: none !important;
+    width: 56rem;
+    position: relative;
+    right: 5%;
+  }
+  main #galery-area img {
+    width: 22rem;
   }
 }
 /*# sourceMappingURL=home.css.map */
