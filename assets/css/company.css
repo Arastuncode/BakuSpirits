@@ -419,103 +419,126 @@ header .mobile-navbar.active {
   color: #a21d1d;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+  header nav {
+    padding-right: 25% !important;
+    width: 350px;
+  }
   header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+    position: relative;
+    left: 14%;
+    bottom: 35%;
+    width: 250px !important;
+    height: 250px !important;
   }
-  #about-are .sertification h2 {
-    color: #fff;
-    text-align: center;
-  }
-  #about-are .sertification .hidden-image {
-    visibility: inherit;
-  }
-  #about-are .sertification .icon {
-    visibility: hidden;
-  }
-  #about-are .container {
-    width: 95%;
-  }
-  #about-are .container .left {
-    background: transparent !important;
-  }
-  #about-are .container .right {
-    background: transparent !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  #about .image img {
-    height: 500px !important;
-  }
-  #about .sertification {
-    margin-bottom: 15% !important;
-  }
-  #about .sertification .images img {
-    padding-bottom: 15% !important;
-    margin-bottom: -25% !important;
-  }
-  #about .sertification .hidden-image {
-    visibility: inherit;
+  #about {
+    margin-top: 10%;
   }
   #about .sertification .icon {
     visibility: hidden;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
   #about .sertification .hidden-image {
     visibility: inherit;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  header nav {
+    padding-right: 25% !important;
+    width: 400px;
+  }
+  header nav .logo img {
+    position: relative;
+    left: 14%;
+    bottom: 32%;
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #about {
+    margin-top: 15%;
+  }
+  #about .sertification .icon {
+    visibility: hidden !important;
+  }
+  #about .sertification .hidden-image {
+    visibility: inherit !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  header nav {
+    padding-right: 25% !important;
+    width: 790px;
+  }
+  header nav .logo img {
+    position: relative;
+    right: 10%;
+    bottom: 35%;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #about {
+    margin-top: 10%;
   }
   #about .sertification .icon {
     visibility: hidden;
   }
-}
-
-@media screen and (max-width: 768px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  #about-are .sertification .hidden-image {
-    visibility: inherit;
-  }
-  #about-are .sertification .icon {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  #about .sertification {
-    padding: 10px;
-  }
   #about .sertification .hidden-image {
     visibility: inherit;
+  }
+  #about .video {
+    width: 850px !important;
+  }
+  #about .video iframe {
+    position: relative;
+    left: -20%;
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header nav {
+    padding-right: 25% !important;
+    width: 790px;
+  }
+  header nav .logo img {
+    position: relative;
+    right: 10%;
+    bottom: 35%;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #about {
+    margin-top: 10%;
   }
   #about .sertification .icon {
     visibility: hidden;
   }
-  #about .container {
-    width: 95% !important;
+  #about .sertification .hidden-image {
+    visibility: inherit;
   }
-  #about .container .left {
-    background: transparent !important;
+  #about .video {
+    width: 850px !important;
   }
-  #about .container .right {
-    background: transparent !important;
+  #about .video iframe {
+    position: relative;
+    left: -20%;
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  header nav .logo {
+    position: relative;
+  }
+  header nav .logo img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  header nav ul {
+    position: absolute;
+    top: -5%;
+    left: 12%;
   }
 }
 /*# sourceMappingURL=company.css.map */

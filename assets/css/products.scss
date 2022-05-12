@@ -21,19 +21,23 @@ $background-color: rgb(23, 110, 88);
 $text-hover-color: rgb(247, 176, 53);
 $font-color: rgb(110, 86, 44);
 $main-font-color: #fff;
+
 header {
     height: 100px;
-    
+
     nav {
         padding: 0px !important;
+
         .logo {
             width: 200px;
-            height:200px;
+            height: 200px;
+
             img {
                 width: 100%;
                 height: 100%;
             }
         }
+
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
@@ -261,6 +265,7 @@ header {
         z-index: 9;
     }
 }
+
 main {
     .filter-area {
         color: white;
@@ -437,29 +442,18 @@ main {
     }
 }
 
-
-//Phone Portrait & Landscape
-@media screen and(min-width: 320px) and(max-width: 470px) {
+//Phone Portrait  
+@media screen and (max-width: 400px) {
     header {
         nav {
+            padding-right: 25% !important;
+            width: 350px;
+            height: 150px;
+
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-
-        ul {
-            a {
-
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-
-                &:hover {
-                    color: $text-hover-color  !important;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
         }
@@ -467,101 +461,50 @@ main {
 
     main {
         #shop-area {
-            padding-bottom: 30% !important;
-            .card-body {
-                padding: 20px;
-            }
+            .card {
+                width: 22em !important;
 
-            .form-select {
-                width: 200px !important;
-            }
-
-            .search-box {
-                margin-top: 2% !important;
-
-                .search {
-                    width: 200px !important;
+                .card-img-top {
+                    width: 100% !important;
                 }
-            }
-            .card{
-               width: 22em !important;
-                .card-body{
-                    a{
+
+                .card-body {
+                    a {
                         font-size: 1.25em !important;
                     }
+
                     font-size: 1.25em !important;
                     font-weight: bolder !important;
                     font-style: italic;
-                }
-            }
-        }
-        .pagination{
-           margin-left: 15% !important;
-            
-        }
-    }
-    .footer{
-        margin-top:-15% !important;
-    }
-}
-
-//Phone Portrait  
-@media screen and(max-width: 320px) {
-    header {
-
-        nav {
-            .logo {
-
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    text-align: center;
                 }
             }
         }
 
-        ul {
-            a {
-
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-
-                &:hover {
-                    color: $text-hover-color  !important;
-                }
+        .pagination {
+            ul {
+                position: relative;
+                left: 40%;
             }
-        }
-    }
-
-    #shop-area {
-        .card-body {
-            padding: 20px;
         }
     }
 }
 
 //Phone Landscape
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
     header {
         nav {
+            margin-bottom: 5% !important;
+            width: 410px;
+            height: 120px;
+
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-
-        ul {
-            a {
-
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-
-                &:hover {
-                    color: $text-hover-color  !important;
+                    position: relative;
+                    left: -10%;
+                    top: -5%;
+                    width: 200px !important;
+                    height: 200px !important;
                 }
             }
         }
@@ -569,164 +512,190 @@ main {
 
     main {
         #shop-area {
-            padding-bottom: 50% !important;
-            .card-body {
-                padding: 20px;
-            }
-            .filter-area{
-                margin-bottom: 5% !important;
-            }
-            .form-select {
-                width: 210px !important;
-            }
+            .card {
+                width: 24em !important;
 
-            .search-box {
-                margin-top: 2% !important;
-                width: 240px !important;
-                .search {
-                    width: 200px !important;
+                .card-img-top {
+                    width: 100% !important;
                 }
-            }
-            .card{
-                
-                max-width: 22em !important;
-                .card-body{
-                    a{
+
+                .card-body {
+                    a {
                         font-size: 1.25em !important;
                     }
+
                     font-size: 1.25em !important;
                     font-weight: bolder !important;
                     font-style: italic;
+                    text-align: center;
                 }
             }
         }
-        .pagination{
-           margin-left: 15% !important;
-            
+
+        .pagination {
+            ul {
+                position: relative;
+                left: 45%;
+            }
         }
     }
-    .footer{
-        margin-top:-15% !important;
-    }
 }
+
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    header {
-        nav {
-
-
-            .logo {
-
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-
-        ul {
-            a {
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-
-                &:hover {
-                    color: $text-hover-color  !important;
-                }
-
-                i {
-                    margin-top: 10px;
-                }
-
-                .count {
-                    position: absolute;
-                    top: 5.3%;
-                    right: 13.4%;
-                }
-            }
-        }
-    }
-
-    #shop-area {
-        .card-body {
-            padding: 20px;
-        }
-    }
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
-@media screen and(max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     header {
-
         nav {
+            margin-bottom: 5% !important;
+            width: 410px;
+            height: 120px;
 
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-
-        ul {
-            a {
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-                font-size: 16px;
-
-                &:hover {
-                    color: $text-hover-color  !important;
+                    position: relative;
+                    left: -10%;
+                    top: -5%;
+                    width: 200px !important;
+                    height: 200px !important;
                 }
             }
         }
     }
 
-    #shop-area {
-        .card-body {
-            padding: 20px;
+    main {
+        #shop-area {
+            .card {
+                width: 24em !important;
+
+                .card-img-top {
+                    width: 100% !important;
+                }
+
+                .card-body {
+                    a {
+                        font-size: 1.25em !important;
+                    }
+
+                    font-size: 1.25em !important;
+                    font-weight: bolder !important;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
         }
+
+        .pagination {
+            ul {
+                position: relative;
+                left: 45%;
+            }
+        }
+    }
+
+}
+
+//Table  Landscape
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        nav {
+            width: 750px;
+            height: 200px;
+
+            .logo {
+                margin-right: 35%;
+                margin-top: -5%;
+
+                img {
+                    width: 250px !important;
+                    height: 250px !important;
+                }
+            }
+        }
+    }
+
+    main {
+        .search-sorting {
+            visibility: hidden;
+        }
+
+        .filter-area {
+            height: 400px;
+        }
+
+        #shop-area {
+            .products {
+                .card {
+                    width: 28em !important;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-body {
+                        a {
+                            font-size: 1.25em !important;
+                        }
+
+                        font-size: 1.25em !important;
+                        font-weight: bolder !important;
+                        font-style: italic;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+        .pagination {
+            ul {
+                position: relative;
+                left: 45%;
+            }
+        }
+
     }
 }
 
 //Table  Landscape
-@media screen and(max-width: 1024px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
     header {
-
         nav {
 
             .logo {
-
+                position: relative;
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
-        }
 
-        ul {
-            a {
-                text-align: center !important;
-                font: 1.2em sans-serif;
-                color: white;
-                padding-top: 30px !important;
-
-                &:hover {
-                    color: $text-hover-color  !important;
-                }
-
-                i {
-                    margin-top: 10px;
-                }
+            ul {
+                position: absolute;
+                top: -5%;
+                left:12%;
             }
         }
     }
 
-    #shop-area {
-        .card-body {
-            padding: 20px;
+    main {
+        .search-sorting {
+           
+            .search-box {
+                width: 250px;
+            }
         }
+        .filter-area {
+            height: 400px;
+        }
+        .pagination {
+            ul {
+                position: relative;
+                left: 50%;
+            }
+        }
+
     }
 }

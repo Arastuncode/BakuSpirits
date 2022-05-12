@@ -412,192 +412,173 @@ header {
     }
 }
 
-
 //Phone Portrait  
-@media screen and(max-width: 320px) {
+@media screen and (max-width: 400px) {
     header {
         nav {
+            padding-right: 25% !important;
+            width: 350px;
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    position: relative;
+                    left: 14%;
+                    bottom:35%;
+                    width: 250px !important;
+                    height:250px !important;
                 }
             }
         }
     }
-    #about-are {
-        .sertification {
-            h2 {
-                color: #fff;
-                text-align: center;
-            }
-    
-            .hidden-image {
-                visibility: inherit;
-                 
-            }
+
+    #about {
+        margin-top:10%;
+        .sertification{
             .icon{
                 visibility: hidden;
             }
-        }
-        .container {
-            width: 95%;
-
-            .left {
-                background: transparent !important;
-
-            }
-
-            .right {
-                background: transparent !important;
-
+            .hidden-image{
+                visibility: inherit;
             }
         }
     }
 }
 
 //Phone Landscape
-@media screen and (max-width: 480px) {
-
+@media screen and (min-width: 400px) and (max-width: 600px) {
     header {
         nav {
+            padding-right: 25% !important;
+            width: 400px;
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    position: relative;
+                    left: 14%;
+                    bottom:32%;
+                    width: 250px !important;
+                    height:250px !important;
                 }
             }
         }
     }
-    #about  {
 
-        .image {
-            img {
-                height: 500px !important;
-            }
-        }
-        .sertification {
-            margin-bottom: 15% !important;
-             
-            .images{
-                
-                img{
-                    padding-bottom: 15% !important;
-                    margin-bottom:-25% !important;
-                }
-            }
-            .hidden-image {
-                visibility: inherit;
-                 
-            }
+    #about {
+        margin-top: 15%;
+        .sertification{ 
             .icon{
-                visibility: hidden;
+                visibility: hidden !important;
+            }
+            .hidden-image{
+                visibility: inherit !important;
             }
         }
     }
 }
+
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    header {
-        nav {
-            .logo {
-
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-    }
-    #about  {
-      
-        .sertification {
-            .hidden-image {
-                visibility: inherit;
-                 
-            }
-            .icon{
-                visibility: hidden;
-            }
-        }
-    }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
-@media screen and(max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     header {
         nav {
+            padding-right: 25% !important;
+            width: 790px;
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    position: relative;
+                    right: 10%;
+                    bottom:35%;
+                    width: 300px !important;
+                    height:300px !important;
                 }
             }
         }
     }
-    #about-are {
-       
-        .sertification {
-            .hidden-image {
-                visibility: inherit;
-                 
-            }
+
+    #about {
+        margin-top:10%;
+        .sertification{
             .icon{
                 visibility: hidden;
             }
+            .hidden-image{
+                visibility: inherit;
+            }
+            
+        }
+        .video{
+           
+            width: 850px !important;
+            iframe{
+                position:relative;
+                left: -20%;
+                width: 90% !important;
+            }
         }
     }
+
 }
-
-
 
 //Table  Landscape
-@media screen and(max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header {
         nav {
+            padding-right: 25% !important;
+            width: 790px;
             .logo {
-
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    position: relative;
+                    right: 10%;
+                    bottom:35%;
+                    width: 300px !important;
+                    height:300px !important;
                 }
             }
         }
     }
-    #about  {
-       
-        .sertification {
-            padding:10px;
-            .hidden-image {
-                visibility: inherit;
-            }
+
+    #about {
+        margin-top:10%;
+        .sertification{
             .icon{
                 visibility: hidden;
             }
-        }
-        .container {
-            width: 95% !important;
-
-            .left {
-                background: transparent !important;
-
+            .hidden-image{
+                visibility: inherit;
             }
-
-            .right {
-                background: transparent !important;
-
+            
+        }
+        .video{
+           
+            width: 850px !important;
+            iframe{
+                position:relative;
+                left: -20%;
+                width: 90% !important;
             }
         }
     }
 }
 
-//Desktop
-@media screen and (min-width: 1224px) {}
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    header {
+        nav {
 
-// Large Desktop
-@media screen and (min-width: 1824px) {}
+            .logo {
+                position: relative;
+                img {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+            }
+
+            ul {
+                position: absolute;
+                top: -5%;
+                left:12%;
+            }
+        }
+    }
+}

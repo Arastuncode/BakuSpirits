@@ -20,7 +20,7 @@ $header-font-color: rgb(162, 29, 29);
 
 header {
     height: 100px;
-     
+
     nav {
         padding: 0px !important;
 
@@ -28,14 +28,17 @@ header {
             cursor: pointer;
             border: none;
         }
+
         .logo {
             width: 200px;
-            height:200px;
+            height: 200px;
+
             img {
                 width: 100%;
                 height: 100%;
             }
         }
+
         ul {
             li {
                 position: relative;
@@ -272,29 +275,34 @@ header {
 #top-area {
     height: 600px;
     margin-top: 5%;
+
     .content {
         color: white;
         align-items: center;
         height: 450px;
+
         #wrapper {
             display: table;
             width: 100%;
-           // height: 50%;
+
             #wrapper-inner {
                 display: table-cell;
                 vertical-align: middle;
                 width: 100%;
                 height: 50%;
+
                 #scroll-down {
                     display: block;
                     position: relative;
                     padding-top: 45px;
                     text-align: center;
+
                     .arrow-down {
                         display: block;
                         margin: 0 auto;
                         width: 10px;
                         height: 18px;
+
                         &:after {
                             content: '';
                             display: block;
@@ -311,7 +319,6 @@ header {
                             -ms-transform: rotate(135deg);
                             transform: rotate(135deg);
                         }
-                
                     }
                     &::before {
                         -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
@@ -322,12 +329,11 @@ header {
                         top: 0px;
                         left: 50%;
                         margin-left: 1px;
-                        width: .025rem;
+                        width: .1rem;
                         height: 50px;
                         background: white;
                         content: ' ';
                     }
-            
                 }
             }
             @-webkit-keyframes elasticus {
@@ -343,7 +349,6 @@ header {
                     -o-transform: scale(1, 0);
                     transform: scale(1, 0);
                 }
-    
                 50% {
                     -webkit-transform-origin: 0% 0%;
                     -ms-transform-origin: 0% 0%;
@@ -356,7 +361,6 @@ header {
                     -o-transform: scale(1, 1);
                     transform: scale(1, 1);
                 }
-    
                 50.1% {
                     -webkit-transform-origin: 0% 100%;
                     -ms-transform-origin: 0% 100%;
@@ -369,7 +373,6 @@ header {
                     -o-transform: scale(1, 1);
                     transform: scale(1, 1);
                 }
-    
                 100% {
                     -webkit-transform-origin: 0% 100%;
                     -ms-transform-origin: 0% 100%;
@@ -383,7 +386,6 @@ header {
                     transform: scale(1, 0);
                 }
             }
-    
             @-moz-keyframes elasticus {
                 0% {
                     -webkit-transform-origin: 0% 0%;
@@ -546,6 +548,7 @@ header {
                 }
             }
         }
+
         .text {
             padding: 100px;
 
@@ -595,16 +598,16 @@ header {
     }
 }
 
-#process{
-     
-    .card{
-        background-color:transparent !important;
+#process {
+
+    .card {
+        background-color: transparent !important;
         border: none;
         color: white;
         cursor: pointer;
-        background-color:red;
-       
-        img{
+        background-color: red;
+
+        img {
             height: 100%;
         }
     }
@@ -635,47 +638,233 @@ header {
     }
 }
 
-
 //Phone Portrait  
-@media screen and(max-width: 320px) {
-    #process{
-        margin-top:40% !important;
+@media screen and (max-width: 400px) {
+    header {
+        nav {
+            padding-right: 25% !important;
+            width: 350px;
+
+            .logo {
+                img {
+                    position: relative;
+                    left: 14%;
+                    bottom: 35%;
+                    width: 250px !important;
+                    height: 250px !important;
+                }
+            }
+        }
+    }
+
+    #top-area {
+        .content {
+            .image {
+                width: 21.5em;
+
+                img {
+                    width: 100%;
+                }
+
+                margin-bottom:15%;
+            }
+            width: 110%;
+            height:400px !important;
+            .text {
+                height: 250px;
+                padding: 5% !important;
+            }
+        }
+    }
+    #process {
+        margin-top: -15%;
+        .card {
+            img {
+                width: 16em !important;
+            }
+        }
     }
 }
 
 //Phone Landscape
-@media screen and (max-width: 480px) {
-    #process{
-        margin-top:40% !important;
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    header {
+        nav {
+            padding-right: 25% !important;
+            width: 400px;
+            .logo {
+                img {
+                    position: relative;
+                    left: 7%;
+                    bottom: 32%;
+                    width: 250px !important;
+                    height: 250px !important;
+                }
+            }
+        }
+    }
+
+    #top-area {
+        .content {
+            .image {
+                width: 22em;
+                img {
+                    width: 100%;
+                }
+                margin-bottom:15%;
+            }
+            width: 400px;
+            height:400px !important;
+            .text {
+                height: 250px;
+                padding: 5% !important;
+            }
+        }
+    }
+    #process {
+        margin-top: -15%;
+        .card {
+            img {
+                width: 18em !important;
+            }
+        }
     }
 }
+
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    #process{
-        margin-top:40% !important;
-    }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
-@media screen and(max-width: 768px) {
-    #process{
-        margin-top:40% !important;
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        nav {
+            padding-right: 25% !important;
+            width: 790px;
+            .logo {
+                img {
+                    position: relative;
+                    right: 10%;
+                    bottom: 35%;
+                    width: 300px !important;
+                    height: 300px !important;
+                }
+            }
+        }
+    }
+    #top-area {
+        .content {
+            .image {
+                width: 22em;
+                img {
+                    width: 100%;
+                }
+                margin-bottom:15%;
+            }
+            width: 400px;
+            height:400px !important;
+            .text {
+                height: 250px;
+                padding: 5% !important;
+            }
+        }
+    }
+    #process {
+        margin-top: -15%;
+        .card {
+            img {
+                width: 18em !important;
+            }
+        }
     }
 }
-
-
 
 //Table  Landscape
-@media screen and(max-width: 1024px) {
-    #process{
-        margin-top:40% !important;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        nav {
+            padding-right: 25% !important;
+            width: 790px;
+            .logo {
+                img {
+                    position: relative;
+                    right: 10%;
+                    bottom: 35%;
+                    width: 300px !important;
+                    height: 300px !important;
+                }
+            }
+        }
+    }
+
+    #top-area {
+        .content {
+            .image {
+                width: 33.5em;
+                img {
+                    width: 100%;
+                }
+            }
+            width: 800px;
+            height:400px !important;
+            position: relative;
+            top:9%;
+            .text {
+                height: 450px;
+                padding: 5% !important;
+            }
+        }
+    }
+    #process {
+        margin-top: -15%;
+        .card {
+            img {
+                width:30em !important;
+            }
+        }
     }
 }
 
-//Desktop
-@media screen and (min-width: 1224px) {}
-
-// Large Desktop
-@media screen and (min-width: 1824px) {}
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    header {
+        nav {
+            .logo {
+                position: relative;
+                img {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+            }
+            ul {
+                position: absolute;
+                top: -5%;
+                left: 12%;
+            }
+        }
+    }
+    #top-area {
+        .content {
+            .image {
+                width: 44em;
+                img {
+                    width: 100%;
+                }
+            }
+            width: 800px;
+            height:400px !important;
+            .text {
+                height: 450px;
+                padding: 5% !important;
+            }
+        }
+    }
+    #process {
+        margin-top: -15%;
+        .card {
+            img {
+                width:29em !important;
+            }
+        }
+    }
+}

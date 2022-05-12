@@ -50,12 +50,63 @@
                                         <li><a href="production.html">Processing room</a></li>
                                     </ul>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.html">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="register.html">Register</a>
+                                    <a class="nav-link login-trigger" href="#" data-target="#login" data-toggle="modal" >Login/Register</a>
+                                    <div class="modal fade" id="login" role="dialog">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <button data-dismiss="modal" class="close">&times;</button>
+                                                    <div class="container" id="container">
+                                                        <div class="from-container sign-up-container">
+                                                            <form action="#">
+                                                                <h1>Create Accout</h1>
+                                                                <div class="social-container">
+                                                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                                                </div>
+                                                                <span>or use your email for registration</span>
+                                                                <input type="text" placeholder="Name"/>
+                                                                <input type="email" placeholder="Email"/>
+                                                                <input type="password" placeholder="Password"/>
+                                                                <input type="password" placeholder=" Confirm Password"/>
+                                                                <button>Sign Up</button>
+                                                                <a href="">Already have an account?</a>
+                                                            </form>
+                                                        </div>
+                                                        <div class="from-container sign-in-container">
+                                                            <form action="#">
+                                                                <h1>Sing in</h1>
+                                                                <div class="social-container">
+                                                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                                                </div>
+                                                                <span>or use your account</span>
+                                                                <input type="email" placeholder="Email"/>
+                                                                <input type="password" placeholder="Password"/>
+                                                                <a href="#">Forgot your password?</a>
+                                                                <button id="signIn">Sign In</button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="overlay-container">
+                                                            <div class="overlay">
+                                                                <div class="overlay-panel overlay-left">
+                                                                    <h1>Welcome Back!</h1>
+                                                                    <p>To keep connected with us please login with your personal information.</p>
+                                                                    <button class="ghost" id="signIn">Sing In</button>
+                                                                </div>
+                                                                <div class="overlay-panel overlay-right">
+                                                                    <h1>Hello</h1>
+                                                                    <p>Enter your personal details.</p>
+                                                                    <button class="ghost" id="signUp">Sing Up</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="logout.html">Logout</a>
@@ -134,7 +185,9 @@
                         </div>
                         <div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                             <div class="content">
-                                <h1>Haqqımızda</h1>
+                                <a href="company.html">
+                                    <h1>Haqqımızda</h1>
+                                </a>
                                 <hr>
                                 <p>Baku Spirits MMC 2020-ci ildə öz fəaliyyətinə başlamışdır.Bu gün şirkət alkaqollu
                                     içkilər bazarında Absolute Organic,Organic Nation, Vaksin,Bussines Line,Black
@@ -158,69 +211,75 @@
             <!-- about-area end -->
             <!-- products-area end -->
             <section id="products-area">
-                    <div class="row mt-3">
-                        <h2>Məhsullarımız</h2>
-                        <div class="col-sm">
-                            <div class="card">
-                                <a href="detail.html"><img class="card-img-top" src="./assets/img/вакцина-2.JPG"
-                                        alt="вакцина"></a>
-                                <div class="card-body">
-                                    <a href="detail.html" class="card-title">Vaksin</a>
-                                    <p class="card-text">11.00</p>
-                                    <button href="#" class="btn btn-primary">Add to card</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card" style="width: 18rem;">
-                                <a href="detail.html"><img class="card-img-top" src="./assets/img/spirt-2.JPG"
-                                        alt="spirt"></a>
-                                <div class="card-body">
-                                    <a href="detail.html" class="card-title">Spirt</a>
-                                    <p class="card-text">11.00</p>
-                                    <button href="#" class="btn btn-primary">Add to card</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card" style="width: 18rem;">
-                                <a href="detail.html"><img class="card-img-top" src="./assets/img/absolute-purple-2.JPG"
-                                        alt="absolute-purple"></a>
-                                <div class="card-body">
-                                    <a href="detail.html" class="card-title">Absolute Vodka</a>
-                                    <p class="card-text">11.00</p>
-                                    <button href="#" class="btn btn-primary">Add to card</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card" style="width: 18rem;">
-                                <a href="detail.html"><img class="card-img-top"
-                                        src="./assets/img/absolute-organic-1.JPG" alt="absolute-purple"></a>
-                                <div class="card-body">
-                                    <a href="detail.html" class="card-title">Absolute Organic</a>
-                                    <p class="card-text">11.00</p>
-                                    <button class="btn btn-primary">Add to card</button>
-                                </div>
+                <div class="row mt-3">
+                    <h2>Məhsullarımız</h2>
+                    <div class="col-sm">
+                        <div class="card">
+                            <a href="detail.html"><img class="card-img-top" src="./assets/img/вакцина-2.JPG"
+                                    alt="вакцина"></a>
+                            <div class="card-body">
+                                <a href="detail.html" class="card-title">Vaksin</a>
+                                <p class="card-text">11.00</p>
+                                <button href="#" class="btn btn-primary">Add to card</button>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <a href="detail.html"><img class="card-img-top" src="./assets/img/spirt-2.JPG"
+                                    alt="spirt"></a>
+                            <div class="card-body">
+                                <a href="detail.html" class="card-title">Spirt</a>
+                                <p class="card-text">11.00</p>
+                                <button href="#" class="btn btn-primary">Add to card</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <a href="detail.html"><img class="card-img-top" src="./assets/img/absolute-purple-2.JPG"
+                                    alt="absolute-purple"></a>
+                            <div class="card-body">
+                                <a href="detail.html" class="card-title">Absolute Vodka</a>
+                                <p class="card-text">11.00</p>
+                                <button href="#" class="btn btn-primary">Add to card</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <a href="detail.html"><img class="card-img-top" src="./assets/img/absolute-organic-1.JPG"
+                                    alt="absolute-purple"></a>
+                            <div class="card-body">
+                                <a href="detail.html" class="card-title">Absolute Organic</a>
+                                <p class="card-text">11.00</p>
+                                <button class="btn btn-primary">Add to card</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- products-area end -->
             <!-- Video starts -->
-            <div class="container">
-                <div class="video">
-                    <div class="row">
-                        <div class="col  offset-md-2">
-                            <video class="img-fluid rounded-sm " autoplay loop muted>
-                                <source src="./assets/video/VID-20220220-WA0008.mp4" type="video/mp4"
-                                    class="rounded-sm" />
-                            </video>
-                        </div>
+            <div class="video">
+                <div class="row">
+                    <div class="col  offset-md-2">
+                        <video class="img-fluid rounded-sm " autoplay loop muted>
+                            <source src="./assets/video/VID-20220220-WA0008.mp4" type="video/mp4" class="rounded-sm" />
+                        </video>
                     </div>
                 </div>
             </div>
             <!-- Video end -->
+            <section id="galery-area">
+                <h1>Qalereya</h1>
+                <div class="row mt-3">
+                    <div class="col mt-3"><img src="./assets/img/absolute-2.JPG" class="rounded" alt="..."></div>
+                    <div class="col mt-3"><img src="./assets/img/organic-2.JPG" class="rounded" alt="..."></div>
+                    <div class="col mt-3"><img src="./assets/img/zero-2.JPG" class="rounded" alt="..."></div>
+                    <div class="col mt-3"><img src="./assets/img/absolute-purple-2.JPG" class="rounded" alt="..."></div>
+                </div>
+            </section>
 
         </div>
     </main>
@@ -325,6 +384,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="./assets/js/mobile.js"></script>
+    <script src="./assets/js/home.js"></script>
 </body>
 
 </html>

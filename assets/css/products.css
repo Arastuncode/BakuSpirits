@@ -430,186 +430,167 @@ main .pagination ul li a {
   color: #f7b035;
 }
 
-@media screen and (min-width: 320px) and (max-width: 470px) {
+@media screen and (max-width: 400px) {
+  header nav {
+    padding-right: 25% !important;
+    width: 350px;
+    height: 150px;
+  }
   header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-  }
-  header ul a:hover {
-    color: #f7b035 !important;
-  }
-  main #shop-area {
-    padding-bottom: 30% !important;
-  }
-  main #shop-area .card-body {
-    padding: 20px;
-  }
-  main #shop-area .form-select {
-    width: 200px !important;
-  }
-  main #shop-area .search-box {
-    margin-top: 2% !important;
-  }
-  main #shop-area .search-box .search {
-    width: 200px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
   main #shop-area .card {
     width: 22em !important;
   }
+  main #shop-area .card .card-img-top {
+    width: 100% !important;
+  }
   main #shop-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
   main #shop-area .card .card-body a {
     font-size: 1.25em !important;
   }
-  main .pagination {
-    margin-left: 15% !important;
-  }
-  .footer {
-    margin-top: -15% !important;
+  main .pagination ul {
+    position: relative;
+    left: 40%;
   }
 }
 
-@media screen and (max-width: 320px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-  }
-  header ul a:hover {
-    color: #f7b035 !important;
-  }
-  #shop-area .card-body {
-    padding: 20px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-  }
-  header ul a:hover {
-    color: #f7b035 !important;
-  }
-  main #shop-area {
-    padding-bottom: 50% !important;
-  }
-  main #shop-area .card-body {
-    padding: 20px;
-  }
-  main #shop-area .filter-area {
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  header nav {
     margin-bottom: 5% !important;
+    width: 410px;
+    height: 120px;
   }
-  main #shop-area .form-select {
-    width: 210px !important;
-  }
-  main #shop-area .search-box {
-    margin-top: 2% !important;
-    width: 240px !important;
-  }
-  main #shop-area .search-box .search {
+  header nav .logo img {
+    position: relative;
+    left: -10%;
+    top: -5%;
     width: 200px !important;
+    height: 200px !important;
   }
   main #shop-area .card {
-    max-width: 22em !important;
+    width: 24em !important;
+  }
+  main #shop-area .card .card-img-top {
+    width: 100% !important;
   }
   main #shop-area .card .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
+    text-align: center;
   }
   main #shop-area .card .card-body a {
     font-size: 1.25em !important;
   }
-  main .pagination {
-    margin-left: 15% !important;
-  }
-  .footer {
-    margin-top: -15% !important;
+  main .pagination ul {
+    position: relative;
+    left: 45%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  header nav {
+    margin-bottom: 5% !important;
+    width: 410px;
+    height: 120px;
+  }
   header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+    position: relative;
+    left: -10%;
+    top: -5%;
+    width: 200px !important;
+    height: 200px !important;
   }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
+  main #shop-area .card {
+    width: 24em !important;
   }
-  header ul a:hover {
-    color: #f7b035 !important;
+  main #shop-area .card .card-img-top {
+    width: 100% !important;
   }
-  header ul a i {
-    margin-top: 10px;
+  main #shop-area .card .card-body {
+    font-size: 1.25em !important;
+    font-weight: bolder !important;
+    font-style: italic;
+    text-align: center;
   }
-  header ul a .count {
+  main #shop-area .card .card-body a {
+    font-size: 1.25em !important;
+  }
+  main .pagination ul {
+    position: relative;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header nav {
+    width: 750px;
+    height: 200px;
+  }
+  header nav .logo {
+    margin-right: 35%;
+    margin-top: -5%;
+  }
+  header nav .logo img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  main .search-sorting {
+    visibility: hidden;
+  }
+  main .filter-area {
+    height: 400px;
+  }
+  main #shop-area .products .card {
+    width: 28em !important;
+  }
+  main #shop-area .products .card img {
+    width: 100%;
+  }
+  main #shop-area .products .card .card-body {
+    font-size: 1.25em !important;
+    font-weight: bolder !important;
+    font-style: italic;
+    text-align: center;
+  }
+  main #shop-area .products .card .card-body a {
+    font-size: 1.25em !important;
+  }
+  main .pagination ul {
+    position: relative;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  header nav .logo {
+    position: relative;
+  }
+  header nav .logo img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  header nav ul {
     position: absolute;
-    top: 5.3%;
-    right: 13.4%;
+    top: -5%;
+    left: 12%;
   }
-  #shop-area .card-body {
-    padding: 20px;
+  main .search-sorting .search-box {
+    width: 250px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+  main .filter-area {
+    height: 400px;
   }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-    font-size: 16px;
-  }
-  header ul a:hover {
-    color: #f7b035 !important;
-  }
-  #shop-area .card-body {
-    padding: 20px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  header ul a {
-    text-align: center !important;
-    font: 1.2em sans-serif;
-    color: white;
-    padding-top: 30px !important;
-  }
-  header ul a:hover {
-    color: #f7b035 !important;
-  }
-  header ul a i {
-    margin-top: 10px;
-  }
-  #shop-area .card-body {
-    padding: 20px;
+  main .pagination ul {
+    position: relative;
+    left: 50%;
   }
 }
 /*# sourceMappingURL=products.css.map */
