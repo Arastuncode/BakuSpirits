@@ -5,33 +5,35 @@
 }
 
 body {
-    //     background-image: url(../img/pexels-martin-péchy-304664.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    background-color: rgb(215, 205, 205);
-    overflow-x: hidden;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(162, 29, 29);
+$font-color: rgb(51, 50, 50);
 $header-font-color: rgb(162, 29, 29);
+
 
 header {
     height: 100px;
-     
+
 
     nav {
         padding: 0px !important;
+
         .logo {
             width: 200px;
-            height:200px;
+            height: 200px;
+
             img {
                 width: 100%;
                 height: 100%;
             }
         }
+
         #mobile-navbar-show {
             cursor: pointer;
             border: none;
@@ -260,37 +262,35 @@ header {
     }
 }
 
-
-.image {
-    width: 70%;
-    height: auto;
-    filter: brightness(40%);
-}
-
-#login-area {
-    .login {
+#register-area {
+    .register {
         width: 900px;
         height: 600px;
         background-color: #fff;
         border-radius: 10px;
-        margin-left: 10%;
+        margin-left: 15%;
         box-shadow: 15px 15px 15px #888888;
-        h2{
-            margin-top:1%;
+        margin-top:5%;
+        h2 {
+            margin-top: 1%;
             text-align: center;
         }
+
         form {
             margin-left: 20%;
-            margin-top:5%;
+            margin-top: 5%;
+
             input {
                 width: 60% !important;
-                outline:none !important;
+                outline: none !important;
             }
+
             a {
                 position: relative;
                 color: #0095F6 !important;
-                font-weight:bolder;
+                font-weight: bolder;
                 text-decoration: none;
+
                 &::after {
                     content: "";
                     transition: width .3s;
@@ -307,13 +307,13 @@ header {
                     &::after {
                         width: 100%;
                     }
+
                     text-decoration: none;
                 }
             }
         }
     }
 }
-
 
 .footer {
     padding: 30px;
@@ -339,156 +339,188 @@ header {
     }
 }
 
-
 //Phone Portrait  
-@media screen and(max-width: 320px) {
+@media screen and (max-width: 400px) {
+    header {
+        nav {
+            max-width: 350px;
 
-
-    main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
+            .logo {
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
         }
+    }
 
-        #login-area {
-            .login {
+    main {
+        #register-area {
+            max-width: 350px;
+
+            .register {
+                background-color: transparent;
+                max-width: 350px;
+                box-shadow: none !important;
                 position: relative;
-                left: 2%;
-                width: 350px !important;
+                right: 5%;
+                color: white !important;
 
-                form {
-                    margin-right: -5%;
+                input {
+                    background-color: rgba(255, 255, 255, 0.205);
+                    border: none;
+                    outline: none !important;
                 }
             }
         }
+
     }
 }
 
 //Phone Landscape
-@media screen and (max-width: 480px) {
-
-    main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    header {
+        nav {
+            .logo {
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+            }
+        }
+    }
+
+    main {
+        #register-area {
+            max-width: 350px;
+
+            .register {
+                background-color: transparent;
+                max-width: 400px;
+                box-shadow: none !important;
+                position: relative;
+                right: 5%;
+                color: white !important;
+
+                input {
+                    background-color: rgba(255, 255, 255, 0.205);
+                    border: none;
+                    outline: none !important;
                 }
             }
         }
 
-        #login-area {
-            .login {
-                position: relative;
-                left:-10% !important;
-                width: 350px !important;
-                height:550px !important;
-                background-color:#fff;
-                form {
-                    margin-right: -5%;
-                }
-            }
-        }
     }
 }
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    // #header {
-    //     background-color: $background-color !important;
-
-    //     ul {
-    //         a {
-    //             text-align: center !important;
-    //             font: 1.2em sans-serif;
-    //             color: white;
-
-    //             &:hover {
-    //                 color: $text-hover-color !important;
-    //             }
-    //             i{
-    //                 margin-top:10px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #footer {
-    //     .img{
-    //         visibility: hidden !important;
-    //     }
-    // }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
-@media screen and(max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 769px) {
+    header {
+        nav {
+            .logo {
+                margin-right: 35%; 
+                max-width:760px;
+                img {
+                    width: 200px !important;
+                    height: 200px !important;
+                }
+            }
+        }
+    }
 
     main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
+        #register-area {
+            max-width: 350px;
+            margin-top: 12%;
+
+            .register {
+                background-color: rgba(255, 255, 255, 0.205);
+                max-width: 745px;
+                box-shadow: none !important;
+                position: relative;
+                right: 10%;
+                color: white !important;
+                text-align: center;e
+                input {
+                    background-color: rgba(255, 255, 255, 0.352);
+                    border: none;
+                    outline: none !important;
+                    position: relative;
+                    right: -2%;
+                }
+            }
+        }
+
+    }
+
+}
+
+//Table  Landscape
+@media screen and (min-width: 770px) and (max-width: 992px) {
+    header {
+        nav {
+            .logo {
+                margin-right: 35%;
+                margin-top: -5%;
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 250px !important;
+                    height: 250px !important;
                 }
             }
         }
+    }
 
-        #login-area {
-            .login {
+    main {
+        #register-area {
+            max-width: 350px;
+            margin-top: 10%;
+
+            .register {
+                background-color: rgba(255, 255, 255, 0.205);
+                max-width: 780px;
+                box-shadow: none !important;
                 position: relative;
-                left: 2%;
-                width: 350px !important;
-
-                form {
-                    margin-right: -5%;
+                right: 7%;
+                color: white !important;
+                text-align: center;e
+                input {
+                    background-color: rgba(255, 255, 255, 0.352);
+                    border: none;
+                    outline: none !important;
+                    position: relative;
+                    right: -2%;
                 }
             }
         }
+
     }
 }
 
-
-
 //Table  Landscape
-@media screen and(max-width: 1024px) {
-    main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
-
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    header {
+        nav {
+            .logo {
                 img {
-                    width: 100%;
-                    height: 100%;
+                    margin-left: 30%;
+                    width: 340px !important;
+                    height: 240px !important;
                 }
             }
-        }
 
-        #login-area {
-            .login {
-                position: relative;
-                left: 2%;
-                width: 350px !important;
+            ul {
 
-                form {
-                    margin-right: -5%;
-                }
+                margin-left: 3%;
             }
         }
     }
+ 
 }
 
 //Desktop

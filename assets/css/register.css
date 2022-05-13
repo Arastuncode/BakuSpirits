@@ -6,8 +6,9 @@
 }
 
 body {
-  background-color: #d7cdcd;
-  overflow-x: hidden;
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -244,46 +245,40 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-.image {
-  width: 70%;
-  height: auto;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-}
-
-#login-area .login {
+#register-area .register {
   width: 900px;
   height: 600px;
   background-color: #fff;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 15%;
   -webkit-box-shadow: 15px 15px 15px #888888;
           box-shadow: 15px 15px 15px #888888;
+  margin-top: 5%;
 }
 
-#login-area .login h2 {
+#register-area .register h2 {
   margin-top: 1%;
   text-align: center;
 }
 
-#login-area .login form {
+#register-area .register form {
   margin-left: 20%;
   margin-top: 5%;
 }
 
-#login-area .login form input {
+#register-area .register form input {
   width: 60% !important;
   outline: none !important;
 }
 
-#login-area .login form a {
+#register-area .register form a {
   position: relative;
   color: #0095F6 !important;
   font-weight: bolder;
   text-decoration: none;
 }
 
-#login-area .login form a::after {
+#register-area .register form a::after {
   content: "";
   -webkit-transition: width .3s;
   transition: width .3s;
@@ -297,11 +292,11 @@ header .mobile-navbar.active {
   background-color: #0095F6;
 }
 
-#login-area .login form a:hover {
+#register-area .register form a:hover {
   text-decoration: none;
 }
 
-#login-area .login form a:hover::after {
+#register-area .register form a:hover::after {
   width: 100%;
 }
 
@@ -329,81 +324,131 @@ header .mobile-navbar.active {
   color: #a21d1d;
 }
 
-@media screen and (max-width: 320px) {
-  main .head-image .image {
-    width: 375px !important;
-    height: 200px;
+@media screen and (max-width: 400px) {
+  header nav {
+    max-width: 350px;
   }
-  main .head-image .image img {
-    width: 100%;
-    height: 100%;
+  header nav .logo img {
+    width: 150px !important;
+    height: 150px !important;
   }
-  main #login-area .login {
+  main #register-area {
+    max-width: 350px;
+  }
+  main #register-area .register {
+    background-color: transparent;
+    max-width: 350px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     position: relative;
-    left: 2%;
-    width: 350px !important;
+    right: 5%;
+    color: white !important;
   }
-  main #login-area .login form {
-    margin-right: -5%;
+  main #register-area .register input {
+    background-color: rgba(255, 255, 255, 0.205);
+    border: none;
+    outline: none !important;
   }
 }
 
-@media screen and (max-width: 480px) {
-  main .head-image .image {
-    width: 375px !important;
-    height: 200px;
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  header nav .logo img {
+    width: 150px !important;
+    height: 150px !important;
   }
-  main .head-image .image img {
-    width: 100%;
-    height: 100%;
+  main #register-area {
+    max-width: 350px;
   }
-  main #login-area .login {
+  main #register-area .register {
+    background-color: transparent;
+    max-width: 400px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     position: relative;
-    left: -10% !important;
-    width: 350px !important;
-    height: 550px !important;
-    background-color: #fff;
+    right: 5%;
+    color: white !important;
   }
-  main #login-area .login form {
-    margin-right: -5%;
+  main #register-area .register input {
+    background-color: rgba(255, 255, 255, 0.205);
+    border: none;
+    outline: none !important;
   }
 }
 
-@media screen and (max-width: 768px) {
-  main .head-image .image {
-    width: 375px !important;
-    height: 200px;
+@media screen and (min-width: 600px) and (max-width: 769px) {
+  header nav .logo {
+    margin-right: 35%;
+    max-width: 760px;
   }
-  main .head-image .image img {
-    width: 100%;
-    height: 100%;
+  header nav .logo img {
+    width: 200px !important;
+    height: 200px !important;
   }
-  main #login-area .login {
+  main #register-area {
+    max-width: 350px;
+    margin-top: 12%;
+  }
+  main #register-area .register {
+    background-color: rgba(255, 255, 255, 0.205);
+    max-width: 745px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     position: relative;
-    left: 2%;
-    width: 350px !important;
+    right: 10%;
+    color: white !important;
+    text-align: center;
   }
-  main #login-area .login form {
-    margin-right: -5%;
+  main #register-area .register e
+input {
+    background-color: rgba(255, 255, 255, 0.352);
+    border: none;
+    outline: none !important;
+    position: relative;
+    right: -2%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  main .head-image .image {
-    width: 375px !important;
-    height: 200px;
+@media screen and (min-width: 770px) and (max-width: 992px) {
+  header nav .logo {
+    margin-right: 35%;
+    margin-top: -5%;
   }
-  main .head-image .image img {
-    width: 100%;
-    height: 100%;
+  header nav .logo img {
+    width: 250px !important;
+    height: 250px !important;
   }
-  main #login-area .login {
+  main #register-area {
+    max-width: 350px;
+    margin-top: 10%;
+  }
+  main #register-area .register {
+    background-color: rgba(255, 255, 255, 0.205);
+    max-width: 780px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     position: relative;
-    left: 2%;
-    width: 350px !important;
+    right: 7%;
+    color: white !important;
+    text-align: center;
   }
-  main #login-area .login form {
-    margin-right: -5%;
+  main #register-area .register e
+input {
+    background-color: rgba(255, 255, 255, 0.352);
+    border: none;
+    outline: none !important;
+    position: relative;
+    right: -2%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  header nav .logo img {
+    margin-left: 30%;
+    width: 340px !important;
+    height: 240px !important;
+  }
+  header nav ul {
+    margin-left: 3%;
   }
 }
 /*# sourceMappingURL=register.css.map */

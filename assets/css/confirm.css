@@ -246,102 +246,41 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main .image {
-  width: 70%;
-  height: auto;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-}
-
-main .content {
-  margin-left: 20%;
-}
-
 main .content h1 {
   color: #fff;
 }
 
+@-webkit-keyframes load {
+  0% {
+    -webkit-box-shadow: 0 0 #ed3b65 inset;
+            box-shadow: 0 0 #ed3b65 inset;
+  }
+  100% {
+    -webkit-box-shadow: 0 -70px #ed3b65 inset;
+            box-shadow: 0 -70px #ed3b65 inset;
+  }
+}
+
+@keyframes load {
+  0% {
+    -webkit-box-shadow: 0 0 #ed3b65 inset;
+            box-shadow: 0 0 #ed3b65 inset;
+  }
+  100% {
+    -webkit-box-shadow: 0 -70px #ed3b65 inset;
+            box-shadow: 0 -70px #ed3b65 inset;
+  }
+}
+
 main .content .loader {
-  width: 600px;
-  height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .content .loader .ball {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #fff;
-  -webkit-animation: bounce .5s alternate infinite;
-          animation: bounce .5s alternate infinite;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
-}
-
-main .content .loader .ball:nth-child(2) {
-  -webkit-animation-delay: .16s;
-          animation-delay: .16s;
-}
-
-main .content .loader .ball:nth-child(3) {
-  -webkit-animation-delay: .32s;
-          animation-delay: .32s;
-}
-
-@-webkit-keyframes bounce {
-  from {
-    -webkit-transform: scaleX(1.25);
-            transform: scaleX(1.25);
-  }
-  to {
-    -webkit-transform: translateY(-50px) scaleX(1);
-            transform: translateY(-50px) scaleX(1);
-  }
-  0% {
-    background: red;
-  }
-  25% {
-    background: green;
-  }
-  75% {
-    background: yellow;
-  }
-  100% {
-    background: orange;
-  }
-}
-
-@keyframes bounce {
-  from {
-    -webkit-transform: scaleX(1.25);
-            transform: scaleX(1.25);
-  }
-  to {
-    -webkit-transform: translateY(-50px) scaleX(1);
-            transform: translateY(-50px) scaleX(1);
-  }
-  0% {
-    background: red;
-  }
-  25% {
-    background: green;
-  }
-  75% {
-    background: yellow;
-  }
-  100% {
-    background: orange;
-  }
+  -webkit-transform: perspective(140px) rotateX(-45deg);
+          transform: perspective(140px) rotateX(-45deg);
+  width: 32px;
+  height: 72px;
+  position: relative;
+  border: 2px solid #fff;
+  -webkit-animation: 1.5s linear infinite alternate;
+          animation: 1.5s linear infinite alternate;
 }
 
 .footer {

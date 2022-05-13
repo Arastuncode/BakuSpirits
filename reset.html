@@ -11,7 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="./assets/css/forget.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
     <title>Baku Spirits</title>
 </head>
 
@@ -23,15 +23,15 @@
                 <div class="col-12">
                     <nav
                         class="navbar navbar-expand-lg d-flex d-lg-block justify-content-between d-xl-flex navbar-light py-3 py-lg-0">
-                        
+                        <a class="navbar-brand logo" href="home.html">
+                            <img src="./assets/icons/bakuspirit100.png" alt="">
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation" id="mobile-navbar-show">
                             <span class="navbar-toggler-icon" style="font-size: 12px;"></span>
                         </button>
-                        <a class="navbar-brand logo" href="home.html">
-                            <img src="./assets/icons/bakuspirit1.png" alt="">
-                        </a>
+
                         <div class="collapse navbar-collapse d-none d-lg-block">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
@@ -94,7 +94,7 @@
     </header>
     <!-- header end -->
     <main>
-        <!-- <div class="head-image">
+        <div class="head-image">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="image">
@@ -102,30 +102,42 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <section id="login-area">
             <div class="container mt-5 me-5">
                 <div class="login">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mt-3">
-                            <h2>Reset Password</h2>
+                            <h2>Register</h2>
                             <form>
-                              
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label"></label>
-                                    <input type="password" class="form-control" placeholder="New Password" id="exampleInputPassword1">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="addon-wrapping">
+                                     <span></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                     <span></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <span></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label"></label>
+                                    <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label"> </label>
                                     <input type="password" class="form-control" placeholder="Confirm Password" id="exampleInputPassword1">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Reset password</button>
-                                <div class="text-center font-weight-light">
-                                    <ul class="list-inline">
-                                        <li> <a href="login.html"> Sign in </a></li>
-                                        <li> Don't have an account? <a href="register.html"> Sign up </a></li>
-                                    </ul> 
-                                  </div>
+                                <button type="submit" class="btn btn-primary ">Sign Up</button>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Have an account? <a href="login.html">  Log in </a>
+                                 </div>
                             </form>
                         </div>
                     </div>
@@ -239,4 +251,4 @@
     <script src="./assets/js/mobile.js"></script>
 </body>
 
-</html>
+</html> 
