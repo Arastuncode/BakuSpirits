@@ -495,7 +495,7 @@ main {
     #about-area {
         background-color: rgba(255, 255, 255, 0.538);
         border-radius: 10px;
-
+       
         .image {
             width: 600px;
             height: 500px;
@@ -508,10 +508,9 @@ main {
         }
 
         .content {
-            color: black;
+            color:black;
             margin-right: 15%;
             cursor: pointer;
-
             a {
                 text-decoration: none;
                 color: black;

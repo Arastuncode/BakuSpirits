@@ -507,7 +507,7 @@ main #detail-area .product-image {
 }
 
 main #detail-area .product-image img {
-  width: 70%;
+  width: 100%;
   height: 110% !important;
   border-radius: 10px;
 }
@@ -518,6 +518,10 @@ main #detail-area .product-name {
 }
 
 main #detail-area .product-detail {
+  color: #fff;
+}
+
+main .table {
   color: #fff;
 }
 
@@ -645,6 +649,9 @@ main .container .sides .right {
 }
 
 @media screen and (min-width: 320px) and (max-width: 470px) {
+  header nav {
+    height: 150px;
+  }
   header nav .logo img {
     width: 100px !important;
     height: 100px !important;
@@ -666,6 +673,9 @@ main .container .sides .right {
   main .container {
     width: 95%;
   }
+  main .container .items img {
+    width: 18rem !important;
+  }
   main .container .left {
     background: transparent !important;
   }
@@ -675,6 +685,9 @@ main .container .sides .right {
 }
 
 @media screen and (max-width: 480px) {
+  header nav {
+    height: 150px;
+  }
   header nav .logo img {
     width: 100px !important;
     height: 100px !important;
@@ -686,6 +699,9 @@ main .container .sides .right {
 }
 
 @media screen and (max-width: 768px) {
+  header nav {
+    height: 150px;
+  }
   header nav .logo img {
     width: 100px !important;
     height: 100px !important;
@@ -699,20 +715,71 @@ main .container .sides .right {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  header nav {
-    width: 95% !important;
-  }
+@media screen and (min-width: 992px) and (max-width: 1024px) {
   header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
+    margin-left: 30%;
+    width: 340px !important;
+    height: 240px !important;
   }
-  main #product-are .product-name {
-    background-color: red !important;
-    margin-top: -5% !important;
+  header nav ul {
+    margin-left: 3%;
   }
-  main #product-are .product-name h2 {
-    color: red !important;
+  main #carousel {
+    min-width: 50rem !important;
+    max-width: 63rem !important;
+  }
+  main #carousel .carousel-item {
+    height: 300px !important;
+  }
+  main #carousel .carousel-item img {
+    width: 95% !important;
+    height: 100% !important;
+  }
+  main #about-area {
+    position: relative;
+    left: -2%;
+    background-color: transparent;
+    width: 57rem !important;
+  }
+  main #about-area .image {
+    width: 27rem !important;
+    height: 300px !important;
+  }
+  main #about-area .image img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  main #about-area .content {
+    text-align: center !important;
+    min-width: 28rem !important;
+    min-height: 450px !important;
+    position: relative;
+    right: 5%;
+  }
+  main #about-area .content hr {
+    width: 50%;
+    margin-left: 25%;
+  }
+  main #products-area .card {
+    width: 34rem;
+    max-width: 21rem !important;
+  }
+  main #products-area .card .card-body {
+    font-size: 1.25em !important;
+    font-weight: bolder !important;
+    font-style: italic;
+    text-align: center;
+  }
+  main #products-area .card .card-body a {
+    font-size: 1.25em !important;
+  }
+  main .video {
+    width: 56rem;
+    position: relative;
+    right: 5%;
+  }
+  main #galery-area img {
+    width: 22rem;
   }
 }
 /*# sourceMappingURL=detail.css.map */
