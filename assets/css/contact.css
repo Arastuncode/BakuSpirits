@@ -501,138 +501,29 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main #carousel .carousel-item {
-  height: 700px !important;
+main #contact-area {
+  color: white;
 }
 
-main #carousel .carousel-item img {
-  height: 100% !important;
+main #contact-area input, main #contact-area textarea {
+  background-color: rgba(255, 255, 255, 0.486);
+  border: none;
+  color: white;
 }
 
-main #about-area {
-  background-color: rgba(255, 255, 255, 0.538);
-  border-radius: 10px;
+main #contact-area button {
+  background-color: #545492;
 }
 
-main #about-area .image {
-  width: 600px;
-  height: 500px;
-}
-
-main #about-area .image img {
-  width: 100%;
-  height: 100%;
-}
-
-main #about-area .content {
-  color: black;
-  margin-right: 15%;
+main #contact-area ul {
+  list-style: none;
   cursor: pointer;
 }
 
-main #about-area .content a {
-  text-decoration: none;
-  color: black;
-}
-
-main #about-area .content hr {
-  height: 3px;
-  color: red;
-}
-
-main #products-area h2 {
-  color: white;
-  text-align: center;
-}
-
-main #products-area .card {
-  margin-top: 10px;
-  width: 18rem;
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-main #products-area .card .card-img-top {
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform .75s;
-  transition: -webkit-transform .75s;
-  transition: transform .75s;
-  transition: transform .75s, -webkit-transform .75s;
-}
-
-main #products-area .card:hover .card-img-top {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-main #products-area .card .card-body .card-title {
+main #contact-area ul a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
-  font-weight: bolder;
-}
-
-main #products-area .card .card-body .btn {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: white;
-  outline: 2px solid #fff;
-  padding: 10px 40px;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  background-color: transparent;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-}
-
-main #products-area .card .card-body .btn:hover {
-  color: #333232 !important;
-}
-
-main #products-area .card .card-body .btn::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 0;
-  height: 100%;
-  background-color: #fff !important;
-  -webkit-transform: skewX(35deg);
-          transform: skewX(35deg);
-  z-index: -1;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-main #products-area .card .card-body .btn:hover::before {
-  width: 150%;
-}
-
-main #products-area .card .card-body .btn p {
-  font-weight: 16px !important;
-}
-
-main video {
-  padding-right: 14%;
-}
-
-main video source {
-  height: 390px;
-  width: 100%;
-}
-
-main #galery-area h1 {
-  text-align: center;
-  color: #fff;
-}
-
-main #galery-area img {
-  width: 20rem;
-  border-radius: 10px;
+  padding: 15px;
 }
 
 .footer {
@@ -664,53 +555,14 @@ main #galery-area img {
     width: 150px !important;
     height: 150px !important;
   }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
-  }
-  main #about-area {
-    padding: -2%;
-    width: 22rem;
-  }
-  main #about-area .image {
-    min-width: 21rem;
-    max-width: 21.5rem !important;
-    height: 300px !important;
-  }
-  main #about-area .image img {
+  main #contact-area .message-area {
     width: 100% !important;
-    height: 100% !important;
   }
-  main #about-area .content {
+  main .location-area iframe {
+    max-width: 100%;
+  }
+  footer {
     text-align: center;
-    width: 21.5rem !important;
-    max-width: 22rem !important;
-    min-height: 450px !important;
-  }
-  main #about-area .content hr {
-    width: 50%;
-    margin-left: 25%;
-  }
-  main #products-area .card {
-    width: 22rem;
-    max-width: 26em !important;
-  }
-  main #products-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
-    text-align: center;
-  }
-  main #products-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .video {
-    width: 25.5rem;
-  }
-  main #galery-area img {
-    width: 22rem;
   }
 }
 
@@ -719,47 +571,14 @@ main #galery-area img {
     width: 150px !important;
     height: 150px !important;
   }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
-  }
-  main #about-area .image {
-    width: 24.2rem !important;
-    height: 300px !important;
-  }
-  main #about-area .image img {
+  main #contact-area .message-area {
     width: 100% !important;
-    height: 100% !important;
   }
-  main #about-area .content {
-    text-align: center !important;
-    min-width: 390px !important;
-    min-height: 450px !important;
+  main .location-area iframe {
+    width: 100%;
   }
-  main #about-area .content hr {
-    width: 50%;
-    margin-left: 25%;
-  }
-  main #products-area .card {
-    width: 24.5rem;
-    max-width: 28em !important;
-  }
-  main #products-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  footer {
     text-align: center;
-  }
-  main #products-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .video {
-    width: 28.5rem;
-  }
-  main #galery-area img {
-    width: 24.5rem;
   }
 }
 
@@ -772,42 +591,14 @@ main #galery-area img {
     width: 340px !important;
     height: 240px !important;
   }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
-  }
-  main #about-area .image {
-    width: 355px !important;
-    height: 300px !important;
-  }
-  main #about-area .image img {
+  main #contact-area .message-area {
     width: 100% !important;
-    height: 100% !important;
   }
-  main #about-area .content {
-    text-align: center !important;
-    width: 355px !important;
-    min-height: 460px !important;
+  main .location-area iframe {
+    width: 760px;
   }
-  main #about-area .content hr {
-    width: 50%;
-    margin-left: 25%;
-  }
-  main #shop .card {
-    max-width: 22em !important;
-  }
-  main #shop .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
-  }
-  main #shop .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .video {
-    display: none !important;
+  footer {
+    text-align: center;
   }
 }
 
@@ -820,62 +611,14 @@ main #galery-area img {
     width: 350px !important;
     height: 250px !important;
   }
-  main #carousel {
-    min-width: 46.2rem !important;
-    max-width: 51.5rem !important;
-  }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    width: 95% !important;
-    height: 100% !important;
-  }
-  main #about-area {
-    position: relative;
-    left: -8%;
-    background-color: transparent;
-    width: 46.2rem !important;
-  }
-  main #about-area .image {
-    width: 21.1rem !important;
-    height: 300px !important;
-  }
-  main #about-area .image img {
+  main #contact-area .message-area {
     width: 100% !important;
-    height: 100% !important;
   }
-  main #about-area .content {
-    text-align: center !important;
-    min-width: 21.1rem !important;
-    min-height: 450px !important;
-    position: relative;
-    right: 10%;
+  main .location-area iframe {
+    width: 990px;
   }
-  main #about-area .content hr {
-    width: 50%;
-    margin-left: 25%;
-  }
-  main #products-area .card {
-    width: 34rem;
-    max-width: 36rem !important;
-  }
-  main #products-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  footer {
     text-align: center;
-  }
-  main #products-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .video {
-    width: 56rem;
-    position: relative;
-    right: 25%;
-  }
-  main #galery-area img {
-    width: 36rem;
   }
 }
 
@@ -888,62 +631,14 @@ main #galery-area img {
   header nav ul {
     margin-left: 3%;
   }
-  main #carousel {
-    min-width: 50rem !important;
-    max-width: 63rem !important;
-  }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    width: 95% !important;
-    height: 100% !important;
-  }
-  main #about-area {
-    position: relative;
-    left: -2%;
-    background-color: transparent;
-    width: 57rem !important;
-  }
-  main #about-area .image {
-    width: 27rem !important;
-    height: 300px !important;
-  }
-  main #about-area .image img {
+  main #contact-area .message-area {
     width: 100% !important;
-    height: 100% !important;
   }
-  main #about-area .content {
-    text-align: center !important;
-    min-width: 28rem !important;
-    min-height: 450px !important;
-    position: relative;
-    right: 5%;
+  main .location-area iframe {
+    width: 1000px;
   }
-  main #about-area .content hr {
-    width: 50%;
-    margin-left: 25%;
-  }
-  main #products-area .card {
-    width: 34rem;
-    max-width: 21rem !important;
-  }
-  main #products-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  footer {
     text-align: center;
   }
-  main #products-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .video {
-    width: 56rem;
-    position: relative;
-    right: 5%;
-  }
-  main #galery-area img {
-    width: 22rem;
-  }
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=contact.css.map */

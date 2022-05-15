@@ -8,19 +8,13 @@ body {
     background-image: url(../img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    //background-color: rgb(215, 205, 205);
-    overflow-x: hidden;
 }
 
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(162, 29, 29);
+$font-color: rgb(51, 50, 50);
 $header-font-color: rgb(162, 29, 29);
-$background-color: rgb(23, 110, 88);
-$text-hover-color: rgb(247, 176, 53);
-$font-color: rgb(110, 86, 44);
-$main-font-color: #fff;
 
 header {
     nav {
@@ -487,160 +481,28 @@ header {
     }
 }
 
-main {
-    .filter-area {
+main{
+    #contact-area{
         color: white;
-
-        input {
-            outline: none;
-        }
-
-        .name {
-            width: 5px;
-            height: 25px;
-            background-color: rgb(247, 176, 53);
-
-            h6 {
-                margin-left: 10px;
-            }
-        }
-    }
-
-    .search-sorting {
-        .sorting-box {
-            width: 300px;
-
-            .form-select {
-                background-color: transparent;
-                border: none;
-                outline: none !important;
-            }
-
-        }
-
-        .search-box {
-            .search {
-                display: inline;
-                border: 2px solid #ccc;
-                border-radius: 100px;
-                padding: 10px 15px;
-                transition: background-color 0.5 ease-in-out;
-                border: none;
-                background-color: transparent;
-                width: 200px;
-                color: black;
-                ;
-
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            ::placeholder {
-                color: black;
-                opacity: 1;
-            }
-
-            button,
-            i {
-                border: none;
-                background: none;
-                cursor: pointer;
-                color: black;
-            }
-        }
-
-    }
-
-    #shop-area {
-        .card {
-            margin-top: 10px;
-            width: 18rem;
-            background-color: transparent;
+        input,textarea{
+            background-color: rgba(255, 255, 255, 0.486);
             border: none;
-            color: white;
-
-            .card-img-top {
-                border-radius: 10px;
-                transition: transform .75s;
-            }
-
-            &:hover .card-img-top {
-                transform: scale(1.1);
-                box-shadow: 20px 20px 20px rgb(18, 91, 73);
-
-            }
-
-            .card-body {
-
-                .card-title {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 24px;
-                    font-weight: bolder;
-                }
-
-                .btn {
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    color: white;
-                    outline: 2px solid #fff;
-                    padding: 10px 40px;
-                    position: relative;
-                    overflow: hidden;
-                    transition: color 1s;
-                    background-color: transparent;
-                    border: none;
-                    border-radius: 8px;
-                    outline: none;
-
-                    &:hover {
-                        color: $font-color  !important;
-                    }
-
-                    &::before {
-                        content: " ";
-                        position: absolute;
-                        top: 0;
-                        left: -50px;
-                        width: 0;
-                        height: 100%;
-                        background-color: #fff !important;
-                        transform: skewX(35deg);
-                        z-index: -1;
-                        transition: width 1s;
-                    }
-
-                    &:hover::before {
-                        width: 150%;
-                    }
-
-                    p {
-                        font-weight: 16px !important;
-                    }
-                }
-            }
+            color: white; 
         }
-    }
-
-    .pagination {
-        background-color: transparent;
-
+        button{
+            background-color:#545492;
+        }
         ul {
-            display: inline;
-
-            li {
-                a {
-                    color: $main-font-color;
-                    text-decoration: none;
-                }
-
-                padding: 10px;
-                display: inline;
-                list-style: none;
+            list-style: none;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 15px;
             }
         }
     }
+    
 }
 
 .footer {
@@ -649,11 +511,15 @@ main {
 
     ul {
         list-style: none;
+        cursor: pointer;
+
+        p:hover {
+            color: $text-hover-color;
+        }
 
         a {
             text-decoration: none;
             color: white;
-
             padding: 15px;
 
             &:hover {
@@ -667,11 +533,8 @@ main {
 @media screen and (max-width: 400px) {
     header {
         nav {
-            padding-right: 25% !important;
-            width: 350px;
-            height: 150px;
-
             .logo {
+
                 img {
                     width: 150px !important;
                     height: 150px !important;
@@ -681,87 +544,53 @@ main {
     }
 
     main {
-        #shop-area {
-            .card {
-                width: 22em !important;
-
-                .card-img-top {
-                    width: 100% !important;
-                }
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
+        #contact-area {
+            .message-area{
+                width:100% !important;
             }
         }
-
-        .pagination {
-            ul {
-                position: relative;
-                left: 40%;
+        .location-area{
+            iframe{
+                max-width: 100%;
             }
         }
+    }
+
+    footer{
+        text-align: center;
     }
 }
 
 //Phone Landscape
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
     header {
         nav {
-            margin-bottom: 5% !important;
-            width: 410px;
-            height: 120px;
-
             .logo {
+
                 img {
-                    position: relative;
-                    left: -10%;
-                    top: -5%;
-                    width: 200px !important;
-                    height: 200px !important;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
         }
     }
 
     main {
-        #shop-area {
-            .card {
-                width: 24em !important;
-
-                .card-img-top {
-                    width: 100% !important;
-                }
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
+        #contact-area {
+            .message-area{
+                width:100% !important;
             }
         }
-
-        .pagination {
-            ul {
-                position: relative;
-                left: 45%;
+        .location-area{
+            iframe{
+              width: 100%;
             }
         }
     }
+    footer{
+        text-align: center;
+    }
 }
-
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {}
@@ -770,67 +599,45 @@ main {
 @media screen and (min-width: 600px) and (max-width: 768px) {
     header {
         nav {
-            margin-bottom: 5% !important;
-            width: 410px;
-            height: 120px;
-
             .logo {
+                margin-right: 35%;
+                margin-top: 2% !important;
+
                 img {
-                    position: relative;
-                    left: -10%;
-                    top: -5%;
-                    width: 200px !important;
-                    height: 200px !important;
+                    width: 340px !important;
+                    height: 240px !important;
                 }
             }
         }
     }
 
     main {
-        #shop-area {
-            .card {
-                width: 24em !important;
-
-                .card-img-top {
-                    width: 100% !important;
-                }
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
+        #contact-area {
+            .message-area{
+                width:100% !important;
             }
         }
-
-        .pagination {
-            ul {
-                position: relative;
-                left: 45%;
+        .location-area{
+            iframe{
+                 width: 760px;
             }
         }
     }
-
+    footer{
+        text-align: center;
+    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
     header {
         nav {
-            width: 750px;
-            height: 200px;
-
             .logo {
                 margin-right: 35%;
                 margin-top: -5%;
 
                 img {
-                    width: 250px !important;
+                    width: 350px !important;
                     height: 250px !important;
                 }
             }
@@ -838,45 +645,19 @@ main {
     }
 
     main {
-        .search-sorting {
-            visibility: hidden;
-        }
-
-        .filter-area {
-            height: 400px;
-        }
-
-        #shop-area {
-            .products {
-                .card {
-                    width: 28em !important;
-
-                    img {
-                        width: 100%;
-                    }
-
-                    .card-body {
-                        a {
-                            font-size: 1.25em !important;
-                        }
-
-                        font-size: 1.25em !important;
-                        font-weight: bolder !important;
-                        font-style: italic;
-                        text-align: center;
-                    }
-                }
-            }
-
-        }
-
-        .pagination {
-            ul {
-                position: relative;
-                left: 45%;
+        #contact-area {
+            .message-area{
+                width:100% !important;
             }
         }
-
+        .location-area{
+            iframe{
+               width: 990px;
+            }
+        }
+    }
+    footer{
+        text-align: center;
     }
 }
 
@@ -884,39 +665,40 @@ main {
 @media screen and (min-width: 992px) and (max-width: 1024px) {
     header {
         nav {
-
             .logo {
-                position: relative;
                 img {
-                    width: 150px !important;
-                    height: 150px !important;
+                    margin-left: 30%;
+                    width: 340px !important;
+                    height: 240px !important;
                 }
             }
 
             ul {
-                position: absolute;
-                top: -5%;
-                left:12%;
+
+                margin-left: 3%;
             }
         }
     }
 
     main {
-        .search-sorting {
-           
-            .search-box {
-                width: 250px;
+        #contact-area {
+            .message-area{
+                width:100% !important;
             }
         }
-        .filter-area {
-            height: 400px;
-        }
-        .pagination {
-            ul {
-                position: relative;
-                left: 50%;
+        .location-area{
+            iframe{
+                width: 1000px;
             }
         }
-
+    }
+    footer{
+        text-align: center;
     }
 }
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

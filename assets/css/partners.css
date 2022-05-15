@@ -15,6 +15,7 @@ body {
 header nav {
   padding: 0px !important;
   margin-top: -2%;
+  margin-left: 13%;
 }
 
 header nav .logo {
@@ -499,18 +500,6 @@ header .mobile-navbar.active {
   opacity: 1;
   right: 0;
   z-index: 9;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  margin: 3%;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-}
-
-#patner-area {
-  margin-top: 5%;
 }
 
 #patner-area img {

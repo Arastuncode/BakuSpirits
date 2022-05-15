@@ -14,6 +14,7 @@ body {
 header nav {
   padding: 0px !important;
   margin-top: -2%;
+  margin-left: 13%;
 }
 
 header nav .logo {
@@ -500,11 +501,6 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-#about {
-  overflow-x: hidden;
-  margin-top: 5%;
-}
-
 #about .back-image {
   width: 100%;
   position: relative;
@@ -514,9 +510,17 @@ header .mobile-navbar.active {
   width: 100%;
 }
 
+#about p {
+  color: white;
+}
+
 #about .about .image img {
   height: 90% !important;
   border-radius: 10px;
+}
+
+#about .video {
+  margin-left: 5%;
 }
 
 #about .video iframe {
@@ -529,8 +533,6 @@ header .mobile-navbar.active {
   height: 349px;
   width: 635px;
   border-radius: 12px;
-  -webkit-box-shadow: 5px 10px 8px #888888;
-          box-shadow: 5px 10px 8px #888888;
 }
 
 #about .sertification h2 {

@@ -22,7 +22,7 @@ header {
     nav {
         padding: 0px !important;
         margin-top: -2%;
-
+        margin-left: 13%;
         .logo {
             width: 200px;
             height: 200px;
@@ -483,19 +483,13 @@ header {
     }
 }
 
-.image {
-    width: 100%;
-    height: auto;
-    margin: 3%;
-    filter: brightness(40%); 
-}
 
 #patner-area {
     img {
         border-radius: 10px;
         cursor: pointer;
     }
-    margin-top:5%;
+    //margin-top:5%;
     .card {
         background-color: transparent !important;
         border: none;

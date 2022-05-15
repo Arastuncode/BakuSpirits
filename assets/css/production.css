@@ -13,7 +13,8 @@ body {
 
 header nav {
   padding: 0px !important;
-  margin-top: -2%;
+  height: 150px;
+  margin-left: 13%;
 }
 
 header nav .logo {
@@ -502,7 +503,6 @@ header .mobile-navbar.active {
 
 #top-area {
   height: 600px;
-  margin-top: 5%;
 }
 
 #top-area .content {

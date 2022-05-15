@@ -22,7 +22,7 @@ header {
     nav {
         padding: 0px !important;
         margin-top: -2%;
-
+        margin-left: 13%;
         .logo {
             width: 200px;
             height: 200px;
@@ -485,8 +485,7 @@ header {
 
 
 #about {
-    overflow-x: hidden;
-    margin-top: 5%; 
+   
     .back-image {
         width: 100%;
 
@@ -496,7 +495,9 @@ header {
 
         position: relative;
     }
-
+    p{
+        color:white;
+    }
     .about {
         .image {
             img {
@@ -507,13 +508,13 @@ header {
     }
 
     .video {
+        margin-left: 5%;
         iframe {
             display: flex;
             align-items: center;
             height: 349px;
             width: 635px;
             border-radius: 12px;
-            box-shadow: 5px 10px 8px #888888;
         }
     }
 

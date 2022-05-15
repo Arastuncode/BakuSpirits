@@ -6,7 +6,6 @@
 }
 
 body {
-    //background-color: rgb(215, 205, 205);
     background-image: url(../img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,8 +20,8 @@ $header-font-color: rgb(162, 29, 29);
 header {
     nav {
         padding: 0px !important;
-        margin-top: -2%;
-
+        height:150px;
+        margin-left: 13%;
         .logo {
             width: 200px;
             height: 200px;
@@ -482,9 +481,9 @@ header {
         z-index: 9;
     }
 }
+
 #top-area {
     height: 600px;
-    margin-top: 5%;
 
     .content {
         color: white;
