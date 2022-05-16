@@ -19,8 +19,7 @@ $header-font-color: rgb(162, 29, 29);
 header {
     nav {
         padding: 0px !important;
-        margin-top: -2%;
-        margin-left: 13%;
+        margin-top: -2%; 
         .logo {
             width: 200px;
             height: 200px;
@@ -37,16 +36,22 @@ header {
         }
 
         ul {
+            .drop{
+                a{
+                 color: black !important;
+                 font-size: 15px;
+                }
+             }
             li {
                 position: relative;
                 padding: 38px 20px;
 
                 a {
                     position: relative;
-                    font-size: 12px;
+                    font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: black !important;
+                    color: white !important;
                     font-weight: 500;
 
                     &::after {
@@ -58,7 +63,7 @@ header {
                         transform: translateX(-50%);
                         width: 0;
                         height: 1px;
-                        background-color: black;
+                        background-color: white;
                     }
 
                     &:hover {
@@ -69,7 +74,7 @@ header {
                         text-decoration: none;
                     }
                 }
-
+                
                 .fa-search {
                     transform: rotateY(180deg);
                 }
@@ -513,9 +518,8 @@ main {
             cursor: pointer;
             a {
                 text-decoration: none;
-                color: black;
+                color: white;
             }
-
             hr {
                 height: 3px;
                 color: red;
@@ -611,7 +615,10 @@ main {
     #galery-area {
         h1 {
             text-align: center;
-            color: #fff;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
         }
 
         img {

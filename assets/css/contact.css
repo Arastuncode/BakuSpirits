@@ -14,7 +14,6 @@ body {
 header nav {
   padding: 0px !important;
   margin-top: -2%;
-  margin-left: 13%;
 }
 
 header nav .logo {
@@ -32,6 +31,11 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
+header nav ul .drop a {
+  color: black !important;
+  font-size: 15px;
+}
+
 header nav ul li {
   position: relative;
   padding: 38px 20px;
@@ -39,10 +43,10 @@ header nav ul li {
 
 header nav ul li a {
   position: relative;
-  font-size: 12px;
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: black !important;
+  color: white !important;
   font-weight: 500;
 }
 
@@ -57,7 +61,7 @@ header nav ul li a::after {
           transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background-color: black;
+  background-color: white;
 }
 
 header nav ul li a:hover {
@@ -505,7 +509,8 @@ main #contact-area {
   color: white;
 }
 
-main #contact-area input, main #contact-area textarea {
+main #contact-area input,
+main #contact-area textarea {
   background-color: rgba(255, 255, 255, 0.486);
   border: none;
   color: white;
@@ -524,6 +529,15 @@ main #contact-area ul a {
   text-decoration: none;
   color: white;
   padding: 15px;
+}
+
+main .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footer {
@@ -615,7 +629,7 @@ main #contact-area ul a {
     width: 100% !important;
   }
   main .location-area iframe {
-    width: 990px;
+    width: 100%;
   }
   footer {
     text-align: center;
@@ -635,7 +649,7 @@ main #contact-area ul a {
     width: 100% !important;
   }
   main .location-area iframe {
-    width: 1000px;
+    width: 100%;
   }
   footer {
     text-align: center;

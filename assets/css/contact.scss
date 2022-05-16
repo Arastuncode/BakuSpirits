@@ -20,7 +20,6 @@ header {
     nav {
         padding: 0px !important;
         margin-top: -2%;
-        margin-left: 13%;
         .logo {
             width: 200px;
             height: 200px;
@@ -37,16 +36,23 @@ header {
         }
 
         ul {
+            .drop {
+                a {
+                    color: black !important;
+                    font-size: 15px;
+                }
+            }
+           
             li {
                 position: relative;
                 padding: 38px 20px;
 
                 a {
                     position: relative;
-                    font-size: 12px;
+                    font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: black !important;
+                    color: white !important;
                     font-weight: 500;
 
                     &::after {
@@ -58,7 +64,7 @@ header {
                         transform: translateX(-50%);
                         width: 0;
                         height: 1px;
-                        background-color: black;
+                        background-color: white;
                     }
 
                     &:hover {
@@ -481,20 +487,25 @@ header {
     }
 }
 
-main{
-    #contact-area{
+main {
+    #contact-area {
         color: white;
-        input,textarea{
+
+        input,
+        textarea {
             background-color: rgba(255, 255, 255, 0.486);
             border: none;
-            color: white; 
+            color: white;
         }
-        button{
-            background-color:#545492;
+
+        button {
+            background-color: #545492;
         }
+
         ul {
             list-style: none;
             cursor: pointer;
+
             a {
                 text-decoration: none;
                 color: white;
@@ -502,7 +513,11 @@ main{
             }
         }
     }
-    
+
+    .location {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 
 .footer {
@@ -545,18 +560,19 @@ main{
 
     main {
         #contact-area {
-            .message-area{
-                width:100% !important;
+            .message-area {
+                width: 100% !important;
             }
         }
-        .location-area{
-            iframe{
+
+        .location-area {
+            iframe {
                 max-width: 100%;
             }
         }
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 }
@@ -577,17 +593,19 @@ main{
 
     main {
         #contact-area {
-            .message-area{
-                width:100% !important;
+            .message-area {
+                width: 100% !important;
             }
         }
-        .location-area{
-            iframe{
-              width: 100%;
+
+        .location-area {
+            iframe {
+                width: 100%;
             }
         }
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 }
@@ -613,17 +631,19 @@ main{
 
     main {
         #contact-area {
-            .message-area{
-                width:100% !important;
+            .message-area {
+                width: 100% !important;
             }
         }
-        .location-area{
-            iframe{
-                 width: 760px;
+
+        .location-area {
+            iframe {
+                width: 760px;
             }
         }
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 }
@@ -646,17 +666,19 @@ main{
 
     main {
         #contact-area {
-            .message-area{
-                width:100% !important;
+            .message-area {
+                width: 100% !important;
             }
         }
-        .location-area{
-            iframe{
-               width: 990px;
+
+        .location-area {
+            iframe {
+                width: 100%;
             }
         }
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 }
@@ -682,17 +704,19 @@ main{
 
     main {
         #contact-area {
-            .message-area{
-                width:100% !important;
+            .message-area {
+                width: 100% !important;
             }
         }
-        .location-area{
-            iframe{
-                width: 1000px;
+
+        .location-area {
+            iframe {
+                width: 100%;
             }
         }
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 }

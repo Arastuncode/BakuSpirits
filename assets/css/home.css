@@ -14,7 +14,6 @@ body {
 header nav {
   padding: 0px !important;
   margin-top: -2%;
-  margin-left: 13%;
 }
 
 header nav .logo {
@@ -32,6 +31,11 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
+header nav ul .drop a {
+  color: black !important;
+  font-size: 15px;
+}
+
 header nav ul li {
   position: relative;
   padding: 38px 20px;
@@ -39,10 +43,10 @@ header nav ul li {
 
 header nav ul li a {
   position: relative;
-  font-size: 12px;
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: black !important;
+  color: white !important;
   font-weight: 500;
 }
 
@@ -57,7 +61,7 @@ header nav ul li a::after {
           transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background-color: black;
+  background-color: white;
 }
 
 header nav ul li a:hover {
@@ -532,7 +536,7 @@ main #about-area .content {
 
 main #about-area .content a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 main #about-area .content hr {
@@ -627,6 +631,10 @@ main video source {
 
 main #galery-area h1 {
   text-align: center;
+}
+
+main #galery-area h1 a {
+  text-decoration: none;
   color: #fff;
 }
 

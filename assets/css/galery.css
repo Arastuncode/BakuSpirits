@@ -9,7 +9,6 @@ body {
   background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 
 header nav {
@@ -506,169 +505,8 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main .filter-area {
-  color: white;
-}
-
-main .filter-area input {
-  outline: none;
-}
-
-main .filter-area .name {
-  width: 5px;
-  height: 25px;
-  background-color: #f7b035;
-}
-
-main .filter-area .name h6 {
-  margin-left: 10px;
-}
-
-main .search-sorting .sorting-box {
-  width: 300px;
-}
-
-main .search-sorting .sorting-box .form-select {
-  background-color: transparent;
-  border: none;
-  outline: none !important;
-}
-
-main .search-sorting .search-box .search {
-  display: inline;
-  border: 2px solid #ccc;
-  border-radius: 100px;
-  padding: 10px 15px;
-  -webkit-transition: background-color 0.5 ease-in-out;
-  transition: background-color 0.5 ease-in-out;
-  border: none;
-  background-color: transparent;
-  width: 200px;
-  color: black;
-}
-
-main .search-sorting .search-box .search:focus {
-  outline: none;
-}
-
-main .search-sorting .search-box ::-webkit-input-placeholder {
-  color: black;
-  opacity: 1;
-}
-
-main .search-sorting .search-box :-ms-input-placeholder {
-  color: black;
-  opacity: 1;
-}
-
-main .search-sorting .search-box ::-ms-input-placeholder {
-  color: black;
-  opacity: 1;
-}
-
-main .search-sorting .search-box ::placeholder {
-  color: black;
-  opacity: 1;
-}
-
-main .search-sorting .search-box button,
-main .search-sorting .search-box i {
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: black;
-}
-
-main #shop-area .card {
-  margin-top: 10px;
-  width: 18rem;
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-main #shop-area .card .card-img-top {
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform .75s;
-  transition: -webkit-transform .75s;
-  transition: transform .75s;
-  transition: transform .75s, -webkit-transform .75s;
-}
-
-main #shop-area .card:hover .card-img-top {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 20px 20px 20px #125b49;
-          box-shadow: 20px 20px 20px #125b49;
-}
-
-main #shop-area .card .card-body .card-title {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-  font-weight: bolder;
-}
-
-main #shop-area .card .card-body .btn {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: white;
-  outline: 2px solid #fff;
-  padding: 10px 40px;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  background-color: transparent;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-}
-
-main #shop-area .card .card-body .btn:hover {
-  color: #6e562c !important;
-}
-
-main #shop-area .card .card-body .btn::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 0;
-  height: 100%;
-  background-color: #fff !important;
-  -webkit-transform: skewX(35deg);
-          transform: skewX(35deg);
-  z-index: -1;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-main #shop-area .card .card-body .btn:hover::before {
-  width: 150%;
-}
-
-main #shop-area .card .card-body .btn p {
-  font-weight: 16px !important;
-}
-
-main .pagination {
-  background-color: transparent;
-}
-
-main .pagination ul {
-  display: inline;
-}
-
-main .pagination ul li {
-  padding: 10px;
-  display: inline;
-  list-style: none;
-}
-
-main .pagination ul li a {
-  color: #fff;
-  text-decoration: none;
+main #galery-area .image img {
+  width: 20rem;
 }
 
 .footer {
@@ -678,6 +516,11 @@ main .pagination ul li a {
 
 .footer ul {
   list-style: none;
+  cursor: pointer;
+}
+
+.footer ul p:hover {
+  color: #a21d1d;
 }
 
 .footer ul a {
@@ -687,170 +530,98 @@ main .pagination ul li a {
 }
 
 .footer ul a:hover {
-  color: #f7b035;
+  color: #a21d1d;
 }
 
 @media screen and (max-width: 400px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 350px;
-    height: 150px;
-  }
   header nav .logo img {
     width: 150px !important;
     height: 150px !important;
   }
-  main #shop-area .card {
-    width: 22em !important;
-  }
-  main #shop-area .card .card-img-top {
+  main #contact-area .message-area {
     width: 100% !important;
   }
-  main #shop-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  main .location-area iframe {
+    max-width: 100%;
+  }
+  footer {
     text-align: center;
-  }
-  main #shop-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 40%;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  header nav {
-    margin-bottom: 5% !important;
-    width: 410px;
-    height: 120px;
-  }
+@media screen and (min-width: 401px) and (max-width: 600px) {
   header nav .logo img {
-    position: relative;
-    left: -10%;
-    top: -5%;
-    width: 200px !important;
-    height: 200px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
-  main #shop-area .card {
-    width: 24em !important;
-  }
-  main #shop-area .card .card-img-top {
+  main #contact-area .message-area {
     width: 100% !important;
   }
-  main #shop-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  main .location-area iframe {
+    width: 100%;
+  }
+  footer {
     text-align: center;
-  }
-  main #shop-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  header nav {
-    margin-bottom: 5% !important;
-    width: 410px;
-    height: 120px;
+  header nav .logo {
+    margin-right: 35%;
+    margin-top: 2% !important;
   }
   header nav .logo img {
-    position: relative;
-    left: -10%;
-    top: -5%;
-    width: 200px !important;
-    height: 200px !important;
+    width: 340px !important;
+    height: 240px !important;
   }
-  main #shop-area .card {
-    width: 24em !important;
-  }
-  main #shop-area .card .card-img-top {
+  main #contact-area .message-area {
     width: 100% !important;
   }
-  main #shop-area .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  main .location-area iframe {
+    width: 760px;
+  }
+  footer {
     text-align: center;
-  }
-  main #shop-area .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  header nav {
-    width: 750px;
-    height: 200px;
-  }
   header nav .logo {
     margin-right: 35%;
     margin-top: -5%;
   }
   header nav .logo img {
-    width: 250px !important;
+    width: 350px !important;
     height: 250px !important;
   }
-  main .search-sorting {
-    visibility: hidden;
+  main #contact-area .message-area {
+    width: 100% !important;
   }
-  main .filter-area {
-    height: 400px;
-  }
-  main #shop-area .products .card {
-    width: 28em !important;
-  }
-  main #shop-area .products .card img {
+  main .location-area iframe {
     width: 100%;
   }
-  main #shop-area .products .card .card-body {
-    font-size: 1.25em !important;
-    font-weight: bolder !important;
-    font-style: italic;
+  footer {
     text-align: center;
-  }
-  main #shop-area .products .card .card-body a {
-    font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-  header nav .logo {
-    position: relative;
-  }
   header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
+    margin-left: 30%;
+    width: 340px !important;
+    height: 240px !important;
   }
   header nav ul {
-    position: absolute;
-    top: -5%;
-    left: 12%;
+    margin-left: 3%;
   }
-  main .search-sorting .search-box {
-    width: 250px;
+  main #contact-area .message-area {
+    width: 100% !important;
   }
-  main .filter-area {
-    height: 400px;
+  main .location-area iframe {
+    width: 100%;
   }
-  main .pagination ul {
-    position: relative;
-    left: 50%;
+  footer {
+    text-align: center;
   }
 }
-/*# sourceMappingURL=products.css.map */
+/*# sourceMappingURL=galery.css.map */

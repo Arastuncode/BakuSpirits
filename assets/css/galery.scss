@@ -8,20 +8,19 @@ body {
     background-image: url(../img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    //background-color: rgb(215, 205, 205);
-    overflow-x: hidden;
 }
 
 $color: #f34f3f;
 $background-color: rgb(250, 246, 246);
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(162, 29, 29);
+$font-color: rgb(51, 50, 50);
 $header-font-color: rgb(162, 29, 29);
 
 header {
     nav {
         padding: 0px !important;
-        margin-top: -2%; 
+        margin-top: -2%;
+
         .logo {
             width: 200px;
             height: 200px;
@@ -38,12 +37,13 @@ header {
         }
 
         ul {
-            .drop{
-                a{
-                 color: black !important;
-                 font-size: 15px;
+            .drop {
+                a {
+                    color: black !important;
+                    font-size: 15px;
                 }
-             }
+            }
+
             li {
                 position: relative;
                 padding: 38px 20px;
@@ -76,7 +76,7 @@ header {
                         text-decoration: none;
                     }
                 }
-                
+
                 .fa-search {
                     transform: rotateY(180deg);
                 }
@@ -489,33 +489,15 @@ header {
 }
 
 main {
-    
-    .content {
-        
-
-        h1 {
-            color: #fff;
-        }
-        @keyframes load{
-            0%{
-                box-shadow: 0 0 #ed3b65 inset;
-            }
-            100%{
-                box-shadow: 0 -70px #ed3b65 inset;
+    #galery-area {
+        .image {
+            img {
+                width: 20rem; 
             }
         }
-        .loader {
-           transform:perspective(140px) rotateX(-45deg);
-           width:32px;
-           height:72px;
-           position: relative;
-           border:2px solid #fff;
-           animation:1.5s linear infinite alternate;            
-        }
-
-         
     }
 }
+
 
 .footer {
     padding: 30px;
@@ -541,175 +523,180 @@ main {
     }
 }
 
-
 //Phone Portrait  
-@media screen and(max-width: 320px) {
+@media screen and (max-width: 400px) {
     header {
         nav {
             .logo {
 
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
         }
     }
 
     main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+        #contact-area {
+            .message-area {
+                width: 100% !important;
             }
         }
 
+        .location-area {
+            iframe {
+                max-width: 100%;
+            }
+        }
+    }
 
+    footer {
+        text-align: center;
     }
 }
 
 //Phone Landscape
-@media screen and (max-width: 480px) {
-
+@media screen and (min-width: 401px) and (max-width: 600px) {
     header {
         nav {
             .logo {
 
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 150px !important;
+                    height: 150px !important;
                 }
             }
         }
     }
 
     main {
-        .head-image {
-            .image {
-                min-width: 400px !important;
-                height: 200px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+        #contact-area {
+            .message-area {
+                width: 100% !important;
             }
         }
 
-        .content {
-            .loader {
-                //background-color: red;
-                margin-bottom: -10% !important;
-                margin-left: -23%;
-                width: 120% !important;
-
-                .bal {
-                    padding: 0% !important;
-                }
-
-                h1 {
-                    font-size: 17px !important;
-                }
+        .location-area {
+            iframe {
+                width: 100%;
             }
         }
+    }
 
+    footer {
+        text-align: center;
     }
 }
 
 //Table Portrait & Landscape
-@media screen and(min-width: 768px) and(max-width: 1024px) {
-    // #header {
-    //     background-color: $background-color !important;
-
-    //     ul {
-    //         a {
-    //             text-align: center !important;
-    //             font: 1.2em sans-serif;
-    //             color: white;
-
-    //             &:hover {
-    //                 color: $text-hover-color !important;
-    //             }
-    //             i{
-    //                 margin-top:10px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #footer {
-    //     .img{
-    //         visibility: hidden !important;
-    //     }
-    // }
-
-}
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
 
 // Table Portrait 
-@media screen and(max-width: 768px) {
-
+@media screen and (min-width: 600px) and (max-width: 768px) {
     header {
         nav {
             .logo {
+                margin-right: 35%;
+                margin-top: 2% !important;
 
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 340px !important;
+                    height: 240px !important;
                 }
             }
         }
     }
 
     main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+        #contact-area {
+            .message-area {
+                width: 100% !important;
             }
         }
 
+        .location-area {
+            iframe {
+                width: 760px;
+            }
+        }
+    }
 
+    footer {
+        text-align: center;
     }
 }
 
-
-
 //Table  Landscape
-@media screen and(max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header {
         nav {
             .logo {
+                margin-right: 35%;
+                margin-top: -5%;
 
                 img {
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 350px !important;
+                    height: 250px !important;
                 }
             }
         }
     }
 
     main {
-        .head-image {
-            .image {
-                width: 375px !important;
-                height: 200px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+        #contact-area {
+            .message-area {
+                width: 100% !important;
             }
         }
 
+        .location-area {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
 
+    footer {
+        text-align: center;
+    }
+}
+
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    header {
+        nav {
+            .logo {
+                img {
+                    margin-left: 30%;
+                    width: 340px !important;
+                    height: 240px !important;
+                }
+            }
+
+            ul {
+
+                margin-left: 3%;
+            }
+        }
+    }
+
+    main {
+        #contact-area {
+            .message-area {
+                width: 100% !important;
+            }
+        }
+
+        .location-area {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
