@@ -31,8 +31,12 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
+header nav ul .drop {
+  background-color: transparent !important;
+}
+
 header nav ul .drop a {
-  color: black !important;
+  color: #fff !important;
   font-size: 15px;
 }
 
@@ -46,7 +50,7 @@ header nav ul li a {
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: white !important;
+  color: #fff !important;
   font-weight: 500;
 }
 
@@ -112,10 +116,10 @@ header nav ul li .modal .modal-body {
   width: 110vh;
 }
 
-header nav ul li .modal h1 {
+header nav ul li .modal h4 {
   font-weight: bold;
   margin: 0;
-  color: #0a6c0a;
+  color: #fff;
 }
 
 header nav ul li .modal p {
@@ -430,7 +434,7 @@ header nav ul .shop-cart a {
 
 header nav ul .shop-cart sup {
   padding: 2px 2px;
-  color: white;
+  color: #fff;
   background-color: #f34f3f;
 }
 

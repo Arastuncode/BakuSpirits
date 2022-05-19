@@ -10,16 +10,15 @@ body {
     background-size: cover;
 }
 
-$color: #f34f3f;
-$background-color: rgb(250, 246, 246);
+$color: #f34f3f; 
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(51, 50, 50);
-$header-font-color: rgb(162, 29, 29);
+$font-color: #fff; 
 
 header {
     nav {
         padding: 0px !important;
-        margin-top: -2%; 
+        margin-top: -2%;
+
         .logo {
             width: 200px;
             height: 200px;
@@ -36,12 +35,14 @@ header {
         }
 
         ul {
-            .drop{
-                a{
-                 color: black !important;
-                 font-size: 15px;
+            .drop {
+                a {
+                    color: $font-color !important;
+                    font-size: 15px;
                 }
-             }
+                background-color: transparent !important;
+            }
+
             li {
                 position: relative;
                 padding: 38px 20px;
@@ -51,7 +52,7 @@ header {
                     font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: white !important;
+                    color: $font-color !important;
                     font-weight: 500;
 
                     &::after {
@@ -74,7 +75,7 @@ header {
                         text-decoration: none;
                     }
                 }
-                
+
                 .fa-search {
                     transform: rotateY(180deg);
                 }
@@ -113,10 +114,10 @@ header {
                         width: 110vh;
                     }
 
-                    h1 {
+                    h4 {
                         font-weight: bold;
                         margin: 0;
-                        color: rgb(10, 108, 10);
+                        color: $font-color;
                     }
 
                     p {
@@ -359,8 +360,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
-
-                        //top: 10px;
+ 
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -402,7 +402,7 @@ header {
 
                 sup {
                     padding: 2px 2px;
-                    color: white;
+                    color: $font-color;
                     background-color: #f34f3f;
                 }
 
@@ -500,7 +500,7 @@ main {
     #about-area {
         background-color: rgba(255, 255, 255, 0.538);
         border-radius: 10px;
-       
+
         .image {
             width: 600px;
             height: 500px;
@@ -513,13 +513,15 @@ main {
         }
 
         .content {
-            color:black;
+            color: black;
             margin-right: 15%;
             cursor: pointer;
+
             a {
                 text-decoration: none;
-                color: white;
+                color: $font-color;
             }
+
             hr {
                 height: 3px;
                 color: red;
@@ -530,7 +532,7 @@ main {
 
     #products-area {
         h2 {
-            color: white;
+            color: $font-color;
             text-align: center;
         }
 
@@ -539,7 +541,7 @@ main {
             width: 18rem;
             background-color: transparent;
             border: none;
-            color: white;
+            color:$font-color;
 
             .card-img-top {
                 border-radius: 10px;
@@ -554,7 +556,7 @@ main {
 
                 .card-title {
                     text-decoration: none;
-                    color: white;
+                    color: $font-color;
                     font-size: 24px;
                     font-weight: bolder;
                 }
@@ -562,7 +564,7 @@ main {
                 .btn {
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    color: white;
+                    color: $font-color;
                     outline: 2px solid #fff;
                     padding: 10px 40px;
                     position: relative;
@@ -615,9 +617,10 @@ main {
     #galery-area {
         h1 {
             text-align: center;
-            a{
+
+            a {
                 text-decoration: none;
-                color: #fff;
+                color: $font-color;
             }
         }
 
@@ -629,9 +632,12 @@ main {
     }
 }
 
+
+
+
 .footer {
     padding: 30px;
-    color: white;
+    color: $font-color;
 
     ul {
         list-style: none;
@@ -643,7 +649,7 @@ main {
 
         a {
             text-decoration: none;
-            color: white;
+            color: $font-color;
             padding: 15px;
 
             &:hover {
@@ -949,7 +955,8 @@ main {
                 hr {
                     width: 50%;
                     margin-left: 25%;
-                } 
+                }
+
                 text-align: center !important;
                 min-width: 21.1rem !important;
                 min-height: 450px !important;
@@ -1029,7 +1036,8 @@ main {
             position: relative;
             left: -2%;
             background-color: transparent;
-            width: 57rem !important; 
+            width: 57rem !important;
+
             .image {
                 width: 27rem !important;
                 height: 300px !important;
@@ -1044,7 +1052,8 @@ main {
                 hr {
                     width: 50%;
                     margin-left: 25%;
-                } 
+                }
+
                 text-align: center !important;
                 min-width: 28rem !important;
                 min-height: 450px !important;
@@ -1057,6 +1066,7 @@ main {
             .card {
                 width: 34rem;
                 max-width: 21rem !important;
+
                 .card-body {
                     a {
                         font-size: 1.25em !important;

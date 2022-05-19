@@ -10,11 +10,9 @@ body {
     background-size: cover;
 }
 
-$color: #f34f3f;
-$background-color: rgb(250, 246, 246);
+$color: #f34f3f; 
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(51, 50, 50);
-$header-font-color: rgb(162, 29, 29);
+$font-color: #fff; 
 
 header {
     nav {
@@ -39,9 +37,10 @@ header {
         ul {
             .drop {
                 a {
-                    color: black !important;
+                    color: $font-color !important;
                     font-size: 15px;
                 }
+                background-color: transparent !important;
             }
 
             li {
@@ -53,7 +52,7 @@ header {
                     font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: white !important;
+                    color: $font-color !important;
                     font-weight: 500;
 
                     &::after {
@@ -115,10 +114,10 @@ header {
                         width: 110vh;
                     }
 
-                    h1 {
+                    h4 {
                         font-weight: bold;
                         margin: 0;
-                        color: rgb(10, 108, 10);
+                        color: $font-color;
                     }
 
                     p {
@@ -361,8 +360,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
-
-                        //top: 10px;
+ 
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -404,7 +402,7 @@ header {
 
                 sup {
                     padding: 2px 2px;
-                    color: white;
+                    color: $font-color;
                     background-color: #f34f3f;
                 }
 
@@ -488,20 +486,64 @@ header {
     }
 }
 
+
 main {
     #galery-area {
-        .image {
+        .content {
+             
+        display: none;
             img {
-                width: 20rem; 
+                width: 20rem;
             }
         }
     }
+
+    .btn {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $font-color;
+        outline: 2px solid #fff;
+        padding: 10px 40px;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        background-color: transparent;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        width: 200px;
+        &:hover {
+            color: $text-hover-color !important;
+
+        }
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: 0;
+            height: 100%;
+            background-color: #fff !important;
+            transform: skewX(35deg);
+            z-index: -1;
+            transition: width 1s;
+        }
+        &:hover::before {
+            width: 150%;
+        }
+
+        p {
+            font-weight: 16px !important;
+        }
+    }
+
+
 }
 
 
 .footer {
     padding: 30px;
-    color: white;
+    color: $font-color;
 
     ul {
         list-style: none;
@@ -513,7 +555,7 @@ main {
 
         a {
             text-decoration: none;
-            color: white;
+            color: $font-color;
             padding: 15px;
 
             &:hover {
@@ -537,19 +579,7 @@ main {
         }
     }
 
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                max-width: 100%;
-            }
-        }
-    }
+     
 
     footer {
         text-align: center;
@@ -570,19 +600,7 @@ main {
         }
     }
 
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
+    
 
     footer {
         text-align: center;
@@ -608,19 +626,7 @@ main {
         }
     }
 
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 760px;
-            }
-        }
-    }
+     
 
     footer {
         text-align: center;
@@ -643,20 +649,7 @@ main {
         }
     }
 
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
-
+     
     footer {
         text-align: center;
     }
@@ -681,19 +674,7 @@ main {
         }
     }
 
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
+   
 
     footer {
         text-align: center;

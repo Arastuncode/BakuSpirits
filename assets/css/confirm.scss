@@ -7,21 +7,19 @@
 body {
     background-image: url(../img/back.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    //background-color: rgb(215, 205, 205);
+    background-size: cover; 
     overflow-x: hidden;
 }
 
 $color: #f34f3f;
-$background-color: rgb(250, 246, 246);
+$color: #f34f3f; 
 $text-hover-color: rgb(162, 29, 29);
-$font-color: rgb(162, 29, 29);
-$header-font-color: rgb(162, 29, 29);
-
+$font-color: #fff; 
 header {
     nav {
         padding: 0px !important;
-        margin-top: -2%; 
+        margin-top: -2%;
+
         .logo {
             width: 200px;
             height: 200px;
@@ -38,12 +36,14 @@ header {
         }
 
         ul {
-            .drop{
-                a{
-                 color: black !important;
-                 font-size: 15px;
+            .drop {
+                a {
+                    color: $font-color !important;
+                    font-size: 15px;
                 }
-             }
+                background-color: transparent !important;
+            }
+
             li {
                 position: relative;
                 padding: 38px 20px;
@@ -53,7 +53,7 @@ header {
                     font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: white !important;
+                    color: $font-color !important;
                     font-weight: 500;
 
                     &::after {
@@ -76,7 +76,7 @@ header {
                         text-decoration: none;
                     }
                 }
-                
+
                 .fa-search {
                     transform: rotateY(180deg);
                 }
@@ -115,10 +115,10 @@ header {
                         width: 110vh;
                     }
 
-                    h1 {
+                    h4 {
                         font-weight: bold;
                         margin: 0;
-                        color: rgb(10, 108, 10);
+                        color: $font-color;
                     }
 
                     p {
@@ -361,8 +361,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
-
-                        //top: 10px;
+ 
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -404,7 +403,7 @@ header {
 
                 sup {
                     padding: 2px 2px;
-                    color: white;
+                    color: $font-color;
                     background-color: #f34f3f;
                 }
 

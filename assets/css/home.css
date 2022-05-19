@@ -31,8 +31,12 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
+header nav ul .drop {
+  background-color: transparent !important;
+}
+
 header nav ul .drop a {
-  color: black !important;
+  color: #fff !important;
   font-size: 15px;
 }
 
@@ -46,7 +50,7 @@ header nav ul li a {
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: white !important;
+  color: #fff !important;
   font-weight: 500;
 }
 
@@ -112,10 +116,10 @@ header nav ul li .modal .modal-body {
   width: 110vh;
 }
 
-header nav ul li .modal h1 {
+header nav ul li .modal h4 {
   font-weight: bold;
   margin: 0;
-  color: #0a6c0a;
+  color: #fff;
 }
 
 header nav ul li .modal p {
@@ -430,7 +434,7 @@ header nav ul .shop-cart a {
 
 header nav ul .shop-cart sup {
   padding: 2px 2px;
-  color: white;
+  color: #fff;
   background-color: #f34f3f;
 }
 
@@ -536,7 +540,7 @@ main #about-area .content {
 
 main #about-area .content a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 main #about-area .content hr {
@@ -545,7 +549,7 @@ main #about-area .content hr {
 }
 
 main #products-area h2 {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -554,7 +558,7 @@ main #products-area .card {
   width: 18rem;
   background-color: transparent;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 main #products-area .card .card-img-top {
@@ -572,7 +576,7 @@ main #products-area .card:hover .card-img-top {
 
 main #products-area .card .card-body .card-title {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 24px;
   font-weight: bolder;
 }
@@ -580,7 +584,7 @@ main #products-area .card .card-body .card-title {
 main #products-area .card .card-body .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
+  color: #fff;
   outline: 2px solid #fff;
   padding: 10px 40px;
   position: relative;
@@ -594,7 +598,7 @@ main #products-area .card .card-body .btn {
 }
 
 main #products-area .card .card-body .btn:hover {
-  color: #333232 !important;
+  color: #fff !important;
 }
 
 main #products-area .card .card-body .btn::before {
@@ -645,7 +649,7 @@ main #galery-area img {
 
 .footer {
   padding: 30px;
-  color: white;
+  color: #fff;
 }
 
 .footer ul {
@@ -659,7 +663,7 @@ main #galery-area img {
 
 .footer ul a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 15px;
 }
 
