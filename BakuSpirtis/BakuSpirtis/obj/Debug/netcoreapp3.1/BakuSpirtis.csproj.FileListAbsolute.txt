@@ -308,11 +308,14 @@ C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpir
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.dll
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.pdb
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.genruntimeconfig.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_ViewImports.cshtml.g.cs
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_ViewStart.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Partners\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Production\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Galery\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_ValidationPartial.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs

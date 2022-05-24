@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\AdminArea\Controllers\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Exceptions\" />
     <Folder Include="ViewComponents\" />
     <Folder Include="Services\Interfaces\" />

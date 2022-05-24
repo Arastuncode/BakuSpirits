@@ -14,5 +14,6 @@ namespace BakuSpirtis.Data
         {
 
         }
+        public DbSet<Slider> Sliders { get; set; }
     }
 }
