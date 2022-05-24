@@ -662,9 +662,9 @@ main {
 //Phone Portrait  
 @media screen and (max-width: 400px) {
     header {
-        nav {
+        nav { 
             .logo {
-
+               margin-top: 3%;
                 img {
                     width: 150px !important;
                     height: 150px !important;

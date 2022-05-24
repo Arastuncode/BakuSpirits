@@ -1,4 +1,5 @@
-﻿using BakuSpirtis.Models;
+﻿using BakuSpirtis.Data;
+using BakuSpirtis.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,7 +12,11 @@ namespace BakuSpirtis.Controllers
 {
     public class HomeController : Controller
     {
-         
+        private readonly AppDbContext _context;
+        //public HomeController(AppDbContext context)
+        //{
+        //    _context = context;
+        //}
         public IActionResult Index()
         {
             return View();

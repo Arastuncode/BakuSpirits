@@ -672,6 +672,9 @@ main #galery-area img {
 }
 
 @media screen and (max-width: 400px) {
+  header nav .logo {
+    margin-top: 3%;
+  }
   header nav .logo img {
     width: 150px !important;
     height: 150px !important;
