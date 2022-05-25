@@ -22,9 +22,11 @@ namespace BakuSpirtis.Controllers
         public async Task<IActionResult> Index()
         {
             List<Slider> sliders = await _context.Sliders.ToListAsync();
+            List<About> abouts = await _context.Abouts.ToListAsync();
             HomeVM homeVM = new HomeVM
             {
                 Sliders = sliders,
+                Abouts=abouts,
               
             };
 

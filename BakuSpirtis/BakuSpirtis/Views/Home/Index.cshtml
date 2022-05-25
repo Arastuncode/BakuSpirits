@@ -36,31 +36,25 @@
         <section id="about-area">
             <div class="about mt-3">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <div class="image">
-                            <img src="~/assets/img/about.jpg" alt="">
+                    @foreach (var item in Model.Abouts)
+                    {
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3">
+                            <div class="image">
+                                <img src="~/assets/img/@item.Image" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3">
-                        <div class="content">
-                            <a asp-controller="About" asp-action="Index">
-                                <h1>Haqqımızda</h1>
-                            </a>
-                            <hr>
-                            <p class="text-justify">
-                                “Baku Spirits” MMC 2021-ci ildə öz fəaliyyətinə başlamışdır. Bu
-                                gün şirkət alkaqollu içkilər bazarında “Absolute Organic”, “Organic Nation”,
-                                “Vaksin”, ”Bussines Line”, “Black Scorpion”, ”Zero”, adı ilə tanınan araqlar və
-                                “Qobustan” markalı şərab istehsal edir. Müəssisədə ən müasir avadanlıqlarından
-                                istifadə olunur. Laboratoriyamız müasir “Agilent’s Gas” xromatoqrafı, “ANTON PAAR
-                                ALCOLYZER” cihazı, “OHAUS” pH metr və konduktometr, “ULTRAPURE” saf su avadanlıqları
-                                ilə təchiz olunub. Məhsullarımız yüksək ixtisaslı texnoloqun rəhbərliyi altında
-                                istehsal olunur. Məhsulların keyfiyyəti İSO 22000-2018 sertifikatı ilə təsdiq
-                                olunur. Şirkətin qarşısında duran əsas məqsəd alkoqolu içkilər bazarında daha
-                                keyfiyətli məhsular istehsal edərək inkişaf etməkdir.
-                            </p>
+                        <div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3">
+                            <div class="content">
+                                <a asp-controller="About" asp-action="Index">
+                                    <h1>Haqqımızda</h1>
+                                </a>
+                                <hr>
+                                <p class="text-justify">
+                                    @Html.Raw(item.Text)
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
         </section>

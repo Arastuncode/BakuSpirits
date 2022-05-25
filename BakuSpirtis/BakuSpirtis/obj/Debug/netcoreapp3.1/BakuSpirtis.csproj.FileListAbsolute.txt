@@ -323,3 +323,7 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Create.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Edit.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Detail.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\About\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\About\Create.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\About\Detail.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\About\Edit.cshtml.g.cs
