@@ -588,13 +588,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 400px) {
-  header nav {
-    max-width: 350px;
-  }
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   main #login-area {
     max-width: 350px;
   }
@@ -615,10 +608,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   main #login-area {
     max-width: 350px;
   }
@@ -639,14 +628,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 600px) and (max-width: 769px) {
-  header nav .logo {
-    margin-right: 35%;
-    max-width: 760px;
-  }
-  header nav .logo img {
-    width: 200px !important;
-    height: 200px !important;
-  }
   main #login-area {
     max-width: 350px;
     margin-top: 12%;
@@ -672,14 +653,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 770px) and (max-width: 992px) {
-  header nav .logo {
-    margin-right: 35%;
-    margin-top: -5%;
-  }
-  header nav .logo img {
-    width: 250px !important;
-    height: 250px !important;
-  }
   main #login-area {
     max-width: 350px;
     margin-top: 10%;
@@ -701,17 +674,6 @@ input {
     outline: none !important;
     position: relative;
     right: -2%;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  header nav .logo img {
-    margin-left: 30%;
-    width: 340px !important;
-    height: 240px !important;
-  }
-  header nav ul {
-    margin-left: 3%;
   }
 }
 /*# sourceMappingURL=login.css.map */

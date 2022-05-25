@@ -1,5 +1,6 @@
 using BakuSpirtis.Data;
 using BakuSpirtis.Models;
+using BakuSpirtis.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -47,7 +48,8 @@ namespace BakuSpirtis
                 options.SignIn.RequireConfirmedPhoneNumber = true;
                 options.SignIn.RequireConfirmedEmail = true;
             });
-            //services.AddScoped<LayoutService>();
+            services.AddScoped<LayoutService>();
+            services.AddScoped<ProductService>();
             //services.AddScoped<IEmailService, EmailService>();
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
@@ -64,9 +66,9 @@ namespace BakuSpirtis
             {
                 app.UseDeveloperExceptionPage();
             }
-            //var cultureInfo = new CultureInfo("en-US");
-            //CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-            //CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+            var cultureInfo = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             app.UseSession();
             app.UseHttpsRedirection();

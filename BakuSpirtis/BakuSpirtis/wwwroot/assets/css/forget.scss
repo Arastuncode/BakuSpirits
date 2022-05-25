@@ -564,19 +564,19 @@ header {
 
 //Phone Portrait  
 @media screen and (max-width: 400px) {
-    header {
-        nav {
-            max-width: 350px;
+    // header {
+    //     nav {
+    //         max-width: 350px;
 
-            .logo {
+    //         .logo {
 
-                img {
-                    width: 150px !important;
-                    height: 150px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 150px !important;
+    //                 height: 150px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #login-area {
@@ -601,17 +601,17 @@ header {
 
 //Phone Landscape
 @media screen and (min-width: 401px) and (max-width: 600px) {
-    header {
-        nav {
-            .logo {
+    // header {
+    //     nav {
+    //         .logo {
 
-                img {
-                    width: 150px !important;
-                    height: 150px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 150px !important;
+    //                 height: 150px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #login-area {
@@ -640,18 +640,18 @@ header {
 
 // Table Portrait 
 @media screen and (min-width: 600px) and (max-width: 769px) {
-    header {
-        nav {
-            .logo {
-                margin-right: 35%; 
-                max-width:760px;
-                img {
-                    width: 200px !important;
-                    height: 200px !important;
-                }
-            }
-        }
-    }
+    // header {
+    //     nav {
+    //         .logo {
+    //             margin-right: 35%; 
+    //             max-width:760px;
+    //             img {
+    //                 width: 200px !important;
+    //                 height: 200px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #login-area {
@@ -683,19 +683,19 @@ header {
 
 //Table  Landscape
 @media screen and (min-width: 770px) and (max-width: 992px) {
-    header {
-        nav {
-            .logo {
-                margin-right: 35%;
-                margin-top: -5%;
+    // header {
+    //     nav {
+    //         .logo {
+    //             margin-right: 35%;
+    //             margin-top: -5%;
 
-                img {
-                    width: 250px !important;
-                    height: 250px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 250px !important;
+    //                 height: 250px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #login-area {
@@ -725,22 +725,22 @@ header {
 
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    header {
-        nav {
-            .logo {
-                img {
-                    margin-left: 30%;
-                    width: 340px !important;
-                    height: 240px !important;
-                }
-            }
+    // header {
+    //     nav {
+    //         .logo {
+    //             img {
+    //                 margin-left: 30%;
+    //                 width: 340px !important;
+    //                 height: 240px !important;
+    //             }
+    //         }
 
-            ul {
+    //         ul {
 
-                margin-left: 3%;
-            }
-        }
-    }
+    //             margin-left: 3%;
+    //         }
+    //     }
+    // }
  
 }
 

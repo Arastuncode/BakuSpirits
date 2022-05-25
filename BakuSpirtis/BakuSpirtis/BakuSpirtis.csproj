@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220525150021_CreateProductCategoryTable.cs" />
+    <Compile Remove="Migrations\20220525150021_CreateProductCategoryTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.25">
@@ -21,9 +26,68 @@
 
   <ItemGroup>
     <Folder Include="Exceptions\" />
-    <Folder Include="ViewComponents\" />
     <Folder Include="Services\Interfaces\" />
     <Folder Include="ViewModels\Account\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\Components\Footer\Default.cshtml" />
+    <None Include="Views\Shared\Components\Header\Default.cshtml" />
+    <None Include="wwwroot\assets\css\about.css.map" />
+    <None Include="wwwroot\assets\css\about.scss" />
+    <None Include="wwwroot\assets\css\age.css.map" />
+    <None Include="wwwroot\assets\css\age.scss" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.esm.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\css\bootstrap-5.1.3-dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets\css\company.css.map" />
+    <None Include="wwwroot\assets\css\company.scss" />
+    <None Include="wwwroot\assets\css\confirm.css.map" />
+    <None Include="wwwroot\assets\css\confirm.scss" />
+    <None Include="wwwroot\assets\css\contact.css.map" />
+    <None Include="wwwroot\assets\css\contact.scss" />
+    <None Include="wwwroot\assets\css\detail.css.map" />
+    <None Include="wwwroot\assets\css\detail.scss" />
+    <None Include="wwwroot\assets\css\forget.css.map" />
+    <None Include="wwwroot\assets\css\forget.scss" />
+    <None Include="wwwroot\assets\css\galery.css.map" />
+    <None Include="wwwroot\assets\css\galery.scss" />
+    <None Include="wwwroot\assets\css\home.css.map" />
+    <None Include="wwwroot\assets\css\home.scss" />
+    <None Include="wwwroot\assets\css\login.css.map" />
+    <None Include="wwwroot\assets\css\login.scss" />
+    <None Include="wwwroot\assets\css\partners.css.map" />
+    <None Include="wwwroot\assets\css\partners.scss" />
+    <None Include="wwwroot\assets\css\products.css.map" />
+    <None Include="wwwroot\assets\css\products.scss" />
+    <None Include="wwwroot\assets\css\register.css.map" />
+    <None Include="wwwroot\assets\css\register.scss" />
+    <None Include="wwwroot\assets\owlcarousel\owl.carousel.min.js" />
   </ItemGroup>
 
 </Project>

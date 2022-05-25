@@ -572,10 +572,6 @@ main .content .loader {
 }
 
 @media screen and (max-width: 320px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
   main .head-image .image {
     width: 375px !important;
     height: 200px;
@@ -587,10 +583,6 @@ main .content .loader {
 }
 
 @media screen and (max-width: 480px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
   main .head-image .image {
     min-width: 400px !important;
     height: 200px;
@@ -613,10 +605,6 @@ main .content .loader {
 }
 
 @media screen and (max-width: 768px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
   main .head-image .image {
     width: 375px !important;
     height: 200px;
@@ -628,10 +616,6 @@ main .content .loader {
 }
 
 @media screen and (max-width: 1024px) {
-  header nav .logo img {
-    width: 100px !important;
-    height: 100px !important;
-  }
   main .head-image .image {
     width: 375px !important;
     height: 200px;

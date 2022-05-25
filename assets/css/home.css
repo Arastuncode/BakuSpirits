@@ -502,19 +502,20 @@ header .mobile-navbar ul ul ul li {
 }
 
 header .mobile-navbar.active {
-  width: 420px;
+  min-width: 320px;
   visibility: visible;
   opacity: 1;
   right: 0;
   z-index: 9;
 }
 
-main #carousel .carousel-item {
-  height: 700px !important;
+main #slider {
+  position: relative;
 }
 
-main #carousel .carousel-item img {
-  height: 100% !important;
+main #slider .slider img {
+  min-height: 400px;
+  width: 100% !important;
 }
 
 main #about-area {
@@ -672,18 +673,9 @@ main #galery-area img {
 }
 
 @media screen and (max-width: 400px) {
-  header nav .logo {
-    margin-top: 3%;
-  }
   header nav .logo img {
     width: 150px !important;
     height: 150px !important;
-  }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
   }
   main #about-area {
     padding: -2%;
@@ -734,12 +726,6 @@ main #galery-area img {
     width: 150px !important;
     height: 150px !important;
   }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
-  }
   main #about-area .image {
     width: 24.2rem !important;
     height: 300px !important;
@@ -787,12 +773,6 @@ main #galery-area img {
     width: 340px !important;
     height: 240px !important;
   }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    height: 100% !important;
-  }
   main #about-area .image {
     width: 355px !important;
     height: 300px !important;
@@ -834,17 +814,6 @@ main #galery-area img {
   header nav .logo img {
     width: 350px !important;
     height: 250px !important;
-  }
-  main #carousel {
-    min-width: 46.2rem !important;
-    max-width: 51.5rem !important;
-  }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    width: 95% !important;
-    height: 100% !important;
   }
   main #about-area {
     position: relative;
@@ -902,17 +871,6 @@ main #galery-area img {
   }
   header nav ul {
     margin-left: 3%;
-  }
-  main #carousel {
-    min-width: 50rem !important;
-    max-width: 63rem !important;
-  }
-  main #carousel .carousel-item {
-    height: 300px !important;
-  }
-  main #carousel .carousel-item img {
-    width: 95% !important;
-    height: 100% !important;
   }
   main #about-area {
     position: relative;

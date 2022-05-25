@@ -10,9 +10,9 @@ body {
     background-size: cover;
 }
 
-$color: #f34f3f; 
+$color: #f34f3f;
 $text-hover-color: rgb(162, 29, 29);
-$font-color: #fff; 
+$font-color: #fff;
 
 header {
     nav {
@@ -37,9 +37,10 @@ header {
         ul {
             .drop {
                 a {
-                    color: $font-color !important;
+                    color: $font-color  !important;
                     font-size: 15px;
                 }
+
                 background-color: transparent !important;
             }
 
@@ -52,7 +53,7 @@ header {
                     font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: $font-color !important;
+                    color: $font-color  !important;
                     font-weight: 500;
 
                     &::after {
@@ -360,7 +361,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
- 
+
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -478,7 +479,7 @@ header {
     }
 
     .mobile-navbar.active {
-        width: 420px;
+        min-width: 320px;
         visibility: visible;
         opacity: 1;
         right: 0;
@@ -487,14 +488,15 @@ header {
 }
 
 main {
-    #carousel {
-        .carousel-item {
-            height: 700px !important;
-
+    #slider {
+        position: relative;
+        .slider {
             img {
-                height: 100% !important;
+                min-height: 400px;
+                width: 100% !important;
             }
         }
+    
     }
 
     #about-area {
@@ -541,7 +543,7 @@ main {
             width: 18rem;
             background-color: transparent;
             border: none;
-            color:$font-color;
+            color: $font-color;
 
             .card-img-top {
                 border-radius: 10px;
@@ -662,9 +664,9 @@ main {
 //Phone Portrait  
 @media screen and (max-width: 400px) {
     header {
-        nav { 
+        nav {
             .logo {
-               margin-top: 3%;
+
                 img {
                     width: 150px !important;
                     height: 150px !important;
@@ -674,15 +676,7 @@ main {
     }
 
     main {
-        #carousel {
-            .carousel-item {
-                height: 300px !important;
-
-                img {
-                    height: 100% !important;
-                }
-            }
-        }
+        
 
         #about-area {
             padding: -2%;
@@ -760,15 +754,7 @@ main {
     }
 
     main {
-        #carousel {
-            .carousel-item {
-                height: 300px !important;
-
-                img {
-                    height: 100% !important;
-                }
-            }
-        }
+        
 
         #about-area {
             .image {
@@ -846,15 +832,7 @@ main {
     }
 
     main {
-        #carousel {
-            .carousel-item {
-                height: 300px !important;
-
-                img {
-                    height: 100% !important;
-                }
-            }
-        }
+        
 
         #about-area {
             .image {
@@ -921,19 +899,7 @@ main {
     }
 
     main {
-        #carousel {
-            min-width: 46.2rem !important;
-            max-width: 51.5rem !important;
-
-            .carousel-item {
-                height: 300px !important;
-
-                img {
-                    width: 95% !important;
-                    height: 100% !important;
-                }
-            }
-        }
+         
 
         #about-area {
             position: relative;
@@ -1018,19 +984,7 @@ main {
     }
 
     main {
-        #carousel {
-            min-width: 50rem !important;
-            max-width: 63rem !important;
-
-            .carousel-item {
-                height: 300px !important;
-
-                img {
-                    width: 95% !important;
-                    height: 100% !important;
-                }
-            }
-        }
+         
 
         #about-area {
             position: relative;

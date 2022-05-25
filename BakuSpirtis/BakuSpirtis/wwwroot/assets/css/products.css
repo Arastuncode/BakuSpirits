@@ -695,15 +695,6 @@ main .pagination ul li a {
 }
 
 @media screen and (max-width: 400px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 350px;
-    height: 150px;
-  }
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   main #shop-area .card {
     width: 22em !important;
   }
@@ -726,18 +717,6 @@ main .pagination ul li a {
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
-  header nav {
-    margin-bottom: 5% !important;
-    width: 410px;
-    height: 120px;
-  }
-  header nav .logo img {
-    position: relative;
-    left: -10%;
-    top: -5%;
-    width: 200px !important;
-    height: 200px !important;
-  }
   main #shop-area .card {
     width: 24em !important;
   }
@@ -760,18 +739,6 @@ main .pagination ul li a {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  header nav {
-    margin-bottom: 5% !important;
-    width: 410px;
-    height: 120px;
-  }
-  header nav .logo img {
-    position: relative;
-    left: -10%;
-    top: -5%;
-    width: 200px !important;
-    height: 200px !important;
-  }
   main #shop-area .card {
     width: 24em !important;
   }
@@ -794,18 +761,6 @@ main .pagination ul li a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  header nav {
-    width: 750px;
-    height: 200px;
-  }
-  header nav .logo {
-    margin-right: 35%;
-    margin-top: -5%;
-  }
-  header nav .logo img {
-    width: 250px !important;
-    height: 250px !important;
-  }
   main .search-sorting {
     visibility: hidden;
   }
@@ -834,18 +789,6 @@ main .pagination ul li a {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-  header nav .logo {
-    position: relative;
-  }
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
-  header nav ul {
-    position: absolute;
-    top: -5%;
-    left: 12%;
-  }
   main .search-sorting .search-box {
     width: 250px;
   }

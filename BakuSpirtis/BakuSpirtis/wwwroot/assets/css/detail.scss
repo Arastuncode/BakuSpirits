@@ -585,8 +585,6 @@ main {
     }
 }
 
-
-
 .footer {
     padding: 30px;
     color: white;
@@ -613,18 +611,18 @@ main {
 
 //Phone Portrait  
 @media screen and(min-width: 320px) and (max-width: 470px) {
-    header {
-        nav {
-            height:150px;
-            .logo {
+    // header {
+    //     nav {
+    //         height:150px;
+    //         .logo {
 
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 100px !important;
+    //                 height: 100px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
 
@@ -670,18 +668,18 @@ main {
 
 //Phone Landscape
 @media screen and (max-width: 480px) {
-    header {
-        nav {
-            height:150px;
-            .logo {
+    // header {
+    //     nav {
+    //         height:150px;
+    //         .logo {
 
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 100px !important;
+    //                 height: 100px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #product-area {
@@ -698,18 +696,18 @@ main {
 
 // Table Portrait 
 @media screen and(max-width: 768px) {
-    header {
-        nav {
-            height:150px;
-            .logo {
+    // header {
+    //     nav {
+    //         height:150px;
+    //         .logo {
 
-                img {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-            }
-        }
-    }
+    //             img {
+    //                 width: 100px !important;
+    //                 height: 100px !important;
+    //             }
+    //         }
+    //     }
+    // }
 
     main {
         #product-are {
@@ -727,22 +725,22 @@ main {
 }
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    header {
-        nav {
-            .logo {
-                img {
-                    margin-left: 30%;
-                    width: 340px !important;
-                    height: 240px !important;
-                }
-            }
+    // header {
+    //     nav {
+    //         .logo {
+    //             img {
+    //                 margin-left: 30%;
+    //                 width: 340px !important;
+    //                 height: 240px !important;
+    //             }
+    //         }
 
-            ul {
+    //         ul {
 
-                margin-left: 3%;
-            }
-        }
-    }
+    //             margin-left: 3%;
+    //         }
+    //     }
+    // }
 
     main {
         #carousel {

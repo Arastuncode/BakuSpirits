@@ -45,7 +45,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                 ModelState.AddModelError("Photo", "File type is wrong");
                 return View();
             }
-            if (!aboutVM.Photo.CheckFileSize(2500))
+            if (!aboutVM.Photo.CheckFileSize(50000))
             {
                 ModelState.AddModelError("Photo", "Image size is wrong");
                 return View();
@@ -108,7 +108,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                 ModelState.AddModelError("Photo", "Image type is wrong");
                 return View(dbAbout);
             }
-            if (!aboutVM.Photo.CheckFileSize(2500))
+            if (!aboutVM.Photo.CheckFileSize(50000))
             {
                 ModelState.AddModelError("Photo", "Image size is wrong");
                 return View(aboutVM);

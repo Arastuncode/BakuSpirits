@@ -687,17 +687,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (max-width: 400px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 350px;
-  }
-  header nav .logo img {
-    position: relative;
-    left: 14%;
-    bottom: 35%;
-    width: 250px !important;
-    height: 250px !important;
-  }
   #about {
     margin-top: 10%;
   }
@@ -710,17 +699,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 400px;
-  }
-  header nav .logo img {
-    position: relative;
-    left: 14%;
-    bottom: 32%;
-    width: 250px !important;
-    height: 250px !important;
-  }
   #about {
     margin-top: 15%;
   }
@@ -733,17 +711,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 790px;
-  }
-  header nav .logo img {
-    position: relative;
-    right: 10%;
-    bottom: 35%;
-    width: 300px !important;
-    height: 300px !important;
-  }
   #about {
     margin-top: 10%;
   }
@@ -764,17 +731,6 @@ header .mobile-navbar.active {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  header nav {
-    padding-right: 25% !important;
-    width: 790px;
-  }
-  header nav .logo img {
-    position: relative;
-    right: 10%;
-    bottom: 35%;
-    width: 300px !important;
-    height: 300px !important;
-  }
   #about {
     margin-top: 10%;
   }
@@ -791,21 +747,6 @@ header .mobile-navbar.active {
     position: relative;
     left: -20%;
     width: 90% !important;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  header nav .logo {
-    position: relative;
-  }
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
-  header nav ul {
-    position: absolute;
-    top: -5%;
-    left: 12%;
   }
 }
 /*# sourceMappingURL=company.css.map */

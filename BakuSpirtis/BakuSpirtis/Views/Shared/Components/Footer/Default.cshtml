@@ -1,0 +1,82 @@
+﻿@model Dictionary<string, string>
+<!-- Footer starts -->
+<footer>
+    <div class="footer mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg col-sm col-xs col-md ">
+                    <h6 class="text-uppercase fw-bold mb-3 ms-3">
+                        Əlaqə
+                    </h6>
+                    <ul class="list-group ">
+                        <li class="list-group">
+                           
+                            <a href=""><i class="fal fa-envelope  fa-xl"></i> @Model["Email"]</a>
+                             
+                        </li>
+                        <li class="list-group mt-3">
+                            <p>
+                                <i class="fal fa-phone ms-2  fa-xl"></i> @Model["Phone"]
+                            </p>
+                        </li>
+                        <li class="list-group">
+                            <a href="">
+                                <i class="fal fa-map-marker-alt  fa-xl"></i> @Model["Address"]
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg col-sm col-xs col-md">
+                    <h6 class="text-uppercase fw-bold mb-3 ms-3">
+                        Səhifələr
+                    </h6>
+                    <ul class="list-group">
+                        <li class="list-group">
+                            <a asp-controller="Product" asp-action="Index">
+                                <i class="fal fa-angle-right fa-xl"></i> Məhsullar
+                            </a>
+                        </li>
+                        <li class="list-group">
+                            <a asp-controller="Partners" asp-action="Index">
+                                <i class="fal fa-angle-right fa-xl"></i> Əməkdaşlıq
+                            </a>
+                        </li>
+                        <li class="list-group">
+                            <a asp-controller="About" asp-action="Index">
+                                <i class="fal fa-angle-right fa-xl"></i> Haqqımızda
+                            </a>
+                        </li>
+                        <li class="list-group">
+                            <a asp-controller="Conact" asp-action="Index">
+                                <i class="fal fa-angle-right fa-xl"></i> Əlaqə
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg col-sm col-xs col-md">
+                    <h6 class="text-uppercase fw-bold mb-3 ms-3">
+                        SOSİAL MEDİYA
+                    </h6>
+                    <ul class="list-group">
+                        <li class="list-group">
+                            <a href="">
+                                <img src="~/assets/icons/instagram.png" alt=""> Instagram
+                            </a>
+                        </li>
+                        <li class="list-group">
+                            <a href="">
+                                <img src="~/assets/icons/facebook.png" alt=""> Facebook
+                            </a>
+                        </li>
+                        <li class="list-group">
+                            <a href="">
+                                <img src="~/assets/icons/whatsapp.png" alt=""> Whatsapp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->

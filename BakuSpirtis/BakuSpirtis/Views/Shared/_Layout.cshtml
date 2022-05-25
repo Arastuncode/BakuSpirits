@@ -11,7 +11,10 @@
     <style>
         @@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/css/home.css">
+    <link rel="stylesheet" href="~/assets/css/home.css">
     <link rel="stylesheet" href="~/assets/css/about.css">
     <link rel="stylesheet" href="~/assets/css/products.css">
     <link rel="stylesheet" href="~/assets/css/partners.css">
@@ -24,204 +27,11 @@
 
 <body>
     <!-- header start -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg  navbar-light py-3 py-lg-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation" id="mobile-navbar-show">
-                            <span class="navbar-toggler-icon" style="font-size: 12px;"></span>
-                        </button>
-                        <a class="navbar-brand logo" asp-controller="Home" asp-action="Index">
-                            <img src="~/assets/icons/bakuspirit1.png" alt="">
-                        </a>
-                        <div class="collapse navbar-collapse d-none d-lg-block">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="Index">Ana səhifə</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Products" asp-action="Index">Məhsullar</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" asp-controller="About" asp-action="Index">Haqqımızda</a>
-                                    <ul class="list-unstyled drop py-3">
-                                        <li><a asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
-                                        <li><a asp-controller="Production" asp-action="Index">İstehsalat otağı</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Galery" asp-action="Index">Galereya</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="login-trigger" href="#" data-target="#login"
-                                       data-toggle="modal">Daxil ol</a>
-                                    <div id="login" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    <button data-dismiss="modal" class="close">&times;</button>
-                                                    <div class="container" id="container">
-                                                        <div class="form-container sign-up-container">
-                                                            <section id="sign-up">
-                                                                <form action="#">
-                                                                    <h1>Qeydiyyat</h1>
-                                                                    <input type="text" placeholder="Ad" />
-                                                                    <input type="email" placeholder="Email" />
-                                                                    <input type="password" placeholder="Parol" />
-                                                                    <button>Qeydiyyat</button>
-                                                                </form>
-                                                            </section>
-                                                        </div>
-                                                        <div class="form-container sign-in-container">
-                                                            <section id="sign-in">
-                                                                <form action="#">
-                                                                    <h1>Daxil ol</h1>
-                                                                    <input type="email" placeholder="Email" />
-                                                                    <input type="password" placeholder="Parol" />
-                                                                    <a href="#">Parolumu unutdum</a>
-                                                                    <button>Daxil ol</button>
-                                                                </form>
-                                                            </section>
-                                                        </div>
-                                                        <div class="overlay-container">
-                                                            <div class="overlay">
-                                                                <div class="overlay-panel overlay-left">
-                                                                    <h4>Zəhmət olmasa qeydiyyatınızı tamamlayın!!</h4>
-                                                                    <button class="ghost" id="signIn">Daxil ol</button>
-                                                                </div>
-                                                                <div class="overlay-panel overlay-right">
-                                                                    <h4>Zəhmət olmasa qeydiyyatınızı tamamlayın!</h4>
-                                                                    <button class="ghost" id="signUp">Qeydiyyat</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Account" asp-action="Logout">Çıxış</a>
-                                </li>
-                                <!-- <li class="nav-item my-auto shop-cart">
-                                    <a href="basket.html">
-                                        <i class="fas fa-shopping-bag"></i>
-                                        <sup class="rounded-circle">0</sup>
-                                        <ul class="list-unstyled py-3">
-                                            <li class="">No products in the cart.</li>
-                                        </ul>
-                                    </a>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="mobile-navbar position-absolute shadow-lg h-100 p-5">
-                <i class="fas fa-times fa-lg" id="mobile-navbar-close"></i>
-                <ul class="list-unstyled">
-                    <li><a asp-controller="Home" asp-action="Index">Home </a></li>
-                    <li><a asp-controller="Products" asp-action="Index">Məhsullarımız</a></li>
-                    <li><a asp-controller="About" asp-action="Index">Haqqımızda</a></li>
-                    <li><a asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
-                    <li><a asp-controller="Galery" asp-action="Index">Galereya</a></li>
-                    <li><a asp-controller="Account" asp-action="Login">Daxil ol</a></li>
-                    <li><a asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
-                    <li><a asp-controller="Account" asp-action="Logout">Çıxış</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    @await Component.InvokeAsync("Header")
     <!-- header end -->
     @RenderBody()
     <!-- Footer starts -->
-    <footer>
-        <div class="footer mt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg col-sm col-xs col-md ">
-                        <h6 class="text-uppercase fw-bold mb-3 ms-3">
-                            Əlaqə
-                        </h6>
-                        <ul class="list-group ">
-                            <li class="list-group">
-                                <a href="">
-                                    <i class="fal fa-envelope  fa-xl"></i> office@bakuspirits.az
-                                </a>
-                            </li>
-                            <li class="list-group mt-3">
-                                <p>
-                                    <i class="fal fa-phone ms-2  fa-xl"></i> +994 012 452 08 54
-                                </p>
-                            </li>
-                            <li class="list-group">
-                                <a href="">
-                                    <i class="fal fa-map-marker-alt  fa-xl"></i> Bülbülə qəsəbəsi, İ.Məmmədov küçəsi
-                                    119 N
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg col-sm col-xs col-md">
-                        <h6 class="text-uppercase fw-bold mb-3 ms-3">
-                            Səhifələr
-                        </h6>
-                        <ul class="list-group">
-                            <li class="list-group">
-                                <a asp-controller="Products" asp-action="Index">
-                                    <i class="fal fa-angle-right fa-xl"></i> Məhsullar
-                                </a>
-                            </li>
-                            <li class="list-group">
-                                <a asp-controller="Partners" asp-action="Index">
-                                    <i class="fal fa-angle-right fa-xl"></i> Əməkdaşlıq
-                                </a>
-                            </li>
-                            <li class="list-group">
-                                <a asp-controller="About" asp-action="Index">
-                                    <i class="fal fa-angle-right fa-xl"></i> Haqqımızda
-                                </a>
-                            </li>
-                            <li class="list-group">
-                                <a asp-controller="Conact" asp-action="Index">
-                                    <i class="fal fa-angle-right fa-xl"></i> Əlaqə
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg col-sm col-xs col-md">
-                        <h6 class="text-uppercase fw-bold mb-3 ms-3">
-                            SOSİAL MEDİYA
-                        </h6>
-                        <ul class="list-group">
-                            <li class="list-group">
-                                <a href="">
-                                    <img src="~/assets/icons/instagram.png" alt=""> Instagram
-                                </a>
-                            </li>
-                            <li class="list-group">
-                                <a href="">
-                                    <img src="~/assets/icons/facebook.png" alt=""> Facebook
-                                </a>
-                            </li>
-                            <li class="list-group">
-                                <a href="">
-                                    <img src="~/assets/icons/whatsapp.png" alt=""> Whatsapp
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @await Component.InvokeAsync("Footer")
     <!-- Footer end -->
     <script src="https://kit.fontawesome.com/edff80f9e7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -239,12 +49,16 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+    <script src="~/assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="~/assets/js/mobile.js"></script>
     <script src="~/assets/js/modal.js"></script>
     <script src="~/assets/js/galery.js"></script>
     <script src="~/assets/js/production.js"></script>
     <script src="~/assets/js/company.js"></script>
     <script src="~/assets/js/detail.js"></script>
+    <script src="~/assets/js/home.js"></script>
 </body>
 
 </html>
