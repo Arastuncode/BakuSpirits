@@ -21,5 +21,6 @@ namespace BakuSpirtis.Data
         public DbSet<Settings> Settings { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Advertisment> Advertisments { get; set; }
+        public DbSet<Galery> Galeries { get; set; }
     }
 }

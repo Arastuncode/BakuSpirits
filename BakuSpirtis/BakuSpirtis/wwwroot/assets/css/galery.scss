@@ -10,9 +10,9 @@ body {
     background-size: cover;
 }
 
-$color: #f34f3f; 
+$color: #f34f3f;
 $text-hover-color: rgb(162, 29, 29);
-$font-color: #fff; 
+$font-color: #fff;
 
 header {
     nav {
@@ -37,9 +37,10 @@ header {
         ul {
             .drop {
                 a {
-                    color: $font-color !important;
+                    color: $font-color  !important;
                     font-size: 15px;
                 }
+
                 background-color: transparent !important;
             }
 
@@ -52,7 +53,7 @@ header {
                     font-size: 17px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: $font-color !important;
+                    color: $font-color  !important;
                     font-weight: 500;
 
                     &::after {
@@ -360,7 +361,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
- 
+
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -490,8 +491,9 @@ header {
 main {
     #galery-area {
         .content {
-             
-        display: none;
+
+            display: none;
+
             img {
                 width: 20rem;
             }
@@ -512,10 +514,12 @@ main {
         border-radius: 8px;
         outline: none;
         width: 200px;
+
         &:hover {
-            color: $text-hover-color !important;
+            color: $text-hover-color  !important;
 
         }
+
         &::before {
             content: " ";
             position: absolute;
@@ -528,6 +532,7 @@ main {
             z-index: -1;
             transition: width 1s;
         }
+
         &:hover::before {
             width: 150%;
         }
@@ -579,7 +584,7 @@ main {
     //     }
     // }
 
-     
+
 
     footer {
         text-align: center;
@@ -600,7 +605,7 @@ main {
     //     }
     // }
 
-    
+
 
     footer {
         text-align: center;
@@ -626,7 +631,7 @@ main {
     //     }
     // }
 
-     
+
 
     footer {
         text-align: center;
@@ -649,7 +654,7 @@ main {
     //     }
     // }
 
-     
+
     footer {
         text-align: center;
     }
@@ -674,7 +679,7 @@ main {
     //     }
     // }
 
-   
+
 
     footer {
         text-align: center;

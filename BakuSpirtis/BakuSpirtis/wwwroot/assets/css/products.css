@@ -583,7 +583,11 @@ main .search-sorting .search-box i {
   color: black;
 }
 
-main #shop-area .card {
+main #product-area .content {
+  display: none;
+}
+
+main #product-area .card {
   margin-top: 10px;
   width: 18rem;
   background-color: transparent;
@@ -591,7 +595,7 @@ main #shop-area .card {
   color: white;
 }
 
-main #shop-area .card .card-img-top {
+main #product-area .card .card-img-top {
   border-radius: 10px;
   -webkit-transition: -webkit-transform .75s;
   transition: -webkit-transform .75s;
@@ -599,21 +603,21 @@ main #shop-area .card .card-img-top {
   transition: transform .75s, -webkit-transform .75s;
 }
 
-main #shop-area .card:hover .card-img-top {
+main #product-area .card:hover .card-img-top {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 20px 20px 20px #125b49;
           box-shadow: 20px 20px 20px #125b49;
 }
 
-main #shop-area .card .card-body .card-title {
+main #product-area .card .card-body .card-title {
   text-decoration: none;
   color: white;
   font-size: 24px;
   font-weight: bolder;
 }
 
-main #shop-area .card .card-body .btn {
+main #product-area .card .card-body .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
@@ -629,11 +633,11 @@ main #shop-area .card .card-body .btn {
   outline: none;
 }
 
-main #shop-area .card .card-body .btn:hover {
+main #product-area .card .card-body .btn:hover {
   color: #fff !important;
 }
 
-main #shop-area .card .card-body .btn::before {
+main #product-area .card .card-body .btn::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -648,31 +652,56 @@ main #shop-area .card .card-body .btn::before {
   transition: width 1s;
 }
 
-main #shop-area .card .card-body .btn:hover::before {
+main #product-area .card .card-body .btn:hover::before {
   width: 150%;
 }
 
-main #shop-area .card .card-body .btn p {
+main #product-area .card .card-body .btn p {
   font-weight: 16px !important;
 }
 
-main .pagination {
-  background-color: transparent;
-}
-
-main .pagination ul {
-  display: inline;
-}
-
-main .pagination ul li {
-  padding: 10px;
-  display: inline;
-  list-style: none;
-}
-
-main .pagination ul li a {
+main #product-area .btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: #fff;
-  text-decoration: none;
+  outline: 2px solid #fff;
+  padding: 10px 40px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+}
+
+main #product-area .btn:hover {
+  color: #a21d1d !important;
+}
+
+main #product-area .btn::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #fff !important;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+main #product-area .btn:hover::before {
+  width: 150%;
+}
+
+main #product-area .btn p {
+  font-weight: 16px !important;
 }
 
 .footer {

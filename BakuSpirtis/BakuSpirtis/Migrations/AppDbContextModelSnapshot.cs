@@ -146,6 +146,24 @@ namespace BakuSpirtis.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("BakuSpirtis.Models.Galery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Galeries");
+                });
+
             modelBuilder.Entity("BakuSpirtis.Models.Product", b =>
                 {
                     b.Property<int>("Id")

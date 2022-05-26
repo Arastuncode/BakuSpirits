@@ -1,0 +1,13 @@
+﻿@model List<Galery>
+@{
+    ViewData["Title"] = "Default";
+    Layout = null;
+}
+
+
+@foreach (var item in Model)
+{
+
+    <div class="col mt-3 image"><img src="./assets/img/@item.Image" class="rounded" alt="..."></div>
+ 
+}

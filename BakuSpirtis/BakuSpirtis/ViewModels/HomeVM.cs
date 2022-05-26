@@ -12,5 +12,6 @@ namespace BakuSpirtis.ViewModels
         public List<About> Abouts { get; set; }
         public IEnumerable<Product> Products { get; set; }
         public List<Advertisment> Advertisments { get; set; }
+        public List<Galery> Galeries { get; set; }
     }
 }
