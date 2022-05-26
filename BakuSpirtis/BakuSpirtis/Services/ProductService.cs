@@ -16,23 +16,23 @@ namespace BakuSpirtis.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetProducts(int take)
-        {
-            try
-            {
-                IEnumerable<Product> products = await _context.Products.Where(p => p.IsDeleted == false)
-                      .Include(m => m.Category)
-                      .OrderByDescending(m => m.Id)
-                      .Take(take)
-                      .ToListAsync();
-                return products;
-            }
-            catch (Exception ex)
-            {
+        //public async Task<IEnumerable<Product>> GetProducts(int take)
+        //{
+        //    try
+        //    {
+        //        IEnumerable<Product> products = await _context.Products.Where(p => p.IsDeleted == false)
+        //              .Include(m => m.Category)
+        //              .OrderByDescending(m => m.Id)
+        //              .Take(take)
+        //              .ToListAsync();
+        //        return products;
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                throw new Exception(ex.Message);
-            }
+        //        throw new Exception(ex.Message);
+        //    }
 
-        }
+        //}
     }
 }

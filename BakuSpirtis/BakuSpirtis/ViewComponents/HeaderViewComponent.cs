@@ -15,11 +15,11 @@ namespace BakuSpirtis.ViewComponents
         {
             _layoutService = layoutService;
         }
-        public async Task<IViewComponentResult> InvokeAsync()
-        {
-            Dictionary<string, string> settings = _layoutService.GetSettings();
-            return (await Task.FromResult(View(settings)));
-        }
+        //public async Task<IViewComponentResult> InvokeAsync()
+        //{
+        //    Dictionary<string, string> settings = _layoutService.GetSettings();
+        //    return (await Task.FromResult(View(settings)));
+        //}
 
     }
 }

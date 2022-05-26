@@ -16,15 +16,9 @@ namespace BakuSpirtis.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            ViewBag.ProductCount = _context.Products.Where(p => p.IsDeleted == false).Count();
-            List<Product> products = await _context.Products.Where(p => p.IsDeleted == false)
-               .Include(m => m.Category)
-               .OrderByDescending(m => m.Id)
-               .ToListAsync();
-
-            return View(products);
+            return View( );
         }
     }
 }

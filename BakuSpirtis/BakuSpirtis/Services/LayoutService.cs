@@ -14,10 +14,10 @@ namespace BakuSpirtis.Services
             _context = context;
         }
 
-        public Dictionary<string, string> GetSettings()
-        {
-            Dictionary<string, string> settings = _context.Settings.AsEnumerable().ToDictionary(m => m.Key, m => m.Value);
-            return settings;
-        }
+        //public Dictionary<string, string> GetSettings()
+        //{
+        //    Dictionary<string, string> settings = _context.Settings.AsEnumerable().ToDictionary(m => m.Key, m => m.Value);
+        //    return settings;
+        //}
     }
 }
