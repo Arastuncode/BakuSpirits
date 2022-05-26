@@ -1,0 +1,24 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Name" id="editorid"></textarea>
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <button type="submit" class="btn btn-primary me-2">Save</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
+@section Scripts{
+    <partial name="_ValidationPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editorid");</script>
+}
+
+

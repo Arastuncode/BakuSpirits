@@ -28,13 +28,27 @@ using BakuSpirtis.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
+using BakuSpirtis.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
 using BakuSpirtis.ViewModels.Admin;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
+using BakuSpirtis.Utilities.Pagination;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"586e38ee68dbc4d8a84dc74409b2e1172fe0e090", @"/Areas/AdminArea/Views/About/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dd736e4f923dace353a437a2da853051a7423449", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3228e78e43b96a8ea79b3027aedfa0b040557846", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
     public class Areas_AdminArea_Views_About_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<About>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width:450px; height:450px;"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -74,7 +88,7 @@ using BakuSpirtis.ViewModels.Admin;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<div class=\"container mt-5\" style=\"text-align:center\">\r\n    <h4>About</h4>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "586e38ee68dbc4d8a84dc74409b2e1172fe0e0904929", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "586e38ee68dbc4d8a84dc74409b2e1172fe0e0905365", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -106,7 +120,7 @@ AddHtmlAttributeValue("", 161, Model.Image, 161, 12, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n    <div>\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "586e38ee68dbc4d8a84dc74409b2e1172fe0e0906795", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "586e38ee68dbc4d8a84dc74409b2e1172fe0e0907231", async() => {
                 WriteLiteral("Go back");
             }
             );

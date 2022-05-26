@@ -26,19 +26,21 @@ namespace BakuSpirtis.Controllers
         }
         public async Task<IActionResult> Index()
         {
-           // Dictionary<string, string> settings = _layoutService.GetSettings();
-            //int take = int.Parse(settings["HomeTake"]);
+            
             List<Slider> sliders = await _context.Sliders.ToListAsync();
             List<About> abouts = await _context.Abouts.ToListAsync();
-            //List<Category> categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
-            //IEnumerable<Product> products = await _productService.GetProducts(take);
+            List<Advertisment> advertisments = await _context.Advertisments.ToListAsync();
+            List<Product> products = await _context.Products.Where(p => p.IsDeleted == false)
+                .Include(m => m.ProductImages)
+                .OrderByDescending(m => m.Id)
+                .Take(4)
+                .ToListAsync();
             HomeVM homeVM = new HomeVM
             {
                 Sliders = sliders,
                 Abouts=abouts,
-                //Categories = categories,
-                //Products = products,
-
+                Products = products,
+                Advertisments=advertisments,
             };
 
             return View(homeVM);

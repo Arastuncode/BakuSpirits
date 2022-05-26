@@ -10,7 +10,7 @@ namespace BakuSpirtis.ViewModels
     {
         public List<Slider> Sliders { get; set; }
         public List<About> Abouts { get; set; }
-        //public List<Category> Categories { get; set; }
-        //public IEnumerable<Product> Products { get; set; }
+        public IEnumerable<Product> Products { get; set; }
+        public List<Advertisment> Advertisments { get; set; }
     }
 }

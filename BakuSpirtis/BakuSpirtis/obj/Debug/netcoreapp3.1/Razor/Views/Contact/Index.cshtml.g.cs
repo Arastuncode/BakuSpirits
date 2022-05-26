@@ -21,27 +21,34 @@ using BakuSpirtis;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Views\_ViewImports.cshtml"
-using BakuSpirtis.Models;
+using BakuSpirtis.Utilities.Pagination;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Views\_ViewImports.cshtml"
-using BakuSpirtis.ViewModels;
+using BakuSpirtis.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 4 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Views\_ViewImports.cshtml"
+using BakuSpirtis.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Views\_ViewImports.cshtml"
 using BakuSpirtis.ViewModels.Admin;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ee8754bf536a650070ea1dfd2e24e2435b13bd03", @"/Views/Contact/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a24cca63d298e0a06d377f8e1daeb4da9717db38", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13019dcf796c06b6a22c6987a108842c3600c39b", @"/Views/_ViewImports.cshtml")]
     public class Views_Contact_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -102,7 +109,7 @@ using BakuSpirtis.ViewModels.Admin;
                         </ul>
  ");
             WriteLiteral("                   </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                    <div class=\"message-area\">\r\n                        <h1>Əlaqə saxlayın</h1>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee8754bf536a650070ea1dfd2e24e2435b13bd035188", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee8754bf536a650070ea1dfd2e24e2435b13bd035395", async() => {
                 WriteLiteral(@"
                             <div class=""mb-3"">
                                 <label for=""exampleInputEmail1"" class=""form-label""></label>

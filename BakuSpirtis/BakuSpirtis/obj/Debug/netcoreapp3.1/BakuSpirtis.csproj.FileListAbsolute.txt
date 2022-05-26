@@ -308,7 +308,6 @@ C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpir
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.dll
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.pdb
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.genruntimeconfig.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Partners\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Production\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Galery\Index.cshtml.g.cs
@@ -330,3 +329,11 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Edit.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Product\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Product\Create.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Product\Edit.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Advertisement\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Advertisement\Create.cshtml.g.cs

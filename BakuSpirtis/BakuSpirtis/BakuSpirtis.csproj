@@ -12,11 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20220525150021_CreateProductCategoryTable.cs" />
-    <Compile Remove="Migrations\20220525150021_CreateProductCategoryTable.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.25">
@@ -39,6 +34,8 @@
   <ItemGroup>
     <None Include="Views\Shared\Components\Footer\Default.cshtml" />
     <None Include="Views\Shared\Components\Header\Default.cshtml" />
+    <None Include="wwwroot\admin\js\sb-admin-2.js" />
+    <None Include="wwwroot\admin\js\sb-admin-2.min.js" />
     <None Include="wwwroot\assets\css\about.css.map" />
     <None Include="wwwroot\assets\css\about.scss" />
     <None Include="wwwroot\assets\css\age.css.map" />

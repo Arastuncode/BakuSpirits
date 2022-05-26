@@ -1,0 +1,32 @@
+﻿@model ProductEditVM
+@{
+    ViewData["Title"] = "Edit"; 
+}
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Name">Name: </label>
+            <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Name" id="editorid"></textarea>
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CategoryId">Categories: </label>
+            <select class="form-control" style="width:300px" asp-for="CategoryId" asp-items="@ViewBag.categories"></select>
+            <span class="text-danger" asp-validation-for="CategoryId"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Photos">Images:</label>
+            <input class="form-control" style="width:300px" asp-for="Photos">
+            <span class="text-danger" asp-validation-for="Photos"></span>
+        </div>
+        <button type="submit" class="btn btn-primary me-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
+@section Scripts{
+    <partial name="_ValidationPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editorid");</script>
+}
+
+

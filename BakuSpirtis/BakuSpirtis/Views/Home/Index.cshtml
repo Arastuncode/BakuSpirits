@@ -48,70 +48,39 @@
         <section id="products-area">
             <div class="row mt-3">
                 <h2>Məhsullarımız</h2>
-                <div class="col-sm">
-                    <div class="card">
-                        <a asp-controller="Detail" asp-action="Index">
-                            <img class="card-img-top" src="~/assets/img/вакцина-2.JPG"
-                                 alt="вакцина">
-                        </a>
-                        <div class="card-body">
-                            <a href="detail.html" class="card-title">Vaksin</a>
-                            <!-- <p class="card-text">11.00</p>
-                            <button  class="btn btn-primary">Add to card</button> -->
+                @foreach (var item in Model.Products)
+                {
+                    <div class="col-sm">
+                        <div class="card">
+                            <a asp-controller="Detail" asp-action="Index">
+                                <img class="card-img-top" src="~/assets/img/@item.ProductImages.FirstOrDefault().Image"
+                                     alt="вакцина">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail.html" class="card-title">@Html.Raw(item.Name)</a>
+                                <!-- <p class="card-text">11.00</p>
+                    <button  class="btn btn-primary">Add to card</button> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <a href="detail.html">
-                            <img class="card-img-top" src="~/assets/img/spirt-2.JPG"
-                                 alt="spirt">
-                        </a>
-                        <div class="card-body">
-                            <a href="detail.html" class="card-title">Spirt</a>
-                            <!-- <p class="card-text">11.00</p>
-                            <button  class="btn btn-primary">Add to card</button> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <a href="detail.html">
-                            <img class="card-img-top" src="~/assets/img/absolute-purple-2.JPG"
-                                 alt="absolute-purple">
-                        </a>
-                        <div class="card-body">
-                            <a href="detail.html" class="card-title">Absolute Vodka</a>
-                            <!-- <p class="card-text">11.00</p>
-                            <button  class="btn btn-primary">Add to card</button> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <a href="detail.html">
-                            <img class="card-img-top" src="~/assets/img/absolute-organic-1.JPG"
-                                 alt="absolute-purple">
-                        </a>
-                        <div class="card-body">
-                            <a href="detail.html" class="card-title">Absolute Organic</a>
-                            <!-- <p class="card-text">11.00</p>
-                            <button class="btn btn-primary">Add to card</button> -->
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </section>
         <!-- products-area end -->
         <!-- Video starts -->
         <div class="video">
-            <div class="row">
-                <div class="col  offset-md-2">
-                    <video class="img-fluid rounded-sm " autoplay loop muted>
-                        <source src="~/assets/video/VID-20220220-WA0008.mp4" type="video/mp4" class="rounded-sm" />
-                    </video>
+
+            @foreach (var item in Model.Advertisments)
+            {
+                <div class="row">
+                    <div class="col  offset-md-2">
+                        <video class="img-fluid rounded-sm " autoplay loop muted>
+                            <source src="~/assets/video/@item.Video" type="video/mp4" class="rounded-sm" />
+                        </video>
+                    </div>
                 </div>
-            </div>
+            }
+
         </div>
         <!-- Video end -->
         <section id="galery-area">

@@ -28,13 +28,27 @@ using BakuSpirtis.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
+using BakuSpirtis.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
 using BakuSpirtis.ViewModels.Admin;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\Areas\AdminArea\Views\_ViewImports.cshtml"
+using BakuSpirtis.Utilities.Pagination;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"10340054a23e937487769ac4e8028f2dc9cec710", @"/Areas/AdminArea/Views/About/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dd736e4f923dace353a437a2da853051a7423449", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3228e78e43b96a8ea79b3027aedfa0b040557846", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
     public class Areas_AdminArea_Views_About_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<About>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-success"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -85,7 +99,7 @@ using BakuSpirtis.ViewModels.Admin;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"header d-flex justify-content-between mt-3\">\r\n            <h3>Blog</h3>\r\n            <div>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec7107896", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec7108332", async() => {
                 WriteLiteral("Create");
             }
             );
@@ -143,7 +157,7 @@ using BakuSpirtis.ViewModels.Admin;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                            </td>\r\n                            <td>\r\n                                <div class=\"image\">\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "10340054a23e937487769ac4e8028f2dc9cec71010795", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "10340054a23e937487769ac4e8028f2dc9cec71011231", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -175,7 +189,7 @@ AddHtmlAttributeValue("", 1339, item.Image, 1339, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n                            </td>\r\n                            <td>\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71012964", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71013400", async() => {
                 WriteLiteral("\r\n                                    Detail\r\n                                ");
             }
             );
@@ -207,7 +221,7 @@ AddHtmlAttributeValue("", 1339, item.Image, 1339, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71015368", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71015804", async() => {
                 WriteLiteral("\r\n                                    Edit\r\n                                ");
             }
             );
@@ -239,7 +253,7 @@ AddHtmlAttributeValue("", 1339, item.Image, 1339, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71017768", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10340054a23e937487769ac4e8028f2dc9cec71018204", async() => {
                 WriteLiteral("\r\n                                    <button class=\"btn btn-danger\" type=\"submit\">\r\n                                        Delete\r\n                                    </button>\r\n                                ");
             }
             );

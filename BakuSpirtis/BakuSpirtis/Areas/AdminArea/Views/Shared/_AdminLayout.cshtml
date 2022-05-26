@@ -40,7 +40,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link"asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">
+                <a class="nav-link" asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -68,14 +68,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Products" asp-action="Index">
+                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Product" asp-action="Index">
                     <span>Products</span>
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Category" asp-action="Index">
+                    <span>Categories</span>
+                </a>
+            </li>
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Video" asp-action="Index">
+                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Advertisement" asp-action="Index">
                     <span>Video</span>
                 </a>
             </li>
@@ -86,11 +91,7 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Categories" asp-action="Index">
-                    <span>Categories</span>
-                </a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" asp-area="AdminArea" asp-controller="Partners" asp-action="Index">
                     <span>Partners</span>
@@ -122,7 +123,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Sections:</h6>
                         <a class="collapse-item" asp-area="AdminArea" asp-controller="ProductionPhoto" asp-action="Index">Photo</a>
-                        <a class="collapse-item"asp-area="AdminArea" asp-controller="Photo" asp-action="Index">Cards</a>
+                        <a class="collapse-item" asp-area="AdminArea" asp-controller="Photo" asp-action="Index">Cards</a>
                     </div>
                 </div>
             </li>
