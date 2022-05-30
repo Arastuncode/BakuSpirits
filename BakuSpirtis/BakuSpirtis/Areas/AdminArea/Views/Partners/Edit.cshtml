@@ -1,0 +1,32 @@
+﻿@model PartnersVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container ms-4 mt-5">
+    <div class="ms-12">
+        <div class="img">
+            <img src="~/assets/img/@Model.Image" style="width:350px; height:350px;" />
+        </div>
+        <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Photo"></label>
+                <input class="form-control" style="width:300px" asp-for="Photo">
+                <span class="text-danger" asp-validation-for="Photo"></span>
+                <label class="mt-2" asp-for="Decs"></label>
+                <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Decs" id="editorid"></textarea>
+                <span asp-validation-for="Decs" class="text-danger"></span>
+                <label class="mt-2" asp-for="Name"></label>
+                <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Name" id="editorid"></textarea>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary me-2">Submit</button>
+            <a asp-action="Index" class="btn btn-light">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editorid");</script>
+}

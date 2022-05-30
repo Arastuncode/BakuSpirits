@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BakuSpirtis.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,15 @@ namespace BakuSpirtis.Controllers
 {
     public class PartnersController : Controller
     {
-        public IActionResult Index()
+        private readonly AppDbContext _context;
+        public PartnersController(AppDbContext context)
         {
-            return View();
+            _context = context;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var partners = await _context.Partners.ToListAsync();
+            return View(partners);
         }
     }
 }

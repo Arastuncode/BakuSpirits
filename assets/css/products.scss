@@ -493,36 +493,7 @@ header {
 
 main {
     #product-area {
-        .filter-area {
-            color: white;
-
-            input {
-                outline: none;
-            }
-
-            .name {
-                width: 5px;
-                height: 25px;
-                background-color: rgb(247, 176, 53);
-
-                h6 {
-                    margin-left: 10px;
-                }
-            }
-        }
-
-        .search-sorting {
-            .sorting-box {
-                width: 300px;
-
-                .form-select {
-                    background-color: transparent;
-                    border: none;
-                    outline: none !important;
-                }
-
-            }
-
+        .search {
             .search-box {
                 .search {
                     display: inline;
@@ -640,12 +611,13 @@ main {
 
                 .title {
                     text-align: center;
+
                     h6 {
                         color: white;
                         font-size: 12px;
                         letter-spacing: .1em;
                         text-transform: uppercase;
-                       
+
                     }
                 }
             }
@@ -705,6 +677,7 @@ main {
         }
     }
 }
+
 //Phone Portrait  
 @media screen and (min-width: 300px) and (max-width: 400px) {
 
@@ -836,7 +809,7 @@ main {
                     font-style: italic;
                     text-align: center;
                 }
-            
+
             }
         }
 

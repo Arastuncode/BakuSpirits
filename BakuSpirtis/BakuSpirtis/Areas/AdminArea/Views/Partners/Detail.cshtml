@@ -1,0 +1,16 @@
+﻿@model Partners
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container mt-5" style="text-align:center">
+    <h4>About</h4>
+    <img src="~/assets/img/@Model.Image" style="width:450px; height:450px;" />
+    <div class="bg-dark">
+        <p>@Html.Raw(Model.Name)</p>
+        <p>@Html.Raw(Model.Desc)</p>
+    </div>
+    <div>
+        <a asp-action="Index" class="btn btn-primary mt-3">Go back</a>
+    </div>
+</div>

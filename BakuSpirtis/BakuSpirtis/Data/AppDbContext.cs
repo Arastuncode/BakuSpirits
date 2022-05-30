@@ -22,5 +22,10 @@ namespace BakuSpirtis.Data
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Advertisment> Advertisments { get; set; }
         public DbSet<Galery> Galeries { get; set; }
+        public DbSet<Partners> Partners { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Corusel> Corusels { get; set; }
+        public DbSet<CompanyVideo> CompanyVideos { get; set; }
+        public DbSet<Sertification> Sertifications { get; set; }
     }
 }

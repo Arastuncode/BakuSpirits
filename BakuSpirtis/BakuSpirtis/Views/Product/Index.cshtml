@@ -8,16 +8,8 @@
         <div class="container   mt-5">
             <div class="row">
                 <div class="col-sm-9 col-lg-9 col-md-9 col-xs-9">
-                    <div class="search-sorting">
+                    <div class="search">
                         <div class="row">
-                            <div class="sorting-box col-sm-2 col-xs-2 col-md-2 col-lg-2">
-                                <select class="form-select" style="outline: none;"
-                                        aria-label="Sıralamaq:">
-                                    <option selected>Yenilər əvvəlcə</option>
-                                    <option selected>Ada görə</option>
-                                    <option value="1">Ilk </option>
-                                </select>
-                            </div>
                             <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
                                 <div class="search-box ">
                                     <form id="search" asp-controller="Product" asp-action="Search">
@@ -25,15 +17,17 @@
                                         <button class="fal fa-search" type="submit"></button>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
 
                 </div>
                 <div id="products">
                     <div class="container">
                         <div class="row pt-5">
-                            <div class="col-l    d-flex justify-content-evenly">
+                            <div class="col-lg  d-flex justify-content-evenly">
                                 <ul class="category-mobile d-md-none list-unstyled">
                                     <li>
                                         <a href="" class="categories mr-2" style="color:white;text-decoration:none;">Categories</a>
@@ -85,5 +79,4 @@
             </div>
         </div>
     </section>
-
 </main>

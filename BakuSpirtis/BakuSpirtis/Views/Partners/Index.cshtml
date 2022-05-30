@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Partners>
 @{
     ViewData["Title"] = "Partners";
 }
@@ -8,50 +8,21 @@
         <div class="container ">
             <div class="content">
                 <div class="row">
-                    <div class="card">
-                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                            <img class="card-img-top" src="./assets/img/IMG_1701.JPG" alt="Card image cap">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                <img class="card-img-top" src="~/assets/img/@item.Image" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h3>@Html.Raw(item.Name) </h3>
+                                @Html.Raw(item.Desc)
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3>AMS Ferrari </h3>
-                            For more than 90 years our passion has never stopped growing, driven by those unique
-                            values typical of the Emilian people, who have successfully exported the best bottling
-                            line technology throughout the world. The demanding achievements, experiences lived
-                            alongside clients and tough international competition have shaped our character, helping
-                            us to develop the characteristics setting us apart today: great production flexibility
-                            combined with high innovative capacity, assiduous quality control of the entire
-                            production process and applied materials, and above all, a complete customer focus.
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                            <img class="card-img-top" src="./assets/img/IMG_1699.JPG" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h3>Kematec</h3>
-                            It goes without saying that the conceptual design of our products is in accordance with
-                            the needs of our customers.The energy-efficient system solution plays an important role
-                            for us. The realization of energy-saving potentials is our goal.
-
-                            Highest quality in mechanical engineering, innovative technologies and solutions make us
-                            specialists in the production of special machines – all around the globe.
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                            <img class="card-img-top" src="./assets/img/IMG_1710.JPG" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h3>Helios Glass company</h3>
-                            It goes without saying that the conceptual design of our products is in accordance with
-                            the needs of our customers.The energy-efficient system solution plays an important role
-                            for us. The realization of energy-saving potentials is our goal.
-
-                            Highest quality in mechanical engineering, innovative technologies and solutions make us
-                            specialists in the production of special machines – all around the globe.
-                        </div>
-                    </div>
+                    }
+                   
                 </div>
             </div>
+        </div>
     </section>
 </main>

@@ -510,35 +510,7 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main #product-area .filter-area {
-  color: white;
-}
-
-main #product-area .filter-area input {
-  outline: none;
-}
-
-main #product-area .filter-area .name {
-  width: 5px;
-  height: 25px;
-  background-color: #f7b035;
-}
-
-main #product-area .filter-area .name h6 {
-  margin-left: 10px;
-}
-
-main #product-area .search-sorting .sorting-box {
-  width: 300px;
-}
-
-main #product-area .search-sorting .sorting-box .form-select {
-  background-color: transparent;
-  border: none;
-  outline: none !important;
-}
-
-main #product-area .search-sorting .search-box .search {
+main #product-area .search .search-box .search {
   display: inline;
   border: 2px solid #ccc;
   border-radius: 100px;
@@ -551,32 +523,32 @@ main #product-area .search-sorting .search-box .search {
   color: black;
 }
 
-main #product-area .search-sorting .search-box .search:focus {
+main #product-area .search .search-box .search:focus {
   outline: none;
 }
 
-main #product-area .search-sorting .search-box ::-webkit-input-placeholder {
+main #product-area .search .search-box ::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main #product-area .search-sorting .search-box :-ms-input-placeholder {
+main #product-area .search .search-box :-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main #product-area .search-sorting .search-box ::-ms-input-placeholder {
+main #product-area .search .search-box ::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main #product-area .search-sorting .search-box ::placeholder {
+main #product-area .search .search-box ::placeholder {
   color: black;
   opacity: 1;
 }
 
-main #product-area .search-sorting .search-box button,
-main #product-area .search-sorting .search-box i {
+main #product-area .search .search-box button,
+main #product-area .search .search-box i {
   border: none;
   background: none;
   cursor: pointer;
