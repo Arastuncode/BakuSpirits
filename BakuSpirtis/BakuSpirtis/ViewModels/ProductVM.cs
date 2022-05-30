@@ -13,7 +13,10 @@ namespace BakuSpirtis.ViewModels
         public List<ProductImage> ProductImages { get; set; }
         public List<Category> Categories { get; set; }
         public List<Product> Products { get; set; }
-
+        public string Name { get; set; }
+        public string Desc { get; set; }
+        public decimal Spirit { get; set; }
+        public decimal Energy { get; set; }
 
     }
 }

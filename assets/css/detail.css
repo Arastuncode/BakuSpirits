@@ -553,7 +553,7 @@ main .container .items {
           animation: carouselAnim 15s infinite alternate linear;
 }
 
-main .container .card {
+main .container .cardd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,17 +575,17 @@ main .container .card {
   border: none;
 }
 
-main .container .card a img {
+main .container .cardd a img {
   width: 100%;
   height: 100%;
 }
 
-main .container .card p {
+main .container .cardd p {
   text-align: center;
   padding: 1em;
 }
 
-main .container .card .name {
+main .container .cardd .name {
   font-weight: bold;
 }
 

@@ -13,5 +13,9 @@ namespace BakuSpirtis.ViewModels.Admin
         public int CategoryId { get; set; }
         [Required]
         public List<IFormFile> Photos { get; set; }
+        [Required]
+        public string Desc { get; set; }
+        public decimal Spirit { get; set; }
+        public decimal Energy { get; set; }
     }
 }

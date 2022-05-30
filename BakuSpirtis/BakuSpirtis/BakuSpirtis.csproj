@@ -91,6 +91,8 @@
     <None Include="wwwroot\assets\css\products.scss" />
     <None Include="wwwroot\assets\css\register.css.map" />
     <None Include="wwwroot\assets\css\register.scss" />
+    <None Include="wwwroot\assets\css\search.css.map" />
+    <None Include="wwwroot\assets\css\search.scss" />
     <None Include="wwwroot\assets\js\age.js" />
     <None Include="wwwroot\assets\js\company.js" />
     <None Include="wwwroot\assets\js\detail.js" />

@@ -1,84 +1,78 @@
 ﻿@model ProductVM
 @{
-    ViewData["Title"] = "Məhsullarımız"; 
-}
+    ViewData["Title"] = "Məhsullarımız";
 }
 
 <main>
     <section id="product-area">
         <div class="container   mt-5">
             <div class="row">
-                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3 mt-5 filter-area">
-                    <div class="name">
-                        <h6>Type</h6>
-                    </div>
-                    <ul class="list-group mt-3">
-                        @foreach (var item in Model.Categories)
-                        {
-                            <li class="list-group">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">@Html.Raw(item.Name)</label>
-                                </div>
-                            </li>
-                        }
-                    </ul>
-                    <div class="filter-area mt-3">
-                        <div class="name mt-3">
-                            <h6>Name</h6>
-                        </div>
-                        <ul class="list-group mt-3">
-                            @foreach (var item in Model.Products)
-                            {
-                                <li class="list-group">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">@Html.Raw(item.Name)</label>
-                                    </div>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </div>
                 <div class="col-sm-9 col-lg-9 col-md-9 col-xs-9">
                     <div class="search-sorting">
                         <div class="row">
-                            @*<div class="sorting-box col-sm-2 col-xs-2 col-md-2 col-lg-2">
+                            <div class="sorting-box col-sm-2 col-xs-2 col-md-2 col-lg-2">
                                 <select class="form-select" style="outline: none;"
-                                        aria-label="Default select example">
-                                    <option selected>Sorted by latest</option>
-                                    <option value="1">Sorted by price:low to high </option>
-                                    <option value="2">Sorted by price:high to low</option>
+                                        aria-label="Sıralamaq:">
+                                    <option selected>Yenilər əvvəlcə</option>
+                                    <option selected>Ada görə</option>
+                                    <option value="1">Ilk </option>
                                 </select>
-                            </div>*@
+                            </div>
                             <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
-                                <form>
-                                    <div class="search-box ">
-                                        <input type="text" class="search" placeholder="Search..." autofocus
-                                               required>
+                                <div class="search-box ">
+                                    <form id="search" asp-controller="Product" asp-action="Search">
+                                        <input type="search" class="search" placeholder="Search..." name="search" />
                                         <button class="fal fa-search" type="submit"></button>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="products">
-                        <div class="row mt-3">
+
+                </div>
+                <div id="products">
+                    <div class="container">
+                        <div class="row pt-5">
+                            <div class="col-l    d-flex justify-content-evenly">
+                                <ul class="category-mobile d-md-none list-unstyled">
+                                    <li>
+                                        <a href="" class="categories mr-2" style="color:white;text-decoration:none;">Categories</a>
+                                        <i class="fas fa-caret-down"></i>
+                                        <ul class="category list-unstyled" style="display: none;">
+                                            <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">All</a></li>
+                                            @foreach (var item in Model.Categories)
+                                            {
+                                                <li><a href="" style="text-decoration:none;" data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>
+                                            }
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="category d-none d-md-flex list-unstyled">
+                                    <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">All</a></li>
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <li class="me-3"><a href="" style="text-decoration:none;" data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
                             @foreach (var item in Model.Products)
                             {
-                            <div class="col-sm content">
-                                <div class="card">
-                                    <a href="detail.html">
-                                        <img class="card-img-top" src="~/assets/img/@item.ProductImages.FirstOrDefault().Image"
-                                             alt="absolute-purple">
-                                    </a>
-                                    <div class="card-body">
-                                        <a href="detail.html" class="card-title">@Html.Raw(item.Name)</a>
-                                        <!-- <p class="card-text">11.00</p>
-                                         <button href="#" class="btn btn-primary">Add to card</button> -->
+                                <div class="col-sm mt-3 me-5">
+                                    <div class="product-item content text-center" data-id="@item.Category.Name.ToLower()">
+                                        <div class="img me-5" style="width: 17rem;">
+                                            @if (item.ProductImages.Where(m => m.IsMain == true).Count() > 0)
+                                            {
+                                                <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" class="img-fluid " alt="">
+                                            }
+                                        </div>
+                                        <div class="title  mt-3">
+                                            <h6>@Html.Raw(item.Name)</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             }
                             <div class="row justify-content-center mt-5 me-5">
                                 <div class="col-4">
@@ -91,5 +85,5 @@
             </div>
         </div>
     </section>
-</main>
 
+</main>

@@ -41,6 +41,9 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                     Name = product.Name,
                     Image = product.ProductImages.Where(m => m.IsMain).FirstOrDefault()?.Image,
                     CategoryName = product.Category.Name,
+                    Desc=product.Desc,
+                    Spirit= product.Spirit,
+                    Energy=product.Energy,
                    
                 };
                 productList.Add(newProduct);
@@ -100,7 +103,10 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             {
                 Name = productVM.Name,
                 CategoryId = productVM.CategoryId,
-                ProductImages = imageList
+                ProductImages = imageList,
+                Desc = productVM.Desc,
+                Spirit = productVM.Spirit,
+                Energy = productVM.Energy,
             };
             await _context.ProductImages.AddRangeAsync(imageList);
             await _context.Products.AddAsync(product);
@@ -134,6 +140,9 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                 Name = product.Name,
                 CategoryId = product.CategoryId,
                 Images = product.ProductImages,
+                Desc = product.Desc,
+                Spirit = product.Spirit,
+                Energy = product.Energy,
             };
             return View(result);
         }

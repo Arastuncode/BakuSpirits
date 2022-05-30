@@ -18,5 +18,8 @@ namespace BakuSpirtis.ViewModels.Admin
         public int CategoryId { get; set; }
         public ICollection<ProductImage> Images { get; set; }
         public List<IFormFile> Photos { get; set; }
+        public string Desc { get; set; }
+        public decimal Spirit { get; set; }
+        public decimal Energy { get; set; }
     }
 }

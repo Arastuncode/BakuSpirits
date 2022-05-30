@@ -510,35 +510,35 @@ header .mobile-navbar.active {
   z-index: 9;
 }
 
-main .filter-area {
+main #product-area .filter-area {
   color: white;
 }
 
-main .filter-area input {
+main #product-area .filter-area input {
   outline: none;
 }
 
-main .filter-area .name {
+main #product-area .filter-area .name {
   width: 5px;
   height: 25px;
   background-color: #f7b035;
 }
 
-main .filter-area .name h6 {
+main #product-area .filter-area .name h6 {
   margin-left: 10px;
 }
 
-main .search-sorting .sorting-box {
+main #product-area .search-sorting .sorting-box {
   width: 300px;
 }
 
-main .search-sorting .sorting-box .form-select {
+main #product-area .search-sorting .sorting-box .form-select {
   background-color: transparent;
   border: none;
   outline: none !important;
 }
 
-main .search-sorting .search-box .search {
+main #product-area .search-sorting .search-box .search {
   display: inline;
   border: 2px solid #ccc;
   border-radius: 100px;
@@ -551,32 +551,32 @@ main .search-sorting .search-box .search {
   color: black;
 }
 
-main .search-sorting .search-box .search:focus {
+main #product-area .search-sorting .search-box .search:focus {
   outline: none;
 }
 
-main .search-sorting .search-box ::-webkit-input-placeholder {
+main #product-area .search-sorting .search-box ::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main .search-sorting .search-box :-ms-input-placeholder {
+main #product-area .search-sorting .search-box :-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main .search-sorting .search-box ::-ms-input-placeholder {
+main #product-area .search-sorting .search-box ::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-main .search-sorting .search-box ::placeholder {
+main #product-area .search-sorting .search-box ::placeholder {
   color: black;
   opacity: 1;
 }
 
-main .search-sorting .search-box button,
-main .search-sorting .search-box i {
+main #product-area .search-sorting .search-box button,
+main #product-area .search-sorting .search-box i {
   border: none;
   background: none;
   cursor: pointer;
@@ -585,79 +585,6 @@ main .search-sorting .search-box i {
 
 main #product-area .content {
   display: none;
-}
-
-main #product-area .card {
-  margin-top: 10px;
-  width: 18rem;
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-main #product-area .card .card-img-top {
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform .75s;
-  transition: -webkit-transform .75s;
-  transition: transform .75s;
-  transition: transform .75s, -webkit-transform .75s;
-}
-
-main #product-area .card:hover .card-img-top {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 20px 20px 20px #125b49;
-          box-shadow: 20px 20px 20px #125b49;
-}
-
-main #product-area .card .card-body .card-title {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-  font-weight: bolder;
-}
-
-main #product-area .card .card-body .btn {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: white;
-  outline: 2px solid #fff;
-  padding: 10px 40px;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  background-color: transparent;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-}
-
-main #product-area .card .card-body .btn:hover {
-  color: #fff !important;
-}
-
-main #product-area .card .card-body .btn::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 0;
-  height: 100%;
-  background-color: #fff !important;
-  -webkit-transform: skewX(35deg);
-          transform: skewX(35deg);
-  z-index: -1;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-main #product-area .card .card-body .btn:hover::before {
-  width: 150%;
-}
-
-main #product-area .card .card-body .btn p {
-  font-weight: 16px !important;
 }
 
 main #product-area .btn {
@@ -704,6 +631,47 @@ main #product-area .btn p {
   font-weight: 16px !important;
 }
 
+main #product-area #products ul li a {
+  margin-right: 30px;
+  text-transform: uppercase;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  letter-spacing: .1em;
+  color: white;
+  text-decoration: none;
+}
+
+main #product-area #products ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+main #product-area #products .product-item .img {
+  width: 16rem;
+  overflow: hidden;
+}
+
+main #product-area #products .product-item .img img {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main #product-area #products .product-item .img:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #product-area #products .product-item .title {
+  text-align: center;
+}
+
+main #product-area #products .product-item .title h6 {
+  color: white;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
 .footer {
   padding: 30px;
   color: white;
@@ -723,69 +691,75 @@ main #product-area .btn p {
   color: #a21d1d;
 }
 
-@media screen and (max-width: 400px) {
-  main #shop-area .card {
-    width: 22em !important;
+@media screen and (width: 280px) {
+  main #products .content .img {
+    width: 14em !important;
   }
-  main #shop-area .card .card-img-top {
-    width: 100% !important;
+  main #products .content .img img {
+    width: 100%;
   }
-  main #shop-area .card .card-body {
+  main #products .content .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
     text-align: center;
   }
-  main #shop-area .card .card-body a {
+  main #products .content .card-body a {
     font-size: 1.25em !important;
   }
-  main .pagination ul {
-    position: relative;
-    left: 40%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  main #products .content .img {
+    width: 19.5em !important;
+  }
+  main #products .content .img img {
+    width: 100%;
+  }
+  main #products .content .card-body {
+    font-size: 1.25em !important;
+    font-weight: bolder !important;
+    font-style: italic;
+    text-align: center;
+  }
+  main #products .content .card-body a {
+    font-size: 1.25em !important;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
-  main #shop-area .card {
-    width: 24em !important;
+  main #products .content .img {
+    width: 22em !important;
   }
-  main #shop-area .card .card-img-top {
-    width: 100% !important;
+  main #products .content .img img {
+    width: 100%;
   }
-  main #shop-area .card .card-body {
+  main #products .content .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
     text-align: center;
   }
-  main #shop-area .card .card-body a {
+  main #products .content .card-body a {
     font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  main #shop-area .card {
-    width: 24em !important;
+  main #products .content .img {
+    width: 22em !important;
   }
-  main #shop-area .card .card-img-top {
-    width: 100% !important;
+  main #products .content .img img {
+    width: 100%;
   }
-  main #shop-area .card .card-body {
+  main #products .content .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
     text-align: center;
   }
-  main #shop-area .card .card-body a {
+  main #products .content .card-body a {
     font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 
@@ -796,24 +770,20 @@ main #product-area .btn p {
   main .filter-area {
     height: 400px;
   }
-  main #shop-area .products .card {
-    width: 28em !important;
+  main #products .content .img {
+    width: 42em !important;
   }
-  main #shop-area .products .card img {
+  main #products .content .img img {
     width: 100%;
   }
-  main #shop-area .products .card .card-body {
+  main #products .content .card-body {
     font-size: 1.25em !important;
     font-weight: bolder !important;
     font-style: italic;
     text-align: center;
   }
-  main #shop-area .products .card .card-body a {
+  main #products .content .card-body a {
     font-size: 1.25em !important;
-  }
-  main .pagination ul {
-    position: relative;
-    left: 45%;
   }
 }
 

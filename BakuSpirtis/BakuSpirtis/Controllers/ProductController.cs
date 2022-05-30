@@ -41,8 +41,17 @@ namespace BakuSpirtis.Controllers
 
             return View(productVM);
         }
-        
-         
+        public async Task<IActionResult> Search(string search)
+        {
+            var products = from m in _context.Products  select m;
+
+            if (!String.IsNullOrEmpty(search))
+            {
+                products = products.Where(s => s.Name!.Contains(search));
+            }
+           
+            return View(await products.ToListAsync());
+        }
 
     }
 }

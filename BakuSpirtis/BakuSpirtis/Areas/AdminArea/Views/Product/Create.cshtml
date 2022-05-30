@@ -6,6 +6,11 @@
 <div class="container mt-5">
     <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
         <div class="form-group">
+            <div class="form-group">
+                <label asp-for="Photos">Images:</label>
+                <input class="form-control" style="width:300px" asp-for="Photos">
+                <span class="text-danger" asp-validation-for="Photos"></span>
+            </div>
             <label asp-for="Name">Name: </label>
             <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Name" id="editorid"></textarea>
             <span class="text-danger" asp-validation-for="Name"></span>
@@ -15,10 +20,21 @@
             <select class="form-control" style="width:300px" asp-for="CategoryId" asp-items="@ViewBag.categories"></select>
             <span class="text-danger" asp-validation-for="CategoryId"></span>
         </div>
+        
         <div class="form-group">
-            <label asp-for="Photos">Images:</label>
-            <input class="form-control" style="width:300px" asp-for="Photos">
-            <span class="text-danger" asp-validation-for="Photos"></span>
+            <label asp-for="Desc">Description: </label>
+            <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Desc" id="editorid"></textarea>
+            <span class="text-danger" asp-validation-for="Desc"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Spirit">Spirit: </label>
+            <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Spirit" id="editorid"></textarea>
+            <span class="text-danger" asp-validation-for="Spirit"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Energy">Energy: </label>
+            <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Energy" id="editorid"></textarea>
+            <span class="text-danger" asp-validation-for="Energy"></span>
         </div>
         <button type="submit" class="btn btn-primary me-2">Submit</button>
         <a asp-action="Index" class="btn btn-light">Cancel</a>
