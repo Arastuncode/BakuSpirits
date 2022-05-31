@@ -25,6 +25,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             _context = context;
             _env = env;
         }
+
         public async Task<IActionResult> Index()
         {
             List<Corusel> corusels = await _context.Corusels.ToListAsync();

@@ -27,5 +27,7 @@ namespace BakuSpirtis.Data
         public DbSet<Corusel> Corusels { get; set; }
         public DbSet<CompanyVideo> CompanyVideos { get; set; }
         public DbSet<Sertification> Sertifications { get; set; }
+        public DbSet<Process> Processes { get; set; }
+        public DbSet<Card> Cards { get; set; }
     }
 }

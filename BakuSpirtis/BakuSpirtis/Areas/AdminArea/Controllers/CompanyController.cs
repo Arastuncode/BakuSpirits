@@ -67,5 +67,65 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<Company> GetCompanyById(int id)
+        {
+            return await _context.Companies.FindAsync(id);
+        }
+        public async Task<IActionResult> Detail(int id)
+        {
+            var company = await GetCompanyById(id);
+            if (company is null) return NotFound();
+            return View(company);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Company company = await _context.Companies.Where(m => m.Id == id).FirstOrDefaultAsync();
+            _context.Companies.Remove(company);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Edit(int id)
+        {
+            Company company = await _context.Companies.Where(m => m.Id == id).FirstOrDefaultAsync();
+            CompanyVM companyVM = new CompanyVM
+            {
+                Image = company.Image,
+                Decs = company.Desc,
+            };
+            if (companyVM is null) return View();
+            return View(companyVM);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, CompanyVM companyVM)
+        {
+            var dbCompany = await GetCompanyById(id);
+            if (dbCompany is null) return NotFound();
+            if (!ModelState.IsValid) return View();
+            if (!companyVM.Photo.CheckFileType("image/"))
+            {
+                ModelState.AddModelError("Photo", "Image type is wrong");
+                return View(dbCompany);
+            }
+            if (!companyVM.Photo.CheckFileSize(50000))
+            {
+                ModelState.AddModelError("Photo", "Image size is wrong");
+                return View(companyVM);
+            }
+            string path = Helper.GetFilePath(_env.WebRootPath, "assets/img", dbCompany.Image);
+            Helper.DeleteFile(path);
+            string fileName = Guid.NewGuid().ToString() + "_" + companyVM.Photo.FileName;
+            string newPath = Helper.GetFilePath(_env.WebRootPath, "assets/img", fileName);
+            using (FileStream stream = new FileStream(newPath, FileMode.Create))
+            {
+                await companyVM.Photo.CopyToAsync(stream);
+            }
+            dbCompany.Image = fileName;
+            dbCompany.Desc = dbCompany.Desc;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
