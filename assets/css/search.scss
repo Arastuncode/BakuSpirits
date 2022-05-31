@@ -37,9 +37,10 @@ header {
         ul {
             .drop {
                 a {
-                    color: $font-color !important;
-                    font-size: 15px;
+                    color: $font-color  !important;
+                    font-size: 14px;
                 }
+
                 background-color: transparent !important;
             }
 
@@ -49,10 +50,10 @@ header {
 
                 a {
                     position: relative;
-                    font-size: 17px;
+                    font-size: 14px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
-                    color: $font-color !important;
+                    color: $font-color  !important;
                     font-weight: 500;
 
                     &::after {
@@ -360,7 +361,7 @@ header {
                         width: auto;
                         visibility: visible;
                         position: relative;
- 
+
                         li {
                             padding: 5px 0;
                             font-size: 12px;
@@ -478,7 +479,7 @@ header {
     }
 
     .mobile-navbar.active {
-        width: 420px;
+        min-width: 320px;
         visibility: visible;
         opacity: 1;
         right: 0;

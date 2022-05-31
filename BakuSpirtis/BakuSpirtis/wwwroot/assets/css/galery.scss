@@ -38,7 +38,7 @@ header {
             .drop {
                 a {
                     color: $font-color  !important;
-                    font-size: 15px;
+                    font-size: 14px;
                 }
 
                 background-color: transparent !important;
@@ -50,7 +50,7 @@ header {
 
                 a {
                     position: relative;
-                    font-size: 17px;
+                    font-size: 14px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
                     color: $font-color  !important;
@@ -479,7 +479,7 @@ header {
     }
 
     .mobile-navbar.active {
-        width: 420px;
+        min-width: 320px;
         visibility: visible;
         opacity: 1;
         right: 0;

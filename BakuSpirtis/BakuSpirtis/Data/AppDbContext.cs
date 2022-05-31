@@ -29,5 +29,6 @@ namespace BakuSpirtis.Data
         public DbSet<Sertification> Sertifications { get; set; }
         public DbSet<Process> Processes { get; set; }
         public DbSet<Card> Cards { get; set; }
+        public DbSet<Contact>  Contacts { get; set; }
     }
 }

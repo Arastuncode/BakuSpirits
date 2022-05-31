@@ -38,19 +38,19 @@ header {
             .drop {
                 a {
                     color: $font-color  !important;
-                    font-size: 15px;
+                     font-size:14px;
                 }
 
                 background-color: transparent !important;
             }
-
+            font-size:14px;
             li {
                 position: relative;
                 padding: 38px 20px;
-
+                font-size:14px;
                 a {
                     position: relative;
-                    font-size: 17px;
+                    font-size:14px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
                     color: $font-color  !important;

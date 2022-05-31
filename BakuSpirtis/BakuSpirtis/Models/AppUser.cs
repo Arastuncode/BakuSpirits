@@ -9,5 +9,6 @@ namespace BakuSpirtis.Models
     public class AppUser : IdentityUser 
     {
         public string Name { get; set; }
+        public bool IsActiveted { get; set; }
     }
 }

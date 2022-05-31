@@ -493,7 +493,8 @@ header {
         height: 500px;
         border-radius: 10px;
         margin-left: 30%; 
-        margin-top:5%;
+        //margin-top:5%;
+        color: #fff;
         h2 {
             margin-top: 1%;
             text-align: center;
@@ -509,7 +510,7 @@ header {
             }
             a {
                 position: relative;
-                color: #065b93 !important;
+                color: #fff;
                 font-weight: bolder;
                 text-decoration: none;
 

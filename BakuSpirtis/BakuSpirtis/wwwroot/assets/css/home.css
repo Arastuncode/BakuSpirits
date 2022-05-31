@@ -31,23 +31,28 @@ header nav #mobile-navbar-show {
   border: none;
 }
 
+header nav ul {
+  font-size: 14px;
+}
+
 header nav ul .drop {
   background-color: transparent !important;
 }
 
 header nav ul .drop a {
   color: #fff !important;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 header nav ul li {
   position: relative;
   padding: 38px 20px;
+  font-size: 14px;
 }
 
 header nav ul li a {
   position: relative;
-  font-size: 17px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #fff !important;

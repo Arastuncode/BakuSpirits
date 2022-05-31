@@ -38,7 +38,7 @@ header nav ul .drop {
 
 header nav ul .drop a {
   color: #fff !important;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 header nav ul li {
@@ -48,7 +48,7 @@ header nav ul li {
 
 header nav ul li a {
   position: relative;
-  font-size: 17px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #fff !important;
@@ -503,7 +503,7 @@ header .mobile-navbar ul ul ul li {
 }
 
 header .mobile-navbar.active {
-  width: 420px;
+  min-width: 320px;
   visibility: visible;
   opacity: 1;
   right: 0;

@@ -514,7 +514,7 @@ header .mobile-navbar.active {
   height: 500px;
   border-radius: 10px;
   margin-left: 30%;
-  margin-top: 5%;
+  color: #fff;
 }
 
 #login-area .login h2 {
@@ -536,7 +536,7 @@ header .mobile-navbar.active {
 
 #login-area .login form a {
   position: relative;
-  color: #065b93 !important;
+  color: #fff;
   font-weight: bolder;
   text-decoration: none;
 }

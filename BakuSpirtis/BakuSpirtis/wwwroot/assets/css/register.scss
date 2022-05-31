@@ -491,28 +491,28 @@ header {
     .register {
         width: 900px;
         height: 600px;
-        background-color: #fff;
         border-radius: 10px;
         margin-left: 15%;
-        box-shadow: 15px 15px 15px #888888;
-        margin-top:5%;
+        
         h2 {
             margin-top: 1%;
             text-align: center;
+            color: #fff;
         }
 
         form {
-            margin-left: 20%;
-            margin-top: 5%;
-
+            margin-left: 30%;
+            //margin-top: 5%;
+            color: #fff;
             input {
                 width: 60% !important;
                 outline: none !important;
+                background-color: rgba(255, 255, 255, 0.45);
             }
 
             a {
                 position: relative;
-                color: #0095F6 !important;
+                color: #fff;
                 font-weight: bolder;
                 text-decoration: none;
 

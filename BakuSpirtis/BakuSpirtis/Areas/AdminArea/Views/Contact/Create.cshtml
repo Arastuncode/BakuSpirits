@@ -1,0 +1,30 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container ms-4 mt-5">
+    <div class="ms-12">
+        <form class="forms-sample" method="post" asp-controller="Contact" asp-action="Create" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="mt-2" asp-for="Address"></label>
+                <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Address" id="editorid"></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+                <label class="mt-2" asp-for="Email"></label>
+                <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Email" id="editorsid"></textarea>
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <label class="mt-2" asp-for="Phone"></label>
+                <textarea class="form-control form-control-sm mt-1" type="text" asp-for="Phone" id="editoriid"></textarea>
+                <span asp-validation-for="Phone" class="text-danger"></span>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <a asp-action="Index" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editorid");</script>
+    <script>CKEDITOR.replace("editorsid");</script>
+    <script>CKEDITOR.replace("editoriid");</script>
+}
