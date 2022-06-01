@@ -1,6 +1,10 @@
 ﻿@model CompaniesVM
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/company.css">
 }
 
 <main>
@@ -23,9 +27,9 @@
             </div>
             <div class="container">
                 @*<div class="sides">
-                    <div class="left"></div>
-                    <div class="right"></div>
-                </div>*@
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>*@
                 <div class="items">
                     @foreach (var item in Model.Corusels)
                     {
@@ -33,7 +37,7 @@
                             <a href="detail.html"><img src="~/assets/img/@item.Image" alt="" /></a>
                         </div>
                     }
-                    
+
                 </div>
             </div>
             <!-- Video starts -->
@@ -63,10 +67,13 @@
                                 <img src="~/assets/img/@item.Image" alt="..." class="img-fluid hidden-image" id="hidden-image">
                             </div>
                         }
-                       
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
+@section Scripts{
+    <script src="~/assets/js/company.js"></script>
+}

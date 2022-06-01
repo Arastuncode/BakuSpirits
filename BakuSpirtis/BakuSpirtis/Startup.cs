@@ -34,6 +34,7 @@ namespace BakuSpirtis
                 option.IdleTimeout = TimeSpan.FromSeconds(30);
             });
             services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 6;
@@ -42,10 +43,9 @@ namespace BakuSpirtis
                 options.Password.RequireLowercase = true;
                 options.Password.RequireDigit = true;
                 options.User.RequireUniqueEmail = true;
-                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.MaxFailedAccessAttempts = 3;
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
                 options.Lockout.AllowedForNewUsers = true;
-                options.SignIn.RequireConfirmedPhoneNumber = true;
                 options.SignIn.RequireConfirmedEmail = true;
             });
             services.AddScoped<LayoutService>();

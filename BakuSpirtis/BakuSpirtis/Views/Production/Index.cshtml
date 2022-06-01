@@ -1,60 +1,66 @@
 ﻿@model ProductionVM
 @{
     ViewData["Title"] = "Production";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
- 
-    <section id="top-area">
-        <div class="content ">
-            <div class="container-fluid ">
-                @foreach (var item in Model.Processes)
-                {
-                    <div class="row ">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
-                            <div class="text text-center">
-                                <h2> Production</h2>
-                                <p>
-                                   @Html.Raw(item.Text)
-                                </p>
-                                <div id="wrapper">
-                                    <div id="wrapper-inner">
-                                        <div id="scroll-down">
-                                            <p class="arrow-down">
-                                            </p>
-                                        </div>
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/about.css">
+}
+<section id="top-area">
+    <div class="content ">
+        <div class="container-fluid ">
+            @foreach (var item in Model.Processes)
+            {
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                        <div class="text text-center">
+                            <h2> Production</h2>
+                            <p>
+                                @Html.Raw(item.Text)
+                            </p>
+                            <div id="wrapper">
+                                <div id="wrapper-inner">
+                                    <div id="scroll-down">
+                                        <p class="arrow-down">
+                                        </p>
                                     </div>
                                 </div>
-                                <a href="#process">LEARN MORE</a>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                            <div class="image" style="height:40rem;">
-                                <img src="~/assets/img/@item.Image" alt="">
-                            </div>
+                            <a href="#process">LEARN MORE</a>
                         </div>
                     </div>
-                }
-            </div>
-        </div>
-    </section>
-    <section id="process">
-        <div class="container mt-5">
-            <div class="row ">
-                @foreach (var item in Model.Cards)
-                {
-                    <div class="col">
-                        <div class="card" style="width: 24rem;">
-                            <img class="card-img-top" src="~/assets/img/@item.Image" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">@Html.Raw(item.Name)</h5>
-                                <p class="card-text">
-                                   @Html.Raw(item.Desc)
-                                </p>
-                            </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <div class="image" style="height:40rem;">
+                            <img src="~/assets/img/@item.Image" alt="">
                         </div>
                     </div>
-                }
-            </div>
+                </div>
+            }
         </div>
-    </section>
- 
+    </div>
+</section>
+<section id="process">
+    <div class="container mt-5">
+        <div class="row ">
+            @foreach (var item in Model.Cards)
+            {
+                <div class="col">
+                    <div class="card" style="width: 24rem;">
+                        <img class="card-img-top" src="~/assets/img/@item.Image" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">@Html.Raw(item.Name)</h5>
+                            <p class="card-text">
+                                @Html.Raw(item.Desc)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/assets/js/production.js"></script>
+}
+

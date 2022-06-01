@@ -1,8 +1,11 @@
 ﻿@model List<Contact>
 @{
     ViewData["Title"] = "Əlaqə";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/contact.css">
+}
 <main>
     <section id="contact-area">
         <div class="container">

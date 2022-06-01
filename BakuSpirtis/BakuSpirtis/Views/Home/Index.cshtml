@@ -1,8 +1,13 @@
 ﻿@model HomeVM
 @{
     ViewData["Title"] = "ANA SƏHIFƏ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/home.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/owl.theme.default.min.css">
+}
 <main>
     <!-- carousel start -->
     <section id="slider">
@@ -11,7 +16,7 @@
             {
                 <div> <img src="~/assets/img/@item.Image" alt=""> </div>
             }
-            
+
         </div>
 
     </section>
@@ -52,14 +57,14 @@
                 {
                     <div class="col-sm">
                         <div class="card">
-                             
-                                <img class="card-img-top" src="~/assets/img/@item.ProductImages.FirstOrDefault().Image"
-                                     alt="вакцина">
-                            
+
+                            <img class="card-img-top" src="~/assets/img/@item.ProductImages.FirstOrDefault().Image"
+                                 alt="вакцина">
+
                             <div class="card-body">
                                 <a href="detail.html" class="card-title">@Html.Raw(item.Name)</a>
                                 <!-- <p class="card-text">11.00</p>
-                    <button  class="btn btn-primary">Add to card</button> -->
+                                <button  class="btn btn-primary">Add to card</button> -->
                             </div>
                         </div>
                     </div>
@@ -87,8 +92,12 @@
             <h1><a asp-controller="Galery" asp-action="Index">Qalereya</a></h1>
             <div class="row mt-3">
                 @await Component.InvokeAsync("Galery", 3)
-                </div>
+            </div>
         </section>
-       
+
     </div>
 </main>
+@section Scripts{
+    <script src="~/assets/js/home.js"></script>
+    <script src="~/assets/owlcarousel/owl.carousel.min.js"></script>
+}

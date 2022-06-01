@@ -1,0 +1,57 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/register.css">
+}
+
+<main>
+    <section id="register-area">
+        <div class="container  ">
+            <div class="register">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mt-3">
+                        <h2>Qeydiyyat</h2>
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <form method="post" asp-action="Register">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input type="text" asp-for="Name" class="form-control" placeholder="Ad"
+                                       aria-label="Name" aria-describedby="addon-wrapping">
+                                <span class="text-danger" asp-validation-for="Name"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input type="text" asp-for="Username" class="form-control" placeholder="İstifadəçi" aria-label="Username"
+                                       aria-describedby="addon-wrapping">
+                                <span class="text-danger" asp-validation-for="Username"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input type="email" asp-for="Email" class="form-control" placeholder="Email ünvanı"
+                                       id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <span class="text-danger" asp-validation-for="Email"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"></label>
+                                <input type="password" asp-for="Password" class="form-control" placeholder="Parol"
+                                       id="exampleInputPassword1">
+                                <span class="text-danger" asp-validation-for="Password"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary ">Qeydiyyat</button>
+                            <div class="text-center mt-4 font-weight-light">
+                                Hesabınız var? <a asp-controller="Account" asp-action="Login"> Log in </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@section Scripts{
+    <partial name="_ValidationPartial" />
+}

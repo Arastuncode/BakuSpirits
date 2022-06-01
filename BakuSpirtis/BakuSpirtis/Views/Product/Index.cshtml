@@ -1,8 +1,11 @@
 ﻿@model ProductVM
 @{
     ViewData["Title"] = "Məhsullarımız";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/products.css">
+}
 <main>
     <section id="product-area">
         <div class="container   mt-5">
@@ -80,3 +83,6 @@
         </div>
     </section>
 </main>
+@section Scripts{
+    <script src="~/assets/js/product.js"></script>
+}

@@ -1,8 +1,11 @@
 ﻿@model List<Partners>
 @{
     ViewData["Title"] = "Partners";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/partners.css">
+}
 <main>
     <section id="patner-area">
         <div class="container ">
@@ -20,7 +23,7 @@
                             </div>
                         </div>
                     }
-                   
+
                 </div>
             </div>
         </div>

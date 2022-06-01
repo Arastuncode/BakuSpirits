@@ -1,8 +1,11 @@
 ﻿
 @{
     ViewData["Title"] = "GALEREYA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/galery.css">
+}
 <main>
     <div class="container">
         <section id="galery-area">
@@ -17,3 +20,6 @@
         </div>
     </div>
 </main>
+@section Scripts{
+    <script src="~/assets/js/galery.js"></script>
+}
