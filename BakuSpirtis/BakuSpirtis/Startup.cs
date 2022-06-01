@@ -1,6 +1,7 @@
 using BakuSpirtis.Data;
 using BakuSpirtis.Models;
 using BakuSpirtis.Services;
+using BakuSpirtis.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -46,15 +47,16 @@ namespace BakuSpirtis
                 options.Lockout.MaxFailedAccessAttempts = 3;
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
                 options.Lockout.AllowedForNewUsers = true;
-                options.SignIn.RequireConfirmedEmail = true;
+                //options.SignIn.RequireConfirmedEmail = true;
             });
             services.AddScoped<LayoutService>();
             services.AddScoped<ProductService>();
-            //services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IEmailService, EmailService>();
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                
             });
         }
 

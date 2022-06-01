@@ -154,6 +154,13 @@ C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpir
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.dll
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.pdb
 C:\Users\Lenovo\Desktop\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.RazorAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\BakuSpirtis.exe
@@ -214,6 +221,8 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -286,13 +295,6 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.AssemblyInfo.cs
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.RazorAssemblyInfo.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.RazorAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\staticwebassets\BakuSpirtis.StaticWebAssets.Manifest.cache
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\staticwebassets\BakuSpirtis.StaticWebAssets.xml
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\scopedcss\bundle\BakuSpirtis.styles.css
@@ -352,6 +354,9 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\EmialVerification.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Galery\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -364,6 +369,7 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationPartial.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -375,9 +381,6 @@ C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.pdb
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\BakuSpirtis.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationPartial.cshtml.g.cs
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\SendGrid.dll
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
-C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\EmialVerification.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgotPasswordConfirm.cshtml.g.cs
+C:\Users\Lenovo\Desktop\BakuSpirits\BakuSpirtis\BakuSpirtis\obj\Debug\netcoreapp3.1\Razor\Views\Account\ResetPassword.cshtml.g.cs

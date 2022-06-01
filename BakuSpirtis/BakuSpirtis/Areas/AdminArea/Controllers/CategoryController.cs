@@ -1,5 +1,6 @@
 ﻿using BakuSpirtis.Data;
 using BakuSpirtis.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 namespace BakuSpirtis.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;

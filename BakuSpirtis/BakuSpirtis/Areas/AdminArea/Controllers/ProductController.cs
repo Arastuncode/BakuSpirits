@@ -4,6 +4,7 @@ using BakuSpirtis.Data;
 using BakuSpirtis.Models;
 using BakuSpirtis.Utilities.Pagination;
 using BakuSpirtis.ViewModels.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -16,6 +17,7 @@ using System.Threading.Tasks;
 namespace BakuSpirtis.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;

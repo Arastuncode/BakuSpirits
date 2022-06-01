@@ -14,7 +14,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mt-3">
                         <h2>Daxil ol</h2>
-                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <form method="post" asp-action="Login">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label"></label>
@@ -29,10 +29,14 @@
                                 <span class="text-danger" asp-validation-for="Password"></span>
 
                             </div>
+                            <div class="text-center mt-4 font-weight-light">
+                                <a asp-action="ForgotPassword">Şifrəni unutmusunuz?</a>
+                            </div>
                             <button type="submit" class="btn btn-primary ">Daxil ol</button>
                             <div class="text-center mt-4 font-weight-light">
                                 Hesabınız yoxdur? <a asp-action="Register">Qeydiyyat</a>
                             </div>
+
                         </form>
                     </div>
                 </div>

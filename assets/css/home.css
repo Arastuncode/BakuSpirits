@@ -151,10 +151,6 @@ main #galery-area img {
 }
 
 @media screen and (max-width: 400px) {
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   main #about-area {
     padding: -2%;
     width: 22rem;
@@ -200,10 +196,6 @@ main #galery-area img {
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-  header nav .logo img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   main #about-area .image {
     width: 24.2rem !important;
     height: 300px !important;
@@ -243,14 +235,6 @@ main #galery-area img {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  header nav .logo {
-    margin-right: 35%;
-    margin-top: 2% !important;
-  }
-  header nav .logo img {
-    width: 340px !important;
-    height: 240px !important;
-  }
   main #about-area .image {
     width: 355px !important;
     height: 300px !important;
@@ -285,14 +269,6 @@ main #galery-area img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  header nav .logo {
-    margin-right: 35%;
-    margin-top: -5%;
-  }
-  header nav .logo img {
-    width: 350px !important;
-    height: 250px !important;
-  }
   main #about-area {
     position: relative;
     left: -8%;
@@ -342,14 +318,6 @@ main #galery-area img {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-  header nav .logo img {
-    margin-left: 30%;
-    width: 340px !important;
-    height: 240px !important;
-  }
-  header nav ul {
-    margin-left: 3%;
-  }
   main #about-area {
     position: relative;
     left: -2%;

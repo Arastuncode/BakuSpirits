@@ -45,7 +45,13 @@
                             <td>
                                 <p style="width:18rem;">@Html.Raw(item.Phone)</p>
                             </td>
-                           
+                            <td>
+                                <form style="display:inline-block" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                    <button class="btn btn-danger" type="submit">
+                                        Delete
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         count++;
                     }

@@ -1,8 +1,7 @@
 ﻿using BakuSpirtis.Data;
 using BakuSpirtis.Models;
 using BakuSpirtis.Services;
-using BakuSpirtis.ViewModels;
-using BakuSpirtis.ViewModels.Admin;
+using BakuSpirtis.ViewModels; 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace BakuSpirtis.Controllers
 {
+
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
@@ -43,14 +43,16 @@ namespace BakuSpirtis.Controllers
         }
         public async Task<IActionResult> Search(string search)
         {
-            var products = from m in _context.Products  select m;
-
-            if (!String.IsNullOrEmpty(search))
+            List<Product> products = await _context.Products.ToListAsync();
+            List<Product> wantedProducts = new List<Product> { };
+            foreach (var item in products)
             {
-                products = products.Where(s => s.Name!.Contains(search));
+                if (item.Name.ToLower().Trim().Contains(search.ToLower().Trim()))
+                {
+                    wantedProducts.Add(item);
+                }
             }
-           
-            return View(await products.ToListAsync());
+            return View(wantedProducts);
         }
 
     }

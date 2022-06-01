@@ -17,36 +17,43 @@
                     <div class="collapse navbar-collapse d-none d-lg-block">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size:14px;" asp-controller="Home" asp-action="Index">Ana səhifə</a>
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Ana səhifə</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size:14px;" asp-controller="Product" asp-action="Index">Məhsullar</a>
+                                <a class="nav-link" asp-controller="Product" asp-action="Index">Məhsullar</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" style="font-size:14px;" asp-controller="About" asp-action="Index">Haqqımızda</a>
+                                <a class="nav-link" asp-controller="About" asp-action="Index">Haqqımızda</a>
                                 <ul class="list-unstyled drop py-3">
-                                    <li><a style="font-size:14px;" asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
-                                    <li><a style="font-size:14px;" asp-controller="Production" asp-action="Index">İstehsalat otağı</a></li>
+                                    <li><a asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
+                                    <li><a asp-controller="Production" asp-action="Index">İstehsalat otağı</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size:14px;" asp-controller="Galery" asp-action="Index">Galereya</a>
+                                <a class="nav-link" asp-controller="Galery" asp-action="Index">Galereya</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size:14px;" asp-controller="Contact" asp-action="Index">Əlaqə</a>
+                                <a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a>
                             </li>
+
+                            @*@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <ul class="list-unstyled">
+                                    <li><a class="nav-link" style="font-size:10px;" asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+                                </ul>
+                            }*@
 
                             <li class="nav-item dropdown">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                <li class="nav-item"><a class="nav-link" style="font-size:14px;"><i class="fal fa-user"></i> @User.Identity.Name</a></li>
-                                <li class="nav-item"> <a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Logout">Çıxış</a></li>
-                                 }
-                                else
-                                {
-                                       <li class="nav-item"><a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Login">Daxil ol</a></li>
-                                       <li class="nav-item"><a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
-                               }
+                                <li class="nav-item"><a class="nav-link"><i class="fal fa-user"></i> @User.Identity.Name</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Account" asp-action="Logout">Çıxış</a></li>
+                            }
+                            else
+                            {
+                                <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Login">Daxil ol</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
+                            }
                             </ul>
                     </div>
                 </nav>
@@ -55,14 +62,21 @@
         <div class="mobile-navbar position-absolute shadow-lg h-100 p-5">
             <i class="fas fa-times fa-lg" id="mobile-navbar-close"></i>
             <ul class="list-unstyled">
-                <li><a asp-controller="Home" asp-action="Index">Home </a></li>
-                <li><a asp-controller="Product" asp-action="Index">Məhsullarımız</a></li>
-                <li><a asp-controller="About" asp-action="Index">Haqqımızda</a></li>
-                <li><a asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
-                <li><a asp-controller="Galery" asp-action="Index">Galereya</a></li>
-                <li><a asp-controller="Account" asp-action="Login">Daxil ol</a></li>
-                <li><a asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
-                <li><a asp-controller="Account" asp-action="Logout">Çıxış</a></li>
+                <li><a class="nav-link" asp-controller="Home" asp-action="Index">Home </a></li>
+                <li><a class="nav-link" asp-controller="Product" asp-action="Index">Məhsullarımız</a></li>
+                <li><a class="nav-link" asp-controller="About" asp-action="Index">Haqqımızda</a></li>
+                <li><a class="nav-link" asp-controller="Partners" asp-action="Index">Əməkdaşlıq</a></li>
+                <li><a class="nav-link" asp-controller="Galery" asp-action="Index">Galereya</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item"><a class="nav-link"><i class="fal fa-user"></i> @User.Identity.Name</a></li>
+                    <li class="nav-item"> <a class="nav-link"  asp-controller="Account" asp-action="Logout">Çıxış</a></li>
+                }
+                else
+                {
+                    <li class="nav-item"><a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Login">Daxil ol</a></li>
+                    <li class="nav-item"><a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
+                }
             </ul>
         </div>
     </div>

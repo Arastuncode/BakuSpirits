@@ -3,6 +3,7 @@ using AspProject.Utilities.Helper;
 using BakuSpirtis.Data;
 using BakuSpirtis.Models;
 using BakuSpirtis.ViewModels.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -16,6 +17,7 @@ using System.Threading.Tasks;
 namespace BakuSpirtis.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class CompanyVideoController : Controller
     {
         private readonly AppDbContext _context;
