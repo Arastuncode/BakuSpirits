@@ -126,7 +126,7 @@ main {
                 .img {
                     width: 16rem;
                     overflow: hidden;
-
+                    border-radius: 10px;
                     img {
                         transition: all .3s;
                     }
@@ -159,8 +159,6 @@ main {
  
 
 @media screen and (width: 280px) {
-
-
     main {
         #products {
             .content {

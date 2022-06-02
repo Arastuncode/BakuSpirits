@@ -123,6 +123,7 @@ main #product-area #products ul li a:hover {
 main #product-area #products .product-item .img {
   width: 16rem;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 main #product-area #products .product-item .img img {

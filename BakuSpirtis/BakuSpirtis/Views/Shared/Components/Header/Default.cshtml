@@ -36,17 +36,10 @@
                                 <a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a>
                             </li>
 
-                            @*@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                            {
-                                <ul class="list-unstyled">
-                                    <li><a class="nav-link" style="font-size:10px;" asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
-                                </ul>
-                            }*@
-
                             <li class="nav-item dropdown">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                <li class="nav-item"><a class="nav-link"><i class="fal fa-user"></i> @User.Identity.Name</a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="fal fa-user "></i> @User.Identity.Name</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-controller="Account" asp-action="Logout">Çıxış</a></li>
                             }
                             else

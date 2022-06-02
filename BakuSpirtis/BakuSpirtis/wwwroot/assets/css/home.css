@@ -15,13 +15,16 @@ main #slider {
   position: relative;
 }
 
+main #slider .slider {
+  width: 100%;
+}
+
 main #slider .slider img {
-  min-height: 400px;
+  max-height: 800px;
   width: 100% !important;
 }
 
 main #about-area {
-  background-color: rgba(255, 255, 255, 0.538);
   border-radius: 10px;
 }
 
@@ -36,7 +39,7 @@ main #about-area .image img {
 }
 
 main #about-area .content {
-  color: black;
+  color: white;
   margin-right: 15%;
   cursor: pointer;
 }

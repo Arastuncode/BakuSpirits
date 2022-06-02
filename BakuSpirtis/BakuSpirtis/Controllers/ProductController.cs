@@ -43,7 +43,7 @@ namespace BakuSpirtis.Controllers
         }
         public async Task<IActionResult> Search(string search, string searchBy)
         {
-            List<Product> products = await _context.Products.Include(m=>m.ProductImages).ToListAsync();
+            List<Product> products = await _context.Products.Include(m=>m.ProductImages).Where(m=>m.IsDeleted==false).ToListAsync();
             List<Product> wantedProducts = new List<Product> { };
             foreach (var item in products)
             {
