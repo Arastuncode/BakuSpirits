@@ -14,11 +14,11 @@
                                 @foreach (var item in Model)
                                 {
                                     <div class="col-sm mt-3 me-5">
-                                        <div class="product-item content text-center">
+                                        <div class="product-item content text-left ">
                                             <div class="img me-5" style="width: 17rem;">
-                                                <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" class="img-fluid " alt="@Html.Raw(item.Name)">
+                                                <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" class="img-fluid " alt="">
                                             </div>
-                                            <div class="title  mt-3">
+                                            <div class="title text-left  mt-3">
                                                 <h6>@Html.Raw(item.Name)</h6>
                                             </div>
                                         </div>

@@ -36,7 +36,7 @@
                                         <a href="" class="categories mr-2" style="color:white;text-decoration:none;">Categories</a>
                                         <i class="fas fa-caret-down"></i>
                                         <ul class="category list-unstyled" style="display: none;">
-                                            <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">All</a></li>
+                                            <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">Bütün məhsullar</a></li>
                                             @foreach (var item in Model.Categories)
                                             {
                                                 <li><a href="" style="text-decoration:none;" data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>
@@ -46,7 +46,7 @@
                                     </li>
                                 </ul>
                                 <ul class="category d-none d-md-flex list-unstyled">
-                                    <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">All</a></li>
+                                    <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">Bütün məhsullar</a></li>
                                     @foreach (var item in Model.Categories)
                                     {
                                         <li class="me-3"><a href="" style="text-decoration:none;" data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>

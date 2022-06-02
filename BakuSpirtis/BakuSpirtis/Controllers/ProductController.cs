@@ -1,13 +1,13 @@
-﻿using BakuSpirtis.Data;
+﻿using System.Linq;
+using BakuSpirtis.Data;
 using BakuSpirtis.Models;
 using BakuSpirtis.Services;
 using BakuSpirtis.ViewModels; 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
+using Microsoft.EntityFrameworkCore; 
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace BakuSpirtis.Controllers
 {
@@ -41,9 +41,9 @@ namespace BakuSpirtis.Controllers
 
             return View(productVM);
         }
-        public async Task<IActionResult> Search(string search)
+        public async Task<IActionResult> Search(string search, string searchBy)
         {
-            List<Product> products = await _context.Products.ToListAsync();
+            List<Product> products = await _context.Products.Include(m=>m.ProductImages).ToListAsync();
             List<Product> wantedProducts = new List<Product> { };
             foreach (var item in products)
             {

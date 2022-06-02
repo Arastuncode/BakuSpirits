@@ -125,7 +125,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                 await companyVM.Photo.CopyToAsync(stream);
             }
             dbCompany.Image = fileName;
-            dbCompany.Desc = dbCompany.Desc;
+            dbCompany.Desc = companyVM.Decs;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

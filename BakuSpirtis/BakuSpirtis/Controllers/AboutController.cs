@@ -26,6 +26,7 @@ namespace BakuSpirtis.Controllers
             List<Corusel> corusels = await _context.Corusels.ToListAsync();
             List<CompanyVideo> companyVideos = await _context.CompanyVideos.ToListAsync();
             List<Sertification> sertifications = await _context.Sertifications.ToListAsync();
+            List<About> abouts = await _context.Abouts.ToListAsync();
 
             CompaniesVM companyVM = new CompaniesVM
             {
@@ -33,6 +34,7 @@ namespace BakuSpirtis.Controllers
                Corusels =corusels,
                CompanyVideos = companyVideos, 
                Sertifications= sertifications,
+               Abouts = abouts,
             };
 
             return View(companyVM);

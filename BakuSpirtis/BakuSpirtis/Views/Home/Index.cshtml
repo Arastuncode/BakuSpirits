@@ -52,7 +52,7 @@
         <!-- products-area end -->
         <section id="products-area">
             <div class="row mt-3">
-                <h2>Məhsullarımız</h2>
+                <h2><a class="nav-link text-light" asp-controller="Product" asp-action="Index">Məhsullarımız</a></h2>
                 @foreach (var item in Model.Products)
                 {
                     <div class="col-sm">

@@ -12,6 +12,7 @@ namespace BakuSpirtis.ViewModels
         public List<Corusel> Corusels { get; set; }
         public List<CompanyVideo> CompanyVideos { get; set; }
         public List<Sertification> Sertifications { get; set; }
+        public List<About> Abouts  { get; set; }
 
     }
 }

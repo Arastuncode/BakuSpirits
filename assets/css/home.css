@@ -56,6 +56,11 @@ main #products-area h2 {
   text-align: center;
 }
 
+main #products-area h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main #products-area .card {
   margin-top: 10px;
   width: 18rem;

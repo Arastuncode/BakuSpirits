@@ -184,7 +184,7 @@ body {
   border: none;
   color: white;
   cursor: pointer;
-  background-color: red;
+  margin-top: 15%;
 }
 
 #process .card img {
@@ -197,7 +197,6 @@ body {
     height: 400px !important;
   }
   #top-area .content .image {
-    width: 21.5em;
     margin-bottom: 15%;
   }
   #top-area .content .image img {
@@ -208,7 +207,7 @@ body {
     padding: 5% !important;
   }
   #process {
-    margin-top: -15%;
+    margin-top: 25%;
   }
   #process .card img {
     width: 16em !important;
@@ -221,7 +220,6 @@ body {
     height: 400px !important;
   }
   #top-area .content .image {
-    width: 22em;
     margin-bottom: 15%;
   }
   #top-area .content .image img {
@@ -232,7 +230,7 @@ body {
     padding: 5% !important;
   }
   #process {
-    margin-top: -15%;
+    margin-top: 25%;
   }
   #process .card img {
     width: 18em !important;
@@ -256,7 +254,7 @@ body {
     padding: 5% !important;
   }
   #process {
-    margin-top: -15%;
+    margin-top: 25%;
   }
   #process .card img {
     width: 18em !important;
@@ -270,9 +268,6 @@ body {
     position: relative;
     top: 9%;
   }
-  #top-area .content .image {
-    width: 33.5em;
-  }
   #top-area .content .image img {
     width: 100%;
   }
@@ -281,7 +276,7 @@ body {
     padding: 5% !important;
   }
   #process {
-    margin-top: -15%;
+    margin-top: 25%;
   }
   #process .card img {
     width: 30em !important;
@@ -293,9 +288,6 @@ body {
     width: 800px;
     height: 400px !important;
   }
-  #top-area .content .image {
-    width: 44em;
-  }
   #top-area .content .image img {
     width: 100%;
   }
@@ -304,7 +296,7 @@ body {
     padding: 5% !important;
   }
   #process {
-    margin-top: -15%;
+    margin-top: 25%;
   }
   #process .card img {
     width: 29em !important;
