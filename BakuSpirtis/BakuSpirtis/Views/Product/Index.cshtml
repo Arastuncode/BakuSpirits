@@ -31,10 +31,10 @@
                                 <a href="" class="categories mr-2" style="color:white;text-decoration:none;">Categories</a>
                                 <i class="fas fa-caret-down"></i>
                                 <ul class="category list-unstyled" style="display: none;">
-                                    <li><a href="" class="me-3" data-id="all" style="color:white;text-decoration:none;">Bütün məhsullar</a></li>
+                                    <li><a class="mt-5" data-id="all" style="color:white;text-decoration:none;">Bütün məhsullar</a></li>
                                     @foreach (var item in Model.Categories)
                                     {
-                                        <li><a href="" style="text-decoration:none;" data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>
+                                        <li><a data-id="@item.Name.ToLower()">@Html.Raw(item.Name)</a></li>
                                     }
 
                                 </ul>
@@ -55,10 +55,9 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-3 me-5">
                             <div class="product-item content text-center" data-id="@item.Category.Name.ToLower()">
                                 <div class="img">
-                                    @if (item.ProductImages.Where(m => m.IsMain == true).Count() > 0)
-                                    {
-                                        <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" class="img-fluid " alt="">
-                                    }
+                                   
+                                        <img src="~/assets/img/@item.ProductImages.Where(m=>m.IsMain == true).FirstOrDefault().Image" class="img-fluid " alt="">
+                                    
                                 </div>
                                 <div class="title  mt-3">
                                     <h6>@Html.Raw(item.Name)</h6>

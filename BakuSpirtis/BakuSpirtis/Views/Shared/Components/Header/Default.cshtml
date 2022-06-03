@@ -35,10 +35,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                @if (User.Identity.IsAuthenticated)
-                                {
+                           @if (User.Identity.IsAuthenticated)
+                            {
                                 <li class="nav-item"><a class="nav-link"><i class="fal fa-user "></i> @User.Identity.Name</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-controller="Account" asp-action="Logout">Çıxış</a></li>
                             }
@@ -47,7 +45,7 @@
                                 <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Login">Daxil ol</a></li>
                                 <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Register">Qeydiyyat</a></li>
                             }
-                            </ul>
+                         </ul>
                     </div>
                 </nav>
             </div>
@@ -63,10 +61,10 @@
                 <li><a class="nav-link" asp-controller="Galery" asp-action="Index">Galereya</a></li>
                 <li><a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a></li>
                 @if (User.Identity.IsAuthenticated)
-                {
+                 {
                     <li class="nav-item"><a class="nav-link"><i class="fal fa-user"></i> @User.Identity.Name</a></li>
                     <li class="nav-item"> <a class="nav-link" asp-controller="Account" asp-action="Logout">Çıxış</a></li>
-                }
+                 }
                 else
                 {
                     <li class="nav-item"><a class="nav-link" style="font-size:14px;" asp-controller="Account" asp-action="Login">Daxil ol</a></li>

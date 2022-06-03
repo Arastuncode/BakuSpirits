@@ -31,7 +31,6 @@ namespace BakuSpirtis.Controllers
                  .Include(m => m.Category)
                  .Include(m => m.ProductImages)
                  .OrderByDescending(m => m.Id)
-                 .Take(8)
                  .ToListAsync();
             ProductVM productVM = new ProductVM
             {

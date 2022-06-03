@@ -101,7 +101,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             {
                 Name = productVM.Name,
                 CategoryId = productVM.CategoryId,
-                ProductImages = imageList,
+                ProductImages = imageList
             };
             await _context.ProductImages.AddRangeAsync(imageList);
             await _context.Products.AddAsync(product);
@@ -174,7 +174,25 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-       
+        [HttpPost]
+        public async Task<IActionResult> SetDefaultImage(DefaultImageVM model)
+        {
+            List<ProductImage> productImages = await _context.ProductImages.Where(m => m.ProductId == model.ProductId).ToListAsync();
+            foreach (var item in productImages)
+            {
+                if (item.Id == model.ImageId)
+                {
+                    item.IsMain = true;
+                }
+                else
+                {
+                    item.IsMain = false;
+                }
+            }
+            await _context.SaveChangesAsync();
+            return Ok(productImages);
+        }
+
     }
 }
 
