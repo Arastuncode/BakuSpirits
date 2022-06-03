@@ -14,28 +14,30 @@ $color: #f34f3f;
 $text-hover-color: rgb(162, 29, 29);
 $font-color: #fff;
 
- 
+
 
 main {
     #slider {
         position: relative;
+
         .slider {
             width: 100%;
+
             img {
                 max-height: 800px;
                 width: 100% !important;
             }
         }
-    
+
     }
 
     #about-area {
-        
+
         border-radius: 10px;
 
         .image {
-            width: 600px;
-            height: 500px;
+            //width: 600px;
+            //height: 500px;
 
             img {
                 width: 100%;
@@ -66,7 +68,8 @@ main {
         h2 {
             color: $font-color;
             text-align: center;
-            a{
+
+            a {
                 text-decoration: none;
                 color: #fff;
             }
@@ -74,7 +77,7 @@ main {
 
         .card {
             margin-top: 10px;
-            width: 18rem;
+            //width: 18rem;
             background-color: transparent;
             border: none;
             color: $font-color;
@@ -142,12 +145,7 @@ main {
     }
 
     video {
-        padding-right: 14%;
-
-        source {
-            height: 390px;
-            width: 100%;
-        }
+        padding-right: 15%;
     }
 
     #galery-area {
@@ -161,9 +159,8 @@ main {
         }
 
         img {
-            width: 20rem;
+            width: 100%;
             border-radius: 10px;
-
         }
     }
 }
@@ -171,137 +168,14 @@ main {
 
 
 
- 
+
 
 //Phone Portrait  
 @media screen and (max-width: 400px) {
-   
-
-    main {
-        
-
-        #about-area {
-            padding: -2%;
-            width: 22rem;
-
-            .image {
-                min-width: 21rem;
-                max-width: 21.5rem !important;
-                height: 300px !important;
-
-                img {
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-            }
-
-            .content {
-                hr {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-
-                text-align: center;
-                width: 21.5rem !important;
-                max-width: 22rem !important;
-                min-height: 450px !important;
-            }
-        }
-
-        #products-area {
-            .card {
-                width: 22rem;
-                max-width: 26em !important;
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-
-                    text-align: center;
-                }
-            }
-        }
-
-        .video {
-            width: 25.5rem;
-
-        }
-
-        #galery-area {
-            img {
-                width: 22rem;
-            }
-        }
-
-    }
 }
 
 //Phone Landscape
 @media screen and (min-width: 401px) and (max-width: 600px) {
-    
-
-    main {
-        
-
-        #about-area {
-            .image {
-                width: 24.2rem !important;
-                height: 300px !important;
-
-                img {
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-            }
-
-            .content {
-                hr {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-
-                text-align: center !important;
-                min-width: 390px !important;
-                min-height: 450px !important;
-
-            }
-        }
-
-        #products-area {
-            .card {
-                width: 24.5rem;
-                max-width: 28em !important;
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
-            }
-        }
-
-        .video {
-            width: 28.5rem;
-
-        }
-
-        #galery-area {
-            img {
-                width: 24.5rem;
-            }
-        }
-
-    }
 }
 
 //Table Portrait & Landscape
@@ -309,197 +183,14 @@ main {
 
 // Table Portrait 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    
-
-    main {
-        
-
-        #about-area {
-            .image {
-                width: 355px !important;
-                height: 300px !important;
-
-                img {
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-            }
-
-            .content {
-                hr {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-
-                text-align: center !important;
-                width: 355px !important;
-                min-height: 460px !important;
-
-            }
-        }
-
-        #shop {
-            .card {
-                max-width: 22em !important;
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                }
-            }
-        }
-
-        .video {
-            display: none !important;
-        }
-
-    }
-
 }
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
-   
-
-    main {
-         
-
-        #about-area {
-            position: relative;
-            left: -8%;
-            background-color: transparent;
-            width: 46.2rem !important;
-
-            .image {
-                width: 21.1rem !important;
-                height: 300px !important;
-
-                img {
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-            }
-
-            .content {
-                hr {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-
-                text-align: center !important;
-                min-width: 21.1rem !important;
-                min-height: 450px !important;
-                position: relative;
-                right: 10%;
-            }
-        }
-
-        #products-area {
-            .card {
-                width: 34rem;
-                max-width: 36rem !important;
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
-            }
-        }
-
-        .video {
-            width: 56rem;
-            position: relative;
-            right: 25%;
-        }
-
-        #galery-area {
-            img {
-                width: 36rem;
-            }
-        }
-
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-     
-
-    main {
-         
-
-        #about-area {
-            position: relative;
-            left: -2%;
-            background-color: transparent;
-            width: 57rem !important;
-
-            .image {
-                width: 27rem !important;
-                height: 300px !important;
-
-                img {
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-            }
-
-            .content {
-                hr {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-
-                text-align: center !important;
-                min-width: 28rem !important;
-                min-height: 450px !important;
-                position: relative;
-                right: 5%;
-            }
-        }
-
-        #products-area {
-            .card {
-                width: 34rem;
-                max-width: 21rem !important;
-
-                .card-body {
-                    a {
-                        font-size: 1.25em !important;
-                    }
-
-                    font-size: 1.25em !important;
-                    font-weight: bolder !important;
-                    font-style: italic;
-                    text-align: center;
-                }
-            }
-        }
-
-        .video {
-            width: 56rem;
-            position: relative;
-            right: 5%;
-        }
-
-        #galery-area {
-            img {
-                width: 22rem;
-            }
-        }
-
-    }
 }
 
 //Desktop

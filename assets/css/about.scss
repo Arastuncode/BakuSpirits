@@ -23,7 +23,7 @@ $font-color: #fff;
     .content {
         color: white;
         align-items: center;
-        height: 450px;
+        height:70%;
 
         #wrapper {
             display: table;
@@ -300,9 +300,7 @@ $font-color: #fff;
         }
 
         .text {
-            padding: 100px;
-
-            a {
+           a {
                 position: relative;
                 font-size: 14px;
                 text-transform: uppercase;
@@ -338,8 +336,7 @@ $font-color: #fff;
         .image {
             width: 100%;
             height: 100%;
-            margin-left: 1.2%;
-
+            //margin-left:-2%;
             img {
                 width: 100%;
                 height: 100%;
@@ -349,17 +346,13 @@ $font-color: #fff;
 }
 
 #process {
-    margin-top: 40%;
+   
     .card {
         background-color: transparent !important;
         border: none;
         color: white;
         cursor: pointer;
         
-
-        img {
-            height: 100%;
-        }
     }
 }
 
@@ -368,80 +361,11 @@ $font-color: #fff;
 
 //Phone Portrait  
 @media screen and (max-width: 400px) {
-    #top-area {
-        .content {
-            .image {
-                width: 100%;
-
-                img {
-                    width: 100% !important;
-                }
-
-                margin-bottom:15%;
-            }
-
-            width: 110%;
-            height:400px !important;
-
-            .text {
-                height: 250px;
-                padding: 5% !important;
-            }
-        }
-    }
-
-    #process {
-        margin-top: 40%;
-
-        .card {
-
-            img {
-                width: 16em !important;
-            }
-        }
-    }
 }
 
 //Phone Landscape
 @media screen and (min-width: 400px) and (max-width: 600px) {
-
-
-    #top-area {
-        .content {
-            .image {
-                width: 100%;
-
-                img {
-                    width: 100% !important;
-                }
-
-                width: 100%;
-            }
-
-            margin-bottom:15%;
-        }
-
-        width: 400px;
-        height:400px !important;
-
-        .text {
-            height: 250px;
-            padding: 5% !important;
-        }
-    }
-    #process {
-        margin-top: 50%;
-    
-        .card {
-            img {
-                width: 18em !important;
-            }
-        }
-    }
 }
-
-
- 
 
 //Table Portrait & Landscape
 @media screen and(min-width: 768px) and(max-width: 1024px) {}
@@ -449,102 +373,13 @@ $font-color: #fff;
 // Table Portrait 
 @media screen and (min-width: 600px) and (max-width: 768px) {
 
-    #top-area {
-        .content {
-            .image {
-                width: 100%;
-
-                img {
-                    width: 100% !important;
-                }
-
-                margin-bottom:15%;
-            }
-
-            width: 400px;
-            height:400px !important;
-
-            .text {
-                height: 250px;
-                padding: 5% !important;
-            }
-        }
-    }
-
-    #process {
-        margin-top: 50%;
-
-        .card {
-            img {
-                width: 18em !important;
-            }
-        }
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
-
-    #top-area {
-        .content {
-            width: 100%;
-
-            img {
-                width: 100% !important;
-            }
-
-            width: 800px;
-            height:400px !important;
-            position: relative;
-            top:9%;
-
-            .text {
-                height: 450px;
-                padding: 5% !important;
-            }
-        }
-    }
-
-    #process {
-        margin-top: 50%;
-
-        .card {
-            img {
-                width: 30em !important;
-            }
-        }
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
 
-    #top-area {
-        .content {
-            width: 100%;
-
-            img {
-                width: 100% !important;
-            }
-
-            width: 800px;
-            height:400px !important;
-
-            .text {
-                height: 450px;
-                padding: 5% !important;
-            }
-        }
-    }
-
-    #process {
-        margin-top: 50%;
-
-        .card {
-            img {
-                width: 29em !important;
-            }
-        }
-    }
 }

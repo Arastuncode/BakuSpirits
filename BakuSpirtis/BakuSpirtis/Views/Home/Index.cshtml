@@ -28,12 +28,12 @@
                 <div class="row bg-transparent">
                     @foreach (var item in Model.Abouts)
                     {
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-xs-5">
                             <div class="image">
                                 <img src="~/assets/img/@item.Image" alt="">
                             </div>
                         </div>
-                        <div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3">
                             <div class="content">
                                 <a asp-controller="About" asp-action="Index">
                                     <h1>Haqqımızda</h1>
@@ -55,7 +55,7 @@
                 <h2><a class="nav-link text-light" asp-controller="Product" asp-action="Index">Məhsullarımız</a></h2>
                 @foreach (var item in Model.Products)
                 {
-                    <div class="col-sm">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <div class="card">
 
                             <img class="card-img-top" src="~/assets/img/@item.ProductImages.FirstOrDefault().Image"
@@ -78,7 +78,7 @@
             @foreach (var item in Model.Advertisments)
             {
                 <div class="row">
-                    <div class="col  offset-md-2">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12  offset-md-2">
                         <video class="img-fluid rounded-sm " autoplay loop muted>
                             <source src="~/assets/video/@item.Video" type="video/mp4" class="rounded-sm" />
                         </video>

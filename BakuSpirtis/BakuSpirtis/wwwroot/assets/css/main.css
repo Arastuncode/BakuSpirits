@@ -519,11 +519,13 @@ header nav {
   .footer {
     padding: 30px;
     color: #fff;
+    text-align: center;
   }
   
   .footer ul {
     list-style: none;
     cursor: pointer;
+    
   }
   
   .footer ul p:hover {
@@ -575,7 +577,7 @@ header nav {
       margin-top: -5%;
     }
     header nav .logo img {
-      width: 350px !important;
+      width: 250px !important;
       height: 250px !important;
     }
   
@@ -583,16 +585,15 @@ header nav {
   
   @media screen and (min-width: 992px) and (max-width: 1024px) {
     header nav .logo img {
-      margin-left: 30%;
-      width: 340px !important;
+      margin-left: -10%;
+      width: 240px !important;
       height: 240px !important;
     }
-    header nav ul {
-      margin-left: 3%;
+  }
+  @media screen and (width: 1280px) {
+    header nav .logo img {
+      margin-left: -10%;
+      width: 240px !important;
+      height: 240px !important;
     }
-     
-    
-    
-     
-     
   }

@@ -16,7 +16,8 @@ main #galery-area .content {
 }
 
 main #galery-area .content img {
-  width: 20rem;
+  width: 100%;
+  border-radius: 10px;
 }
 
 main .btn {
@@ -61,29 +62,5 @@ main .btn:hover::before {
 
 main .btn p {
   font-weight: 16px !important;
-}
-
-@media screen and (min-width: 401px) and (max-width: 600px) {
-  footer {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  footer {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  footer {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  footer {
-    text-align: center;
-  }
 }
 /*# sourceMappingURL=galery.css.map */

@@ -41,7 +41,7 @@ main {
                 }
 
                 ::placeholder {
-                    color: black;
+                    color: white;
                     opacity: 1;
                 }
 
@@ -50,7 +50,7 @@ main {
                     border: none;
                     background: none;
                     cursor: pointer;
-                    color: black;
+                    color: white;
                 }
             }
 
@@ -124,7 +124,6 @@ main {
 
             .product-item {
                 .img {
-                    width: 16rem;
                     overflow: hidden;
                     border-radius: 10px;
                     img {
@@ -163,8 +162,6 @@ main {
         #products {
             .content {
                 .img {
-                    width: 14em !important;
-
                     img {
                         width: 100%;
                     }
@@ -194,8 +191,6 @@ main {
         #products {
             .content {
                 .img {
-                    width: 19.5em !important;
-
                     img {
                         width: 100%;
                     }
@@ -225,8 +220,6 @@ main {
         #products {
             .content {
                 .img {
-                    width: 22em !important;
-
                     img {
                         width: 100%;
                     }
@@ -259,8 +252,6 @@ main {
         #products {
             .content {
                 .img {
-                    width: 22em !important;
-
                     img {
                         width: 100%;
                     }
@@ -299,19 +290,15 @@ main {
         #products {
             .content {
                 .img {
-                    width: 42em !important;
-
                     img {
                         width: 100%;
                     }
-
                 }
 
                 .card-body {
                     a {
                         font-size: 1.25em !important;
                     }
-
                     font-size: 1.25em !important;
                     font-weight: bolder !important;
                     font-style: italic;

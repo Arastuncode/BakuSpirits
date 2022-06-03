@@ -52,31 +52,4 @@ body {
   -webkit-transform-origin: left;
           transform-origin: left;
 }
-
-@media screen and (max-width: 400px) {
-  #patner-area {
-    margin-top: 6%;
-  }
-  #patner-area .card img {
-    width: 20em;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  #patner-area {
-    margin-top: 15%;
-  }
-  #patner-area .card img {
-    width: 22em;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  #patner-area {
-    margin-top: 14%;
-  }
-  #patner-area .card img {
-    width: 38em;
-  }
-}
 /*# sourceMappingURL=partners.css.map */

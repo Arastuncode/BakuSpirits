@@ -74,25 +74,6 @@ main {
 
 //Phone Landscape
 @media screen and (min-width: 401px) and (max-width: 600px) {
-   
-
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table Portrait & Landscape
@@ -100,71 +81,14 @@ main {
 
 // Table Portrait 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-   
-
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 760px;
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
-
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-     
-
-    main {
-        #contact-area {
-            .message-area {
-                width: 100% !important;
-            }
-        }
-
-        .location-area {
-            iframe {
-                width: 100%;
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Desktop

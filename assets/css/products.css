@@ -30,22 +30,22 @@ main #product-area .search .search-box .search:focus {
 }
 
 main #product-area .search .search-box ::-webkit-input-placeholder {
-  color: black;
+  color: white;
   opacity: 1;
 }
 
 main #product-area .search .search-box :-ms-input-placeholder {
-  color: black;
+  color: white;
   opacity: 1;
 }
 
 main #product-area .search .search-box ::-ms-input-placeholder {
-  color: black;
+  color: white;
   opacity: 1;
 }
 
 main #product-area .search .search-box ::placeholder {
-  color: black;
+  color: white;
   opacity: 1;
 }
 
@@ -54,7 +54,7 @@ main #product-area .search .search-box i {
   border: none;
   background: none;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 main #product-area .content {
@@ -121,7 +121,6 @@ main #product-area #products ul li a:hover {
 }
 
 main #product-area #products .product-item .img {
-  width: 16rem;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -148,9 +147,6 @@ main #product-area #products .product-item .title h6 {
 }
 
 @media screen and (width: 280px) {
-  main #products .content .img {
-    width: 14em !important;
-  }
   main #products .content .img img {
     width: 100%;
   }
@@ -166,9 +162,6 @@ main #product-area #products .product-item .title h6 {
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
-  main #products .content .img {
-    width: 19.5em !important;
-  }
   main #products .content .img img {
     width: 100%;
   }
@@ -184,9 +177,6 @@ main #product-area #products .product-item .title h6 {
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
-  main #products .content .img {
-    width: 22em !important;
-  }
   main #products .content .img img {
     width: 100%;
   }
@@ -202,9 +192,6 @@ main #product-area #products .product-item .title h6 {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  main #products .content .img {
-    width: 22em !important;
-  }
   main #products .content .img img {
     width: 100%;
   }
@@ -225,9 +212,6 @@ main #product-area #products .product-item .title h6 {
   }
   main .filter-area {
     height: 400px;
-  }
-  main #products .content .img {
-    width: 42em !important;
   }
   main #products .content .img img {
     width: 100%;

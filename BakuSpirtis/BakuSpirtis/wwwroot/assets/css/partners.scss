@@ -23,17 +23,14 @@ $font-color: #fff;
         border-radius: 10px;
         cursor: pointer;
     }
-    //margin-top:5%;
     .card {
         background-color: transparent !important;
         border: none;
         cursor: pointer;
         color: white;
         h3 {
-           
             position: relative;
             max-width: 300px;
-
             &::before {
                 content: " ";
                 position: absolute;
@@ -57,28 +54,11 @@ $font-color: #fff;
  
 //Phone Portrait  
 @media screen and (max-width: 400px) {
-    
-    #patner-area{
-        margin-top:6%;
-        .card{
-            img{
-                width:20em;
-            }
-        }
-    }
+
 }
 
 //Phone Landscape
 @media screen and (min-width: 400px) and (max-width: 600px) {
-     
-    #patner-area{
-        margin-top:15%;
-        .card{
-            img{
-                width:22em;
-            }
-        }
-    }
 }
 
 
@@ -93,15 +73,6 @@ $font-color: #fff;
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
-     
-    #patner-area{
-        margin-top:14%;
-        .card{
-            img{
-                width:38em;
-            }
-        }
-    }
 }
 
 //Table  Landscape

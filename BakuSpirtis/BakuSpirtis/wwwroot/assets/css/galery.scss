@@ -19,15 +19,13 @@ $font-color: #fff;
 main {
     #galery-area {
         .content {
-
             display: none;
-
             img {
-                width: 20rem;
+                width: 100%;
+                border-radius: 10px;
             }
         }
     }
-
     .btn {
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -69,26 +67,15 @@ main {
             font-weight: 16px !important;
         }
     }
-
-
 }
-
- 
 
 //Phone Portrait  
 @media screen and (max-width: 400px) {
-
-    
+ 
 }
 
 //Phone Landscape
 @media screen and (min-width: 401px) and (max-width: 600px) {
-    
-
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table Portrait & Landscape
@@ -96,29 +83,14 @@ main {
 
 // Table Portrait 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    
-
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
-
-
-    footer {
-        text-align: center;
-    }
 }
 
 //Table  Landscape
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    footer {
-        text-align: center;
-    }
 }
 
 //Desktop
