@@ -17,19 +17,17 @@ namespace BakuSpirtis.Services
         {
             _config = config;
         }
-        public async Task SendEmail(string emailTo, string html, string content, string userName)
+        public async Task SendEmailAsync(string emailTo, string userName, string html, string content)
         {
             var emailModel = _config.GetSection("EmailConfig").Get<EmailRequest>();
             var apiKey = emailModel.SecretKey;
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress(emailModel.SenderEmail, emailModel.SenderName);
-            var subject = "Sending with SendGrid is Fun";
+            var subject = "EduHome Notification";
             var to = new EmailAddress(emailTo, userName);
-            var plainTextContent = content;
-            var htmlContent = html;
             var msg = MailHelper.CreateSingleEmail(from, to, subject, content, html);
             await client.SendEmailAsync(msg);
         }
-        
+
     }
 }

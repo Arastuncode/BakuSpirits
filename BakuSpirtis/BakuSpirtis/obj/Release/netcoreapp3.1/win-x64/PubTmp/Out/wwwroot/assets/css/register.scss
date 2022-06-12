@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+$color: #f34f3f; 
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff; 
+
+
+ 
+
+#register-area {
+    .register {
+        width: 900px;
+        height: 600px;
+        border-radius: 10px;
+        margin-left: 15%;
+        
+        h2 {
+            margin-top: 1%;
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            margin-left: 30%;
+            //margin-top: 5%;
+            color: #fff;
+            input {
+                width: 60% !important;
+                outline: none !important;
+                background-color: rgba(255, 255, 255, 0.45);
+            }
+
+            a {
+                position: relative;
+                color: #fff;
+                font-weight: bolder;
+                text-decoration: none;
+
+                &::after {
+                    content: "";
+                    transition: width .3s;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 1.5px;
+                    background-color: #0095F6;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+ 
+
+//Phone Portrait  
+@media screen and (max-width: 400px) {
+    
+
+    main {
+        #register-area {
+            max-width: 350px;
+
+            .register {
+                background-color: transparent;
+                max-width: 350px;
+                box-shadow: none !important;
+                position: relative;
+                right: 5%;
+                color: white !important;
+
+                input {
+                    background-color: rgba(255, 255, 255, 0.205);
+                    border: none;
+                    outline: none !important;
+                }
+            }
+        }
+
+    }
+}
+
+//Phone Landscape
+@media screen and (min-width: 401px) and (max-width: 600px) {
+   
+
+    main {
+        #register-area {
+            max-width: 350px;
+
+            .register {
+                background-color: transparent;
+                max-width: 400px;
+                box-shadow: none !important;
+                position: relative;
+                right: 5%;
+                color: white !important;
+
+                input {
+                    background-color: rgba(255, 255, 255, 0.205);
+                    border: none;
+                    outline: none !important;
+                }
+            }
+        }
+
+    }
+}
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
+
+// Table Portrait 
+@media screen and (min-width: 600px) and (max-width: 769px) {
+    
+
+    main {
+        #register-area {
+            max-width: 350px;
+            margin-top: 12%;
+
+            .register {
+                background-color: rgba(255, 255, 255, 0.205);
+                max-width: 745px;
+                box-shadow: none !important;
+                position: relative;
+                right: 10%;
+                color: white !important;
+                text-align: center;e
+                input {
+                    background-color: rgba(255, 255, 255, 0.352);
+                    border: none;
+                    outline: none !important;
+                    position: relative;
+                    right: -2%;
+                }
+            }
+        }
+
+    }
+
+}
+
+//Table  Landscape
+@media screen and (min-width: 770px) and (max-width: 992px) {
+    
+
+    main {
+        #register-area {
+            max-width: 350px;
+            margin-top: 10%;
+
+            .register {
+                background-color: rgba(255, 255, 255, 0.205);
+                max-width: 780px;
+                box-shadow: none !important;
+                position: relative;
+                right: 7%;
+                color: white !important;
+                text-align: center;e
+                input {
+                    background-color: rgba(255, 255, 255, 0.352);
+                    border: none;
+                    outline: none !important;
+                    position: relative;
+                    right: -2%;
+                }
+            }
+        }
+
+    }
+}
+
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+     
+ 
+}
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

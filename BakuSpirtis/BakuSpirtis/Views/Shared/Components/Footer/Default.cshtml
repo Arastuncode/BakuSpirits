@@ -1,4 +1,5 @@
-﻿@model Dictionary<string, string>
+﻿@model Dictionary<string, string> 
+
 <!-- Footer starts -->
 <footer>
     <div class="footer mt-3">
@@ -11,7 +12,7 @@
                     <ul class="list-group ">
                         <li class="list-group">
 
-                            <a href=""><i class="fal fa-envelope  fa-xl"></i> @Model["Email"]</a>
+                            <p><i class="fal fa-envelope  fa-xl"></i> @Model["Email"]</p>
 
                         </li>
                         <li class="list-group mt-3">
@@ -20,9 +21,9 @@
                             </p>
                         </li>
                         <li class="list-group">
-                            <a href="">
+                            <p>
                                 <i class="fal fa-map-marker-alt  fa-xl"></i> @Model["Address"]
-                            </a>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -33,22 +34,22 @@
                     <ul class="list-group">
                         <li class="list-group">
                             <a asp-controller="Product" asp-action="Index">
-                                <i class="fal fa-angle-right fa-xl"></i> Məhsullar
+                                 Məhsullar
                             </a>
                         </li>
                         <li class="list-group">
                             <a asp-controller="Partners" asp-action="Index">
-                                <i class="fal fa-angle-right fa-xl"></i> Əməkdaşlıq
+                                Əməkdaşlıq
                             </a>
                         </li>
                         <li class="list-group">
                             <a asp-controller="About" asp-action="Index">
-                                <i class="fal fa-angle-right fa-xl"></i> Haqqımızda
+                                Haqqımızda
                             </a>
                         </li>
                         <li class="list-group">
                             <a asp-controller="Conact" asp-action="Index">
-                                <i class="fal fa-angle-right fa-xl"></i> Əlaqə
+                                 Əlaqə
                             </a>
                         </li>
                     </ul>
@@ -63,11 +64,7 @@
                                 <img src="~/assets/icons/instagram.png" alt=""> Instagram
                             </a>
                         </li>
-                        <li class="list-group">
-                            <a href="@Model["Facebook"]"  target="_blank">
-                                <img src="~/assets/icons/facebook.png" alt=""> Facebook
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>

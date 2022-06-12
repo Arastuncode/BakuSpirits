@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#register-area .register {
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  margin-left: 15%;
+}
+
+#register-area .register h2 {
+  margin-top: 1%;
+  text-align: center;
+  color: #fff;
+}
+
+#register-area .register form {
+  margin-left: 30%;
+  color: #fff;
+}
+
+#register-area .register form input {
+  width: 60% !important;
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+#register-area .register form a {
+  position: relative;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#register-area .register form a::after {
+  content: "";
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 1.5px;
+  background-color: #0095F6;
+}
+
+#register-area .register form a:hover {
+  text-decoration: none;
+}
+
+#register-area .register form a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  main #register-area {
+    max-width: 350px;
+  }
+  main #register-area .register {
+    background-color: transparent;
+    max-width: 350px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: relative;
+    right: 5%;
+    color: white !important;
+  }
+  main #register-area .register input {
+    background-color: rgba(255, 255, 255, 0.205);
+    border: none;
+    outline: none !important;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  main #register-area {
+    max-width: 350px;
+  }
+  main #register-area .register {
+    background-color: transparent;
+    max-width: 400px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: relative;
+    right: 5%;
+    color: white !important;
+  }
+  main #register-area .register input {
+    background-color: rgba(255, 255, 255, 0.205);
+    border: none;
+    outline: none !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 769px) {
+  main #register-area {
+    max-width: 350px;
+    margin-top: 12%;
+  }
+  main #register-area .register {
+    background-color: rgba(255, 255, 255, 0.205);
+    max-width: 745px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: relative;
+    right: 10%;
+    color: white !important;
+    text-align: center;
+  }
+  main #register-area .register e
+input {
+    background-color: rgba(255, 255, 255, 0.352);
+    border: none;
+    outline: none !important;
+    position: relative;
+    right: -2%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 992px) {
+  main #register-area {
+    max-width: 350px;
+    margin-top: 10%;
+  }
+  main #register-area .register {
+    background-color: rgba(255, 255, 255, 0.205);
+    max-width: 780px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: relative;
+    right: 7%;
+    color: white !important;
+    text-align: center;
+  }
+  main #register-area .register e
+input {
+    background-color: rgba(255, 255, 255, 0.352);
+    border: none;
+    outline: none !important;
+    position: relative;
+    right: -2%;
+  }
+}
+/*# sourceMappingURL=register.css.map */

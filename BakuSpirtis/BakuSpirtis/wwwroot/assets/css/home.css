@@ -72,6 +72,7 @@ main #products-area .card .card-img-top {
   transition: -webkit-transform .75s;
   transition: transform .75s;
   transition: transform .75s, -webkit-transform .75s;
+  min-height: 400px;
 }
 
 main #products-area .card:hover .card-img-top {

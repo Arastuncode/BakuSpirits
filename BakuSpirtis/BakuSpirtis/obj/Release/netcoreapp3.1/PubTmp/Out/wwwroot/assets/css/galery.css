@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #galery-area .content {
+  display: none;
+}
+
+main #galery-area .content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 10px 40px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+}
+
+main .btn:hover {
+  color: #a21d1d !important;
+}
+
+main .btn::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #fff !important;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+main .btn:hover::before {
+  width: 150%;
+}
+
+main .btn p {
+  font-weight: 16px !important;
+}
+/*# sourceMappingURL=galery.css.map */

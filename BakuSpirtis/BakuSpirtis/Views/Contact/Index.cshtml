@@ -1,4 +1,4 @@
-﻿@model List<Contact>
+﻿@model Dictionary<string, string>
 @{
     ViewData["Title"] = "Əlaqə";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -14,26 +14,20 @@
                     <div class="message-area text-center">
                         <h1>Birbaşa Əlaqə</h1>
                         <ul class="list-group mt-3">
-                            @foreach (var item in Model)
-                            {
-                                <li class="list-group">
-                                    <p><i class="fal fa-envelope  fa-xl"></i> @Html.Raw(item.Email)</p>
-                                </li>
-                            }
-                            @foreach (var item in Model)
-                            {
-                                <li class="list-group">
-                                    <p><i class="fal fa-phone fa-xl"></i> @Html.Raw(item.Phone)</p>
-                                </li>
-                            }
-                            @foreach (var item in Model)
-                            {
-                                <li class="list-group">
-                                    <p>
-                                        <i class="fal fa-map-marker-alt  fa-xl"></i> @Html.Raw(item.Address)
-                                    </p>
-                                </li>
-                            }
+
+                            <li class="list-group">
+                                <p><i class="fal fa-envelope  fa-xl"></i> @Model["Email"]</p>
+                            </li>
+
+                            <li class="list-group">
+                                <p><i class="fal fa-phone fa-xl"></i> @Model["Phone"]</p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <i class="fal fa-map-marker-alt  fa-xl"></i> @Model["Address"]
+                                </p>
+                            </li>
+
                         </ul>
                     </div>
                 </div>

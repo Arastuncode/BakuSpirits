@@ -7,6 +7,6 @@ namespace BakuSpirtis.Services.Interfaces
 {
     public interface IEmailService
     {
-        Task SendEmail(string emailTo, string html, string content, string userName);
+        Task SendEmailAsync(string emailTo, string userName, string html, string content);
     }
 }

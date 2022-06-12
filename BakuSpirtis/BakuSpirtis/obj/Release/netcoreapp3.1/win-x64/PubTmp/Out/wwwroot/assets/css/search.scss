@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+$color: #f34f3f; 
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff; 
+
+ 
+
+main {
+    #detail-area {
+        .product-image {
+            height: 80%;
+            margin-left: 7%;
+            position: relative;
+            img {
+                width:100%;
+                height: 110% !important;
+                border-radius: 10px;
+            }
+        }
+
+        .product-name {
+            margin-left: 2%;
+            color: #fff;
+        }
+        .product-detail {
+            color: #fff;
+        }
+    }
+    .table{
+        color: #fff;
+        
+    }
+    .container {
+        overflow: hidden;
+        position: relative;
+        .items {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            animation: carouselAnim 15s infinite alternate linear;
+        }
+        .cardd {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 350px;
+            margin: 1em;
+            padding: 0.5em;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+            background-color: transparent;
+            border: none;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                text-align: center;
+                padding: 1em;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+        }
+
+        @keyframes carouselAnim {
+            from {
+                transform: translate(0, 0);
+            }
+
+            to {
+                transform: translate(calc(-100% + (5 * 300px)));
+            }
+        }
+
+        .sides {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+
+            .right, .left {
+                background: linear-gradient(to right,
+                        rgba(245, 245, 245, 1) 0%,
+                        rgba(255, 255, 255, 0) 100%);
+                width: 15%;
+                height: 100%;
+                position: absolute;
+                z-index: 200;
+                margin-left:-2% !important;
+            }
+            .right {
+                right: 0;
+                background: linear-gradient(to left,
+                        rgba(245, 245, 245, 1) 0%,
+                        rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
+}
+ 
+
+//Phone Portrait  
+@media screen and(min-width: 320px) and (max-width: 470px) {
+    
+
+    main {
+
+        #detail-area {
+            .product-image {
+                margin-top:5% !important;
+                padding-right: 5% !important;
+                margin-left: -1% !important;
+                img {
+                    width: 95% !important;
+                }
+            }
+
+            .product-name {
+                margin-top: -8% !important;
+            }
+
+            .product-detail {
+                width: 90% !important;
+            }
+        }
+
+        .container {
+            width: 95%;
+            .items{
+                img{
+                    width:18rem !important;
+                }
+            }
+            .left {
+                background: transparent !important;
+
+            }
+
+            .right {
+                background: transparent !important;
+
+            }
+        }
+
+    }
+}
+
+//Phone Landscape
+@media screen and (max-width: 480px) {
+    
+
+    main {
+        #product-area {
+            .product-name {
+                background-color: red !important;
+                margin-top: -5% !important;
+            }
+        }
+    }
+}
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
+
+// Table Portrait 
+@media screen and(max-width: 768px) {
+   
+
+    main {
+        #product-are {
+            .product-name {
+                background-color: red !important;
+                margin-top: -5% !important;
+
+                h2 {
+                    color: red !important;
+                }
+            }
+        }
+    }
+
+}
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    
+
+    main {
+        #carousel {
+            min-width: 50rem !important;
+            max-width: 63rem !important;
+
+            .carousel-item {
+                height: 300px !important;
+
+                img {
+                    width: 95% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+
+        #about-area {
+            position: relative;
+            left: -2%;
+            background-color: transparent;
+            width: 57rem !important; 
+            .image {
+                width: 27rem !important;
+                height: 300px !important;
+
+                img {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+
+            .content {
+                hr {
+                    width: 50%;
+                    margin-left: 25%;
+                } 
+                text-align: center !important;
+                min-width: 28rem !important;
+                min-height: 450px !important;
+                position: relative;
+                right: 5%;
+            }
+        }
+
+        #products-area {
+            .card {
+                width: 34rem;
+                max-width: 21rem !important;
+                .card-body {
+                    a {
+                        font-size: 1.25em !important;
+                    }
+
+                    font-size: 1.25em !important;
+                    font-weight: bolder !important;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+
+        .video {
+            width: 56rem;
+            position: relative;
+            right: 5%;
+        }
+
+        #galery-area {
+            img {
+                width: 22rem;
+            }
+        }
+
+    }
+}
+
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

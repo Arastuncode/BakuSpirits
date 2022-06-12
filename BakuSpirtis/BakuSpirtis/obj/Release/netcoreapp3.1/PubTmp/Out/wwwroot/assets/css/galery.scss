@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$color: #f34f3f;
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff;
+
+ 
+
+main {
+    #galery-area {
+        .content {
+            display: none;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $font-color;
+        outline: 2px solid #fff;
+        padding: 10px 40px;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        background-color: transparent;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        width: 200px;
+
+        &:hover {
+            color: $text-hover-color  !important;
+
+        }
+
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: 0;
+            height: 100%;
+            background-color: #fff !important;
+            transform: skewX(35deg);
+            z-index: -1;
+            transition: width 1s;
+        }
+
+        &:hover::before {
+            width: 150%;
+        }
+
+        p {
+            font-weight: 16px !important;
+        }
+    }
+}
+
+//Phone Portrait  
+@media screen and (max-width: 400px) {
+ 
+}
+
+//Phone Landscape
+@media screen and (min-width: 401px) and (max-width: 600px) {
+}
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
+
+// Table Portrait 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+//Table  Landscape
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

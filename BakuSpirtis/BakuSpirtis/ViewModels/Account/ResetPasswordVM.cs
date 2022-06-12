@@ -5,6 +5,7 @@ namespace BakuSpirtis.ViewModels.Account
 {
     public class ResetPasswordVM
     {
+        public string Id { get; set; }
         [Required,DataType(DataType.Password)]
         public string Password { get; set; }
         [Required, DataType(DataType.Password),Compare(nameof(Password))]

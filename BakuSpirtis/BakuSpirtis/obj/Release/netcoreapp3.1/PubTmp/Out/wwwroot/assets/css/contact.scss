@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$color: #f34f3f; 
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff; 
+
+ 
+main {
+    #contact-area {
+        color: white;
+
+        input,
+        textarea {
+            background-color: rgba(255, 255, 255, 0.486);
+            border: none;
+            color: white;
+        }
+
+        button {
+            background-color: #545492;
+        }
+
+        ul {
+            list-style: none;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+ 
+
+//Phone Portrait  
+@media screen and (max-width: 400px) {
+    
+
+    main {
+        #contact-area {
+            .message-area {
+                width: 100% !important;
+            }
+        }
+
+        .location-area {
+            iframe {
+                max-width: 100%;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+//Phone Landscape
+@media screen and (min-width: 401px) and (max-width: 600px) {
+}
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
+
+// Table Portrait 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+//Table  Landscape
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

@@ -1,0 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #contact-area {
+  color: white;
+}
+
+main #contact-area input,
+main #contact-area textarea {
+  background-color: rgba(255, 255, 255, 0.486);
+  border: none;
+  color: white;
+}
+
+main #contact-area button {
+  background-color: #545492;
+}
+
+main #contact-area ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+main #contact-area ul a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+main .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 400px) {
+  main #contact-area .message-area {
+    width: 100% !important;
+  }
+  main .location-area iframe {
+    max-width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

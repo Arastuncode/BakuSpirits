@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+$color: #f34f3f;
+$color: #f34f3f; 
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff; 
+
+ 
+
+main {
+    
+    .content {
+        
+
+        h1 {
+            color: #fff;
+        }
+        @keyframes load{
+            0%{
+                box-shadow: 0 0 #ed3b65 inset;
+            }
+            100%{
+                box-shadow: 0 -70px #ed3b65 inset;
+            }
+        }
+        .loader {
+           transform:perspective(140px) rotateX(-45deg);
+           width:32px;
+           height:72px;
+           position: relative;
+           border:2px solid #fff;
+           animation:1.5s linear infinite alternate;            
+        }
+
+         
+    }
+}
+
+ 
+
+//Phone Portrait  
+@media screen and(max-width: 320px) {
+    
+
+    main {
+        .head-image {
+            .image {
+                width: 375px !important;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+
+    }
+}
+
+//Phone Landscape
+@media screen and (max-width: 480px) {
+
+     
+    main {
+        .head-image {
+            .image {
+                min-width: 400px !important;
+                height: 200px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .content {
+            .loader {
+                //background-color: red;
+                margin-bottom: -10% !important;
+                margin-left: -23%;
+                width: 120% !important;
+
+                .bal {
+                    padding: 0% !important;
+                }
+
+                h1 {
+                    font-size: 17px !important;
+                }
+            }
+        }
+
+    }
+}
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {
+    
+
+}
+
+// Table Portrait 
+@media screen and(max-width: 768px) {
+
+    
+
+    main {
+        .head-image {
+            .image {
+                width: 375px !important;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+//Table  Landscape
+@media screen and(max-width: 1024px) {
+   
+
+    main {
+        .head-image {
+            .image {
+                width: 375px !important;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1224px) {}
+
+// Large Desktop
+@media screen and (min-width: 1824px) {}

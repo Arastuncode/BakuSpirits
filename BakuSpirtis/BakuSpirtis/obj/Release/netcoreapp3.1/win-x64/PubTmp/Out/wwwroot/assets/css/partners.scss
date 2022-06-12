@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    //overflow-x: hidden;
+}
+
+$color: #f34f3f; 
+$text-hover-color: rgb(162, 29, 29);
+$font-color: #fff; 
+
+ 
+
+
+#patner-area {
+    img {
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .card {
+        background-color: transparent !important;
+        border: none;
+        cursor: pointer;
+        color: white;
+        h3 {
+            position: relative;
+            max-width: 300px;
+            &::before {
+                content: " ";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $text-hover-color;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform 0.4s;
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
+}
+ 
+//Phone Portrait  
+@media screen and (max-width: 400px) {
+
+}
+
+//Phone Landscape
+@media screen and (min-width: 400px) and (max-width: 600px) {
+}
+
+
+//Table Portrait & Landscape
+@media screen and(min-width: 768px) and(max-width: 1024px) {}
+
+// Table Portrait 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+     
+
+}
+
+//Table  Landscape
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Table  Landscape
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+     
+}

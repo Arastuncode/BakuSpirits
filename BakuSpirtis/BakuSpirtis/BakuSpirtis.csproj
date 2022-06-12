@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>6b6f1ac4-3754-4453-8493-cea296d3d754</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -85,12 +86,9 @@
     <None Include="wwwroot\assets\css\search.css.map" />
     <None Include="wwwroot\assets\css\search.scss" />
     <None Include="wwwroot\assets\js\age.js" />
-    <None Include="wwwroot\assets\js\company.js" />
-    <None Include="wwwroot\assets\js\detail.js" />
     <None Include="wwwroot\assets\js\galery.js" />
     <None Include="wwwroot\assets\js\home.js" />
     <None Include="wwwroot\assets\js\mobile.js" />
-    <None Include="wwwroot\assets\js\modal.js" />
     <None Include="wwwroot\assets\js\product.js" />
     <None Include="wwwroot\assets\js\production.js" />
     <None Include="wwwroot\assets\owlcarousel\owl.carousel.min.js" />

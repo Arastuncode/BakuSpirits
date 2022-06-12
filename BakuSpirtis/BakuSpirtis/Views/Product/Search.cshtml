@@ -1,8 +1,11 @@
 ﻿@model List<Product>
 @{
     ViewData["Title"] = "Məhsullarımız";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Css{
+    <link rel="stylesheet" href="~/assets/css/products.css">
+}
 <main>
     <section id="product-area">
         <div class="container   mt-5">
@@ -15,7 +18,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-3 me-5">
                                     <div class="product-item content text-left ">
                                         <div class="img me-5" style="width: 17rem;">
-                                            <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" class="img-fluid " alt="">
+                                            <img src="~/assets/img/@item.ProductImages.FirstOrDefault().Image" style="min-height:350px;" class="img-fluid " alt="">
                                         </div>
                                         <div class="title text-left  mt-3">
                                             <h6>@Html.Raw(item.Name)</h6>
