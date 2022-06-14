@@ -142,7 +142,7 @@ namespace BakuSpirtis.Controllers
             var user = await _userManager.FindByEmailAsync(forgotPasswordVM.Email);
             if (user is null)
             {
-                ModelState.AddModelError("", "Email or password is wrong.");
+                ModelState.AddModelError("", "Email is wrong.");
                 return View(forgotPasswordVM);
             }
             var code = await _userManager.GeneratePasswordResetTokenAsync(user);

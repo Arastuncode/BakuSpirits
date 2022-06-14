@@ -1,7 +1,3 @@
- 
-  
-    // SLIDER
-
     $(document).ready(function(){
         $(".slider").owlCarousel(
             {

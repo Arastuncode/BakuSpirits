@@ -85,6 +85,7 @@ main {
             .card-img-top {
                 border-radius: 10px;
                 transition: transform .75s;
+                min-height: 400px;
             }
 
             &:hover .card-img-top {

@@ -128,6 +128,7 @@ main {
                     border-radius: 10px;
                     img {
                         transition: all .3s;
+                        min-height: 400px;
                     }
 
                     &:hover {

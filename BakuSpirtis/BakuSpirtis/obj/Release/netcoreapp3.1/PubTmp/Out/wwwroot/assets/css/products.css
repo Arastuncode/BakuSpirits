@@ -128,6 +128,7 @@ main #product-area #products .product-item .img {
 main #product-area #products .product-item .img img {
   -webkit-transition: all .3s;
   transition: all .3s;
+  min-height: 400px;
 }
 
 main #product-area #products .product-item .img:hover img {

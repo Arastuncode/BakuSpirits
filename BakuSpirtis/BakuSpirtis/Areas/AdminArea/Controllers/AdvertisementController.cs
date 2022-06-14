@@ -43,30 +43,30 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
         {
             if (ModelState["Video"].ValidationState == ModelValidationState.Invalid) return View();
 
-            foreach (var photo in advertisementVM.Video)
+            foreach (var video in advertisementVM.Video)
             {
-                if (!photo.CheckFileType("video/"))
+                if (!video.CheckFileType("video/"))
                 {
                     ModelState.AddModelError("Video", "Video type is wrong");
                     return View();
                 }
 
-                if (!photo.CheckFileSize(500000))
+                if (!video.CheckFileSize(500000))
                 {
                     ModelState.AddModelError("Video", "Video size is wrong");
                     return View();
                 }
 
             }
-            foreach (var photo in advertisementVM.Video)
+            foreach (var video in advertisementVM.Video)
             {
-                string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+                string fileName = Guid.NewGuid().ToString() + "_" + video.FileName;
 
                 string path = Helper.GetFilePath(_env.WebRootPath, "assets/video", fileName);
 
                 using (FileStream stream = new FileStream(path, FileMode.Create))
                 {
-                    await photo.CopyToAsync(stream);
+                    await video.CopyToAsync(stream);
                 }
 
 
@@ -81,7 +81,6 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
         private async Task<Advertisment> GetAdvertismentsById(int id)
         {
             return await _context.Advertisments.FindAsync(id);

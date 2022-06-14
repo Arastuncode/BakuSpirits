@@ -47,7 +47,7 @@ namespace BakuSpirtis
                 options.Lockout.MaxFailedAccessAttempts = 3;
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
                 options.Lockout.AllowedForNewUsers = true;
-                //options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedEmail = true;
             });
             services.AddScoped<LayoutService>();
             services.AddScoped<ProductService>();
