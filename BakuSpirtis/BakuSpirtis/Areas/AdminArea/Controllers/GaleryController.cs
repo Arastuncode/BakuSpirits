@@ -153,5 +153,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+       
+       
     }
 }

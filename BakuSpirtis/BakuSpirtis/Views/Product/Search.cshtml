@@ -8,7 +8,20 @@
 }
 <main>
     <section id="product-area">
-        <div class="container  mt-5">
+        <div class="container   mt-5">
+            <div class="search">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5">
+                        <div class="search-box ">
+                            <form id="search" asp-controller="Product" asp-action="Search">
+                                <input type="search" class="search   placeholder" placeholder="Search..." name="search" />
+                                <button class="fal fa-search text-light" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
             <div id="products">
                 <div class="row">
 

@@ -5,9 +5,15 @@
 
 <div class="container mt-5" style="text-align:center">
     <h4>About</h4>
-    <img src="~/assets/img/@Model.Image" style="width:450px; height:450px;" />
-    <p>@Html.Raw(Model.Text)</p>
+    <div class="row">
+        <div class="col-12">
+            <img src="~/assets/img/@Model.Image" style="width:450px; height:450px;" />
+            <div class="bg-gradient-info">
+                <p >@Html.Raw(Model.Text)</p>
+            </div>
+        </div>
+    </div>
     <div>
-        <a asp-action="Index" class="btn btn-primary mt-3">Go back</a>
+        <a asp-action="Index" class="btn btn-primary ">Go back</a>
     </div>
 </div>
