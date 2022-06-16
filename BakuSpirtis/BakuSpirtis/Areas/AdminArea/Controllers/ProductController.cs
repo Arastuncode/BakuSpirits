@@ -169,6 +169,7 @@ namespace BakuSpirtis.Areas.AdminArea.Controllers
                 imageList.FirstOrDefault().IsMain = true;
                 product.ProductImages = imageList;
             }
+            
             product.Name = productEditVM.Name;
             product.CategoryId = productEditVM.CategoryId;
             await _context.SaveChangesAsync();

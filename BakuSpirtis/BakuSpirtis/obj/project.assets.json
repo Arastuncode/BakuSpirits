@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "MailKit/3.2.0": {
+      "MailKit/3.3.0": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "3.2.0"
+          "MimeKit": "3.3.0"
         },
         "compile": {
           "lib/netstandard2.1/MailKit.dll": {}
@@ -889,7 +889,7 @@
           }
         }
       },
-      "MimeKit/3.2.0": {
+      "MimeKit/3.3.0": {
         "type": "package",
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
@@ -2733,20 +2733,17 @@
     }
   },
   "libraries": {
-    "MailKit/3.2.0": {
-      "sha512": "5MTpTqmjqT7HPvYbP3HozRZMth5vSaT0ReN0iM3rAM4CgLI/R1qqtLDDNWGnFFIlcNzeJkZQRJJMkv8cgzWBbA==",
+    "MailKit/3.3.0": {
+      "sha512": "+TkmnfnicAgtwmPDiqZ/CvtLh7z36o44wjgvJzkbFXyGSnhVxmUWdvnzerA6EqslPTP9nK8aWqoQvr1uMpeHCw==",
       "type": "package",
-      "path": "mailkit/3.2.0",
+      "path": "mailkit/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icons/mailkit-50.png",
-        "lib/net452/MailKit.dll",
-        "lib/net452/MailKit.pdb",
-        "lib/net452/MailKit.xml",
-        "lib/net461/MailKit.dll",
-        "lib/net461/MailKit.pdb",
-        "lib/net461/MailKit.xml",
+        "lib/net462/MailKit.dll",
+        "lib/net462/MailKit.pdb",
+        "lib/net462/MailKit.xml",
         "lib/net47/MailKit.dll",
         "lib/net47/MailKit.pdb",
         "lib/net47/MailKit.xml",
@@ -2765,7 +2762,7 @@
         "lib/netstandard2.1/MailKit.dll",
         "lib/netstandard2.1/MailKit.pdb",
         "lib/netstandard2.1/MailKit.xml",
-        "mailkit.3.2.0.nupkg.sha512",
+        "mailkit.3.3.0.nupkg.sha512",
         "mailkit.nuspec"
       ]
     },
@@ -4244,20 +4241,17 @@
         "version.txt"
       ]
     },
-    "MimeKit/3.2.0": {
-      "sha512": "l9YHMBhBUwY7qQHUp8fw0EvjcbmhN4Iggz6MdjqIShBf42+0nJTa5gu0kuupCOPuiARc9ZaS9c9f0gKz4OnxKw==",
+    "MimeKit/3.3.0": {
+      "sha512": "l3J4XEioKPfck1WnCSVPPH3Jc3BefaAd2ntU66zn6pHDM2F5ev4KSUCwg3VnEKBCe8up2T8+qhliKPxug9fRZw==",
       "type": "package",
-      "path": "mimekit/3.2.0",
+      "path": "mimekit/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icons/mimekit-50.png",
-        "lib/net452/MimeKit.dll",
-        "lib/net452/MimeKit.pdb",
-        "lib/net452/MimeKit.xml",
-        "lib/net461/MimeKit.dll",
-        "lib/net461/MimeKit.pdb",
-        "lib/net461/MimeKit.xml",
+        "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.pdb",
+        "lib/net462/MimeKit.xml",
         "lib/net47/MimeKit.dll",
         "lib/net47/MimeKit.pdb",
         "lib/net47/MimeKit.xml",
@@ -4276,7 +4270,7 @@
         "lib/netstandard2.1/MimeKit.dll",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.3.2.0.nupkg.sha512",
+        "mimekit.3.3.0.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -8945,6 +8939,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MailKit >= 3.3.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.25",
       "Microsoft.EntityFrameworkCore >= 3.1.25",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.25",
@@ -8999,6 +8994,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "MailKit": {
+            "target": "Package",
+            "version": "[3.3.0, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.25, )"

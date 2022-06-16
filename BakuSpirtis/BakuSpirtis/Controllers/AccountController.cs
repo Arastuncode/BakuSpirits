@@ -117,7 +117,7 @@ namespace BakuSpirtis.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task CreateRole()
         {
             foreach (var role in System.Enum.GetValues(typeof(UserRoles)))
